@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+	<title>COnnectVIDa</title>
+</head>
+<body>
+    <nav class="nav-bar">
+		 <img src="imagens/logotop.jpeg">
+
+		 <div class="opcoes"> 
+			 <ul>
+				 	<li ><a href="" class="box-opcoes">Início</a></li>
+				 	<li ><a href=""  class="box-opcoes">Posts</a></li>
+				 	<li ><a href=""  class="box-opcoes">Sobre</a></li>
+				 	<li ><a href=""  class="box-opcoes">Contato</a></li>
+				 	<div class="pesquisar">
+				 		<input class="input" type="search" placeholder="Pesquisar no blog" >
+				 		<button class="button">Pesquisar</button>
+				 	</div>
+			 </ul>	
+
+		 </div>
+	</nav>
+    
+    {% block content %} {% endblock content%}
+
+    <footer id="footer">
+		<p>Entre em contaco conosco: </p>
+		<img src="imagens/youtube.png">
+		<img src="imagens/inst.png">
+		<img src="imagens/gmaill.png">
+
+		
+	</footer>
+</body>
+</html>
