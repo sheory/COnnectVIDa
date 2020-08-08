@@ -4,7 +4,7 @@
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 3.3rem;
+	height: 3.4rem;
 
 	background-color: #248e38;
 	display: flex;
@@ -12,11 +12,11 @@
 }
 
 .nav-bar img {
-	
+	margin-top: -5px;
 	width: 60px;
-	height: 52.8px;
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);00000000
-	box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);*/
+	height: 80px;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+	box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
 }
 
 .opcoes {
@@ -89,6 +89,7 @@ ul {
 }
 
 .pesquisar {
+	margin-top: -3px;
 	width: 25%;
 	float: right;
 	margin-right: .5rem!important;
@@ -101,6 +102,7 @@ body {
 	font-family: 'Lato', sans-serif, 300;
 	margin: 0;
 }
+/*carousel*/
 
 
 /*Cards*/
@@ -257,46 +259,33 @@ a.tag {
 footer	{
 	color: white;
 	width: 100%;
-	height: 50px;
+	height: 38px;
 	background-color: rgba(36, 142, 56);
 	display: flex;
   margin: 0;
   padding: 20px;
 }
 
-footer img{
-	display: inline-grid;
-	justify-content: space-around;
-	width: 7%;
-	height: 45%;
+footer p {
+	margin-top: -8px;
+	font-size: 1.1rem;
 }
-/*
-@media (max-width: 1144) {
-	.cards{
 
-		/*display: inline-grid;
-		justify-content: center;*/
-		margin-top: 100px;
-		margin-left: 20%;
-		margin-right: 20%;
-		width: 90%;
-	}
 
-	.card {
-  	/* Add shadows to create the "card" effect */
-	  box-shadow: 1px 0 0 0 rgba(0,0,0,0.1);
-	  transition: 0.3s;
-	  width: 308px;
-	  height: 414px;
-	  margin: 10px;
-	  background-color: white;
-	  border: 1px solid #dcdcdc;
 
-	  display: inline-grid;
+footer img{
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
 
-	  font-family: 'Lato', sans-serif;
-	  font-weight: 300;
-	  font-size: 100%;
-	}
+	margin-top: 0.3rem;
+	margin-right: 1.5rem;
 
-/*}*/
+	margin-left: 1.5rem;
+}
+
+
+#first {
+	margin-left: 20rem;
+	width: 2rem;
+}
