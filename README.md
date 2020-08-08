@@ -10,6 +10,6 @@ Baixe e instale o Node.js de acordo com o seu sistema operacional.
 Com o Node.js instalado, basta entrar na pasta de projeto e executar o comando a seguir
 a depender do ambiente em que o projeto está:
 
--Ambiente de desevolvimento: <b>npm run dev<b>
+-Ambiente de desevolvimento: <b>npm run dev</b>
 
 -Ambiente de produção: <b>npm run start</b>
