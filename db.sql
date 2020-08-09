@@ -1,0 +1,34 @@
+CREATE DATABASE connectvida;
+
+CREATE TABLE posts(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    title TEXT NOT NULL,
+    subtitle TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    image TEXT NOT NULL,
+    body TEXT NOT NULL,
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE NOW(),
+    created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE posts_comments(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    body TEXT NOT NULL,
+    post_id INT NOT NULL,
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE NOW(),
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE
+);
+
+CREATE TABLE files(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    alias TEXT NOT NULL,
+    src TEXT NOT NULL,
+    type TEXT NOT NULL,
+    post_id INT NOT NULL,
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE NOW(),
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE
+);
