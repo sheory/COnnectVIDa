@@ -1,7 +1,7 @@
 const db = require('../../config/db');
 
 module.exports = {
-    create(post){
+    create(post) {
         const query = `INSERT INTO posts 
         (
             title,
@@ -23,16 +23,52 @@ module.exports = {
 
         return db.promise().query(query, values);
     },
-    findLastInsert(){
+    findLastInsert() {
         return db.promise().query('SELECT * FROM posts ORDER BY id DESC LIMIT 1');
     },
-    findById(id){
+    findById(id) {
         return db.promise().query(`SELECT * FROM posts WHERE id = ${id}`);
     },
-    all(){
+    all() {
         return db.promise().query('SELECT * FROM posts');
     },
-    findRecents(){
-        return db.promise().query('SELECT * FROM posts LIMIT 9');
+    findRecents() {
+        return db.promise().query('SELECT * FROM posts ORDER BY created_at DESC LIMIT 9');
+    },
+    update(post) {
+        const query = `UPDATE posts SET
+        title = ?,
+        subtitle = ?,
+        subject = ?,
+        image = ?,
+        body = ?
+        WHERE
+        id = ?`;
+
+        const values = [
+            post.title,
+            post.subtitle,
+            post.subject,
+            post.image,
+            post.body,
+            post.id
+        ];
+
+        return db.promise().query(query, values);
+    },
+    destroy(post_id){
+        return db.promise().query(`DELETE FROM posts WHERE id = ${post_id}`);
+    },
+    search(params){
+        const { filter, category } = params;
+        let query = '';
+
+        if(category){
+            query = `SELECT * FROM posts WHERE subject LIKE '${category}'`;
+        }else{
+            query = `SELECT * FROM posts`;
+        }
+
+        return db.promise().query(query);
     }
 }
