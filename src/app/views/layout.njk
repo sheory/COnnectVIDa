@@ -8,15 +8,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 	<title>COnnectVIDa</title>
-</head>
-<body>
-    <nav class="nav-bar">
-		 <img src="imagens/logoif.jpg">
+
+	 <nav class="nav-bar">
+		 <img src="assets/logoif.jpg">
 
 		 <div class="opcoes"> 
 			 <ul>
-				 	<li ><a href="" class="box-opcoes">Início</a></li>
-				 	<li ><a href=""  class="box-opcoes">Posts</a></li>
+				 	<li >
+				 		<div class="dropdown"> 
+				 			<a id="drop-a" href=""  class="box-opcoes">Temas</a>
+				 			<div class="dropdown-content">
+				 				<a href="">Arte</a>
+				 				<a href="">Feminismo</a>
+				 				<a href="saude.html">Saúde</a>
+				 				<a href="">Tecnologia</a>
+				 			</div>
+				 		</div>
+				 	</li>
+
 				 	<li ><a href=""  class="box-opcoes">Sobre</a></li>
 				 	<li ><a href=""  class="box-opcoes">Contato</a></li>
 				 	<div class="pesquisar">
@@ -27,16 +36,25 @@
 
 		 </div>
 	</nav>
+</head>
+<body>
+   
     
-    {% block content %} {% endblock content%}
+    {% block content %} 
 
-    <footer id="footer">
+    {% endblock content%}
+
+  <footer id="footer">
+
 		<p>Entre em contato conosco: </p>
 
-		<a href="https://www.instagram.com/connectvida/"><img id="first" src="imagens/insta.png"></a>
-		<a href=""><img src="imagens/yt.png"></a>
-		<a href=""> <img src="imagens/gm.png"></a>
-
+		<div class="footer-imgs"> 
+			<a href="https://www.instagram.com/connectvida/"><img id="first" src="assets/insta.png"></a>
+			<a href=""><img src="assets/yt.png"></a>
+			<a href=""> <img src="assets/gm.png"></a>
+		</div>	
+					
 	</footer>
+
 </body>
 </html>
