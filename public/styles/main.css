@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 3.4rem;
 
-	background-color: #248e38;
+	background-color: rgb(36, 142, 56);
 	display: flex;
 
 }
@@ -36,10 +36,69 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 	color: white;
+	font-family: 'Lato', sans-serif;
 	/*margin-right: 50px;
 	margin-left: 50px;*/
 
 }
+
+/*dropdawn*/
+/*
+#drop-a {
+	background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none; /*nao exibir opções antes do hover*/
+  position: absolute;
+  background-color: rgb(34,155,34);
+  width: 150px;
+  border-radius:  0px 7px 7px 7px;
+  /*min-width: 160px;*/
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(34,170,34,0.9);
+
+
+  border-radius:  0px 7px 7px 7px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+
+}
+
+.dropdown:hover {
+	background-color: rgba(43, 171, 39, 0.7);
+
+}
+/*
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+*/
 
 .box-opcoes{
 	
@@ -109,13 +168,34 @@ body {
 
 .cards{
 
-	/*display: inline-grid;
-	justify-content: center;*/
+
+	/*justify-content: center;*/
 	margin-top: 100px;
-	margin-left: 8%;
-	margin-right: 8%;
+	margin-left: 10%;
+	margin-right: 10%;
+	/*text-align: center; */
 	width: 90%;
 }
+
+
+.card {
+	 
+  /* Add shadows to create the "card" effect */
+  /*box-shadow: 1px 0 0 0 rgba(0,0,0,0.1);*/
+  /*transition: 0.3s;*/
+  width: 308px;
+  height: 412px;
+  margin: 10px;
+  border: 1px solid #dcdcdc;
+  /*float: left*/
+  display: inline-grid;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+
+	transition: all 0.3s linear;
+}
+
 
 h4 {
 	font-size: 100%;
@@ -130,41 +210,27 @@ h1 {
 }
 
 hr{
-	width: 91%;
+	width: 87%;
 	margin-left: 0;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 1px 0 0 0 rgba(0,0,0,0.1);
-  transition: 0.3s;
-  width: 308px;
-  height: 414px;
-  margin: 10px;
-  background-color: white;
-  border: 1px solid #dcdcdc;
-
-  display: inline-grid;
-
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 100%;
-}
-
 .last-update {
-	width: 308px;
-	height: 57%;
-	background-color:	rgba(214,199,199,0.2);
+	margin-bottom:0;
+	width: 99%;
+	height: 1.2rem;
+
+	/*background-color:	rgba(214,199,199,0.2);*/
 	/*text-align: left;*/
 	font-family: 'Mulish', sans-serif;
   border: 1px solid rgba(0,0,0,0.1);
-  font-size: 80%;
+  font-size:77%;
   text-align: justify;
- 
 }
 
+
+
 .card img {
-	width: 99.6%;
+	width: 100%;
 	height: 220px;
 }
 
@@ -177,6 +243,7 @@ button {
 }
 
 a.tag {
+	width: 40px;
 	text-decoration: none;
 	color: black;
 
@@ -187,105 +254,156 @@ a.tag {
 }
 
 
+.feminismo button a, .saúde button a, .tecnologia button a, .artes button a{
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s linear;
+}
 
-#feminismo button {
+
+.feminismo button {
+	
 	background-color: rgba(176,143,200,0.7);
 	border: 1px solid  rgba(176,143,200,0.7);
 }
 
 
-#saude button {
+.saúde button {
 	background-color: rgba(186,225,255,0.7);
 	border: 1px solid  rgba(186,225,255,0.7);
 }
 
 
 
-#tecnologia button {
+.tecnologia button {
 	background-color: rgba(139, 241, 139, 0.7);
 	border: 1px solid  rgba(139, 241, 139, 0.7);
 }
 
 
-#artes button {
+.artes button {
 	background-color: rgba(255, 233, 129, 0.7);
 	border: 1px solid  rgba(255, 233, 129, 0.7);
 
 }
 
+.feminismo button:hover {
+	background-color: rgba(176,143,200,0.9);
+	border: 1px solid  rgba(176,143,200,0.9);
+}
 
+.saúde button:hover {
+	background-color: rgba(186,225,255,0.9);
+	border: 1px solid  rgba(186,225,255,0.9);
+}
+
+.tecnologia button:hover {
+	background-color: rgba(139, 241, 139, 0.9);
+	border: 1px solid  rgba(139, 241, 139, 0.9);
+
+}
+
+.artes button:hover{
+	background-color: rgba(255, 233, 129, 0.9);
+	border: 1px solid  rgba(255, 233, 129, 0.9);
+	
+}
 .tag1 {
-	margin-left: 70%;
-	margin-right: 2%; 
+	width: 6rem;
+	margin-left: 65%; 
 	/*margin-right: .5rem!important;*/
 }
 
- 
+.tag1 button:hover {
+	transform: scale(1.1);
+}
 
-#feminismo {
+
+
+.tag1 p{
+	margin-left: 10%;
+} 
+*/
+
+.feminismo, .artes, .saúde, .tecnologia {
+
+	 height: 410px;
+}
+
+.feminismo {
 	background-color: rgba(176,143,200,0.2);
+
+}
+.last-update-feminismo, .last-update-saúde, .last-update-tecnologia , .last-update-artes {
+	margin-left: -10px;
+	width: 104%;
 }
 
-#feminismo .last-update{
+.last-update-feminismo{
 	background-color: rgba(176,143,200,0.5);
+
 }
 
-#saude {
+.saúde {
 	background-color: rgba(186,225,255,0.2);
 }
 
-#saude .last-update{
+.last-update-saúde{
 	background-color: rgba(186,225,255,0.5);
 }
 
-#tecnologia {
+.tecnologia {
 	background-color: rgba(139, 241, 139, 0.2);
 }
 
 
-#tecnologia .last-update{
+.last-update-tecnologia{
 	background-color: rgba(139, 241, 139, 0.5);
 }
 
-#artes {
+.artes {
 	background-color: rgba(255, 233, 129, 0.2);
 }
 
-#artes .last-update{
+.last-update-artes {
 	background-color: rgba(255, 233, 129, 0.5);
 }
 
 
+/*footer*/
+
 footer	{
 	color: white;
 	width: 100%;
-	height: 38px;
+	height: 100px;
 	background-color: rgba(36, 142, 56);
 	display: flex;
-  margin: 0;
-  padding: 20px;
 }
 
 footer p {
-	margin-top: -8px;
-	font-size: 1.1rem;
+	/*margin-top: -8px;*/ 
+	font-family: 'Lato', sans-serif; 
+	margin-left: 10px;
+	width: 17%;
+	font-size: 1rem;
 }
 
 
 
 footer img{
-	align-items: center;
 	width: 2rem;
 	height: 2rem;
-
-	margin-top: 0.3rem;
-	margin-right: 1.5rem;
-
-	margin-left: 1.5rem;
+  	margin: 10px;
 }
 
-
-#first {
-	margin-left: 20rem;
-	width: 2rem;
+.footer-imgs {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: inline-flex;
+  	float: center;
+  	width: 25%;
+	text-align: center;
 }
+
