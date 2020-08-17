@@ -1,23 +1,41 @@
 const Post = require('../models/Post');
+const { date } = require('../../libs/utils');
+
 
 module.exports = {
-    async index(req, res){
-        const results = await Post.findRecents();
+    async index(req, res) {
+        let results = await Post.findRecents();
         const posts = results[0];
 
-        return res.render('index', { posts });
+        for (let i = 0; i < results[0].length; i++) {
+            let datetime = new Date(results[0][i].created_at);
+            let convert = date(datetime.getTime());
+            results[0][i].created_at = `${convert.format} às ${convert.hourFormat}`;
+
+            datetime = new Date(results[0][i].updated_at);
+            convert = date(datetime.getTime());
+            results[0][i].updated_at = `${convert.format} às ${convert.hourFormat}`;
+        }
+
+        results = await Post.getPostsSubjects();
+        const subjects = results[0];
+
+        return res.json({ posts, subjects });
     },
-    async category(req, res){
+    async category(req, res) {
         const category = req.query.category_name;
         const params = {};
 
         params.category = category;
 
-        const results = await Post.search(params);
+        let results = await Post.search(params);
 
         const posts = results[0];
 
-        return res.json({ posts });
+        results = await Post.getPostsSubjects();
+        const subjects = results[0];
+
+        return res.json({ posts, subjects });
 
     }
 }

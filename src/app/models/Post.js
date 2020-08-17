@@ -70,5 +70,8 @@ module.exports = {
         }
 
         return db.promise().query(query);
+    },
+    getPostsSubjects(){
+        return db.promise().query('SELECT subject FROM posts GROUP BY subject');
     }
 }
