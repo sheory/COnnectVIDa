@@ -15,12 +15,19 @@
 	margin-top: -5px;
 	width: 60px;
 	height: 80px;
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 	box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
+}
+
+
+
+.button-media {
+	display: none;
 }
 
 .opcoes {
 	width: 100%;
+  position: relative;
+  display: inline-block;
 }
 
 li {
@@ -37,21 +44,10 @@ li a {
 	text-decoration: none;
 	color: white;
 	font-family: 'Lato', sans-serif;
-	/*margin-right: 50px;
-	margin-left: 50px;*/
 
 }
 
 /*dropdawn*/
-/*
-#drop-a {
-	background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-*/
 
 .dropdown {
   position: relative;
@@ -94,11 +90,6 @@ li a {
 	background-color: rgba(43, 171, 39, 0.7);
 
 }
-/*
-.dropdown:hover .dropbtn {
-	background-color: #3e8e41;
-}
-*/
 
 .box-opcoes{
 	
@@ -113,16 +104,23 @@ ul {
 	text-align: center;
 }
 
+#last-a {
+	margin-right: -200px;
+}
+
+
+.pesquisar {
+	margin-top: -3px;
+	width: 30%;
+	float: right;
+	margin-right: .4rem!important;
+
+}
 
 .input {
-/*
-	float: right;
-  padding: 0.2%;
 
-	
-  */
   color: #495057;
-  width: 50%;
+  width: 137px;
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 2px;
@@ -132,7 +130,7 @@ ul {
 
 .button {
 	color: white;
-  width: 30%;
+  width: 100px;
   padding: 5px;
   border-radius: 4px 5px;
   border: 1px solid #ced4da;
@@ -147,13 +145,6 @@ ul {
 	background-color: rgba(43, 171, 39, 0.7);
 }
 
-.pesquisar {
-	margin-top: -3px;
-	width: 25%;
-	float: right;
-	margin-right: .5rem!important;
-
-}
 
 
 body {
@@ -180,9 +171,6 @@ body {
 
 .card {
 	 
-  /* Add shadows to create the "card" effect */
-  /*box-shadow: 1px 0 0 0 rgba(0,0,0,0.1);*/
-  /*transition: 0.3s;*/
   width: 308px;
   height: 412px;
   margin: 10px;
@@ -218,9 +206,6 @@ hr{
 	margin-bottom:0;
 	width: 99%;
 	height: 1.2rem;
-
-	/*background-color:	rgba(214,199,199,0.2);*/
-	/*text-align: left;*/
 	font-family: 'Mulish', sans-serif;
   border: 1px solid rgba(0,0,0,0.1);
   font-size:77%;
@@ -239,7 +224,6 @@ button {
 	width: 100%;
 	border-radius: 5px;
 	border: 1px solid white;
-
 }
 
 a.tag {
@@ -308,10 +292,10 @@ a.tag {
 	border: 1px solid  rgba(255, 233, 129, 0.9);
 	
 }
+
 .tag1 {
 	width: 6rem;
 	margin-left: 65%; 
-	/*margin-right: .5rem!important;*/
 }
 
 .tag1 button:hover {
@@ -381,7 +365,7 @@ footer	{
 }
 
 footer p {
-	/*margin-top: -8px;*/ 
+	
 	font-family: 'Lato', sans-serif; 
 	margin-left: 10px;
 	width: 17%;
@@ -406,4 +390,3 @@ footer img{
   	width: 25%;
 	text-align: center;
 }
-
