@@ -44,7 +44,7 @@ module.exports = {
         results = await Post.getPostsSubjects();
         const subjects = results[0];
 
-        return res.json({ posts, subjects });
+         return res.render('temas', { posts, subjects });
 
     }
 }
