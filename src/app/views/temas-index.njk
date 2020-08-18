@@ -1,0 +1,25 @@
+<div class="cards">
+
+	<h1> Postagens recentes <hr></h1>
+
+	{%for post in posts%}
+	<div class="card">
+		<div class="{{post.subject}}"> 
+			<img src="{{post.image}}">
+			<div class="texto">
+				<h4> <b> {{post.title}} </b></h4>
+				<p class="previa-post"> {{post.subtitle}}</p>
+				<div class="tag1">
+					<button> <a href="">ver publicação</a></button> 
+				</div>
+				
+				{%if post.subject %}
+					<div class="last-update-{{post.subject}}">
+	   				<p class="last-update" >{{post.updated_at}}</p>
+	   			</div>
+	   		{%endif%}
+			</div>
+		</div>						
+	</div>
+	{%endfor%}
+</div>

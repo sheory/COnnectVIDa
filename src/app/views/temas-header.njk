@@ -1,0 +1,46 @@
+{%for post in posts%}
+
+<div class="nav-bar">
+	<div class="nav-bar-{{post.subject}}">
+	 <div class="logoif">
+			<img  src="assets/logoif.jpg">
+		</div>
+		
+
+		<div class="opcoes-{{post.subject}}"> 
+			<ul>
+				<li ><a href="/"  class="box-opcoes-{{post.subject}}">Início</a></li>
+				<li >
+					<div class="dropdown"> 
+						<a id="drop-a" href=""  class="box-opcoes-{{post.subject}}">Temas</a>
+							<div class="dropdown-content">
+								<div class="dropdown-content-{{post.subject}}">
+
+								<a href="temas?category_name=Artes">Arte</a>
+								<a href="temas?category_name=Feminismo">Feminismo</a>
+								<a href="temas?category_name=Saúde">Saúde</a>
+								<a href="temas?category_name=Tecnologia" >Tecnologia</a>
+							</div>
+							 
+						</div>
+						
+					</div>
+				</li>
+				<li ><a href=""  class="box-opcoes-{{post.subject}}">Sobre</a></li>
+				<li ><a href=""  class="box-opcoes-{{post.subject}}" id="last-a">Contato</a ></li>
+
+				<div class="img-tema">
+					<img src="assets/{{post.subject}}.png">
+				</div>
+
+				<div class="pesquisar">
+					<input class="input" type="search" placeholder="Buscar no blog" >
+					<button class="button">Buscar</button>
+				</div>
+			</ul>	
+		</div>
+	</div>
+</div>
+
+
+{%endfor%}
