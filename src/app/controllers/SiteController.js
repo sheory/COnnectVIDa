@@ -1,5 +1,6 @@
 const Post = require('../models/Post');
 const { date } = require('../../libs/utils');
+const firebase = require('../../config/firebase');
 
 
 module.exports = {
