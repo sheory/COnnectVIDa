@@ -8,35 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 	<title>COnnectVIDa</title>
-
-	 <nav class="nav-bar">
-		 <img src="assets/logoif.jpg">
-
-		 <div class="opcoes"> 
-			 <ul>
-				 	<li >
-				 		<div class="dropdown"> 
-				 			<a id="drop-a" href=""  class="box-opcoes">Temas</a>
-				 			<div class="dropdown-content">
-				 				<a href="temas?category_name=Artes">Arte</a>
-				 				<a href="temas?category_name=Feminismo">Feminismo</a>
-				 				<a href="temas?category_name=Saúde">Saúde</a>
-				 				<a href="temas?category_name=Tecnologia">Tecnologia</a>
-				 			</div>
-				 		</div>
-				 	</li>
-
-				 	<li ><a href=""  class="box-opcoes">Sobre</a></li>
-				 	<li ><a href=""  class="box-opcoes" id="last-a">Contato</a></li>
-				 	<div class="pesquisar">
-				 		<input class="input" type="search" placeholder="Pesquisar no blog" >
-				 		<button class="button">Pesquisar</button>
-				 	</div>
-			 </ul>	
-
-		 </div>
-		 <button class="button-media"><img src="assets/menu.png"></button>
-	</nav>
+	{% include 'layout-header.njk'%}
 </head>
 <body>
    
