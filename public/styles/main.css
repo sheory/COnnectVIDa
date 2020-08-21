@@ -20,9 +20,7 @@
 
 
 
-.button-media {
-	display: none;
-}
+
 
 .opcoes {
 	width: 100%;
@@ -42,9 +40,9 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	color: white;
-	font-family: 'Lato', sans-serif;
-
+	color: white;font-size: 20px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
 }
 
 /*dropdawn*/
@@ -72,6 +70,8 @@ li a {
   text-decoration: none;
   display: block;
   font-size: 17px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
 }
 
 .dropdown-content a:hover {
@@ -113,7 +113,7 @@ ul {
 	margin-top: -3px;
 	width: 30%;
 	float: right;
-	margin-right: .4rem!important;
+	/*margin-right: 4rem!important;*/
 
 }
 
@@ -389,4 +389,273 @@ footer img{
   	float: center;
   	width: 25%;
 	text-align: center;
+}
+
+
+
+
+.dropdown-media {
+	display: none;
+}
+
+.pesquisar-media {
+	display: none;
+}
+
+
+/*media-query*/
+
+@media only screen and (max-width: 730px) {
+
+	.opcoes {
+		display: none;
+	}
+
+/*dropdawn*/
+
+
+	.dropdown-media {
+
+	  position: relative;
+	  display: block;
+	  width: 55px;
+		background-color:  rgba(34,170,34,0.9);
+		margin-left: 10px;
+	}
+
+
+ 	.dropdown-media img {  	
+ 		padding-left: 5px;
+ 		height: 42px;
+  	width: 42px;
+		background-color: rgba(34,170,34,0.9);
+  	margin-top: 4px;
+  	margin-bottom: 3px;
+
+  	box-shadow: 0px 0px;
+
+
+ 	}
+
+	.dropdown-content {
+		text-align: center;
+	  display: none; /*nao exibir opções antes do hover*/
+	  position: absolute;
+	  background-color: rgb(34,155,34);
+	  border-radius:  0px 7px 7px 7px;
+	  /*min-width: 160px;*/
+	  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: white;
+	  text-decoration: none;
+	  display: block;
+	  font-size: 17px;
+	  font-family: 'Lato', sans-serif;
+ 	 	font-weight: 400;
+	}
+
+	.dropdown-content a:hover {
+		background-color: rgba(34,170,34,0.9);
+	  border-radius:  0px 7px 7px 7px;
+	}
+
+.box-opcoes-temas a {
+	width: 120%;
+}
+
+ 	.dropdown-media img:hover {
+		background-color: rgba(34,170,34,0.9);
+	}
+
+
+	.dropdown-media:hover .dropdown-content {
+		display: block;
+
+	}
+
+	.dropdown-media:hover {
+		background-color: rgba(43, 171, 39, 0.7);
+
+	}
+
+
+.pesquisar-media {
+
+	display: inline-flex;
+	padding-top: 13px;
+	padding-left: 45%;
+	padding-right: 3%;
+	text-align: center;
+	width: 35%;
+}
+
+.input-media {
+	width: 60%;
+	height: 30px;
+	border: none;
+
+	border-radius: 2px 3px;
+	 font-size: 14px;
+	  font-family: 'Lato', sans-serif;
+ 	 	font-weight: 400;
+}
+
+.button-media {
+	margin-left: 5px;
+	float: left;
+	width: 45%;
+	height: 30px;
+	border-color: white;
+	border-radius: 2px 3px;
+	margin-bottom: 5px;
+	color: #FFFFFF;
+	background-color: rgb(34,155,34);
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+ 	font-weight: 400;
+  /*box-shadow: 2px 2px rgba(0,0,0,0.1);*/
+}
+
+	/*dropdown temas*/
+
+.dropdown-content-temas {
+	margin-left: 100px;
+	margin-top: -20px;
+  display: none; /*nao exibir opções antes do hover*/
+  position: absolute;
+	background-color: rgb(36, 142, 56);
+  width: 150px;
+  border-radius:  0px 7px 7px 7px;
+  /*min-width: 160px;*/
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.dropdown-content-temas a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+	font-family: 'Lato', sans-serif;
+ 	font-weight: 400;
+}
+
+#temas-a {
+	width: 100%;
+}
+
+.dropdown-content-temas a:hover {
+	background-color: rgba(34,170,34,0.9);
+
+
+  border-radius:  0px 7px 7px 7px;
+}
+
+.dropdown-temas:hover .dropdown-content-temas {
+	display: block;
+}
+
+.opcoes {
+	display: none;
+}
+
+/*end-nav-bar*/
+
+
+/*cards*/
+
+.cards{
+
+	text-align: center; 
+	margin-left: 5px;
+	margin-right: 0;
+
+}
+
+.cards h1 {
+	text-align: left;
+	margin-left: 20px;
+} 
+
+.card {
+	 
+  width: 320px;
+  text-align: left;
+}
+
+hr{
+	width: 100%;
+}
+ 
+/*end cards*/
+
+/*footer*/
+
+	footer p {
+		font-size: 15px;
+	  font-family: 'Lato', sans-serif;
+ 	 	font-weight: 400;
+		width: 30%;
+	}
+
+
+
+	.footer-imgs {
+		margin-left: 8%;
+	}
+
+	footer img{
+		width: 1.7rem;
+		height: 1.7rem;
+  	margin: 10px;
+	}
+
+}
+
+
+
+@media (min-width: 730px) and (max-width: 1080px)  {
+
+	.pesquisar {
+		width: 40%;
+		margin-right: -2%;
+	}
+
+	#last-a {
+		 margin-right: -50px;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+	.card {
+		margin: 2%;
+		width: 40%;
+		min-width: 290px;
+		max-width: 320px;
+	}
+
+
+	footer p {
+		width: 30%;
+		font-size: 16.5px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
+	}
+
+
+	.footer-imgs {
+		margin-left: 8%;
+	}
+
+	footer img{
+		width: 1.85rem;
+		height: 1.85rem;
+  	margin: 10px;
+}
 }
