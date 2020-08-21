@@ -127,10 +127,9 @@ ul {
   padding: 5px;
   border-radius: 5px 5px;
   border: 1px solid #ced4da;
-  background-color: rgb(118, 118, 118);
-  border: 1px solid #248e38;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgb(250, 250, 250);
   border-radius: 4px ; 
-  background-color: #248e38;
   font-size: 1rem;
 }
 
@@ -140,7 +139,7 @@ ul {
 }
 
 .button:hover {
-	background-color: rgba(43, 171, 39, 0.7);
+	background-color: rgba(250, 250, 250, 0.1);
 }
 
 .pesquisar {
@@ -257,7 +256,7 @@ hr{
 
 	/*justify-content: center;*/
 	margin-top: 100px;
-	margin-left: 13%;
+	margin-left: 10%;
 	margin-right: 10%;
 	/*text-align: center; */
 	width: 90%;
@@ -314,6 +313,10 @@ h1 {
 	background-color:  rgba(0, 91, 150, 0.9);
 	float: right;
 	margin-right: 1rem;
+
+}
+
+.button {
 
 }
 
@@ -536,3 +539,413 @@ footer img{
 }
 
 
+.pesquisar-media {
+	display: none;
+}
+
+.dropdown-content-media-feminismo, .dropdown-content-media-saúde, .dropdown-content-media-tecnologia ,.dropdown-content-media-artes {
+	display: none; 
+}
+
+.img-tema-media {
+	display: none;
+}
+
+.box-opcoes-media {
+	display: none;
+}
+
+
+
+@media only screen and (max-width: 730px) {
+	.opcoes-feminismo, .opcoes-saúde, .opcoes-artes, .opcoes-tecnologia {
+		display: none; 
+	}
+.box-opcoes-media {
+	display: block;
+}
+
+/*.pesquisar-media {
+	display: inline-block;
+	background-color: purple;
+	margin-left: -70%;
+}*/
+
+/*dropdawn*/
+
+
+	.dropdown-media-feminismo,	.dropdown-media-saúde, .dropdown-media-tecnologia, .dropdown-media-artes {
+	  position: absolute;
+	  margin-left: 70px;
+	  margin-top: 3.2px;
+	  display: block;
+	  width: 55px;
+		
+	}
+
+
+	.dropdown-media-feminismo,	.dropdown-media-feminismo img{
+	  background-color: #905294;
+	}
+
+	.dropdown-media-saúde, .dropdown-media-saúde img{
+
+		background-color:  rgb(0, 100, 150);
+	}
+
+	.dropdown-media-tecnologia, .dropdown-media-tecnologia img{
+
+		background-color: rgba(43, 171, 39, 0.7);
+	}
+
+	.dropdown-media-artes, .dropdown-media-artes img{
+
+		background-color: rgba(240, 118, 30, 0.8);
+	}
+
+
+ 	.dropdown-media-feminismo img, .dropdown-media-saúde img, .dropdown-media-tecnologia img, .dropdown-media-artes img { 
+ 		height: 42px;
+  	width: 42px;
+  	margin-top: 4px;
+  	margin-bottom: 3px;
+
+  	box-shadow: 0px 0px;
+ 	}
+
+
+	.dropdown-content-media-feminismo, .dropdown-content-media-saúde, .dropdown-content-media-tecnologia ,.dropdown-content-media-artes {
+
+		text-align: center;
+	  display: none; /*nao exibir opções antes do hover*/
+	  position: absolute;
+	  border-radius:  0px 7px 7px 7px;
+	  /*min-width: 160px;*/
+	  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+	  z-index: 1;
+	}
+
+
+
+.dropdown-content-media-feminismo {
+		background-color: #753374;
+	}
+
+.dropdown-content-media-saúde {
+		
+	background-color: rgb(0, 91, 150);
+	}
+
+	.dropdown-content-media-tecnologia {
+		
+	background-color: rgb(36, 142, 30);
+	}
+
+	.dropdown-content-media-artes {
+		background-color: #E66820;
+	}
+
+
+	.dropdown-content-media-feminismo a:hover {
+
+		background-color:  #805284;
+	}
+
+	.dropdown-content-media-saúde  a:hover {
+
+	background-color: rgba(0, 100, 250, 0.3);
+	}
+
+.dropdown-content-media-tecnologia a:hover {
+		
+	background-color: rgba(43, 171, 39, 0.7);
+}
+
+.dropdown-content-media-artes a:hover {
+		
+	background-color: rgb(240, 118, 30);
+}
+
+	.dropdown-content-media-feminismo a,  .dropdown-content-media-saúde a, .dropdown-content-media-tecnologia a ,.dropdown-content-media-artes a {
+		width: 100px;
+		height: 25px;
+		padding: 15px 20px;
+	  color: white;
+	  text-decoration: none;
+	  display: block;
+	  font-size: 17px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
+	}
+
+	.dropdown-content-media-feminismo a:hover, .dropdown-content-media-saúde a:hover, .dropdown-content-media-tecnologia a:hover ,.dropdown-content-media-artes a:hover  {
+	  
+	  border-radius:  0px 7px 7px 7px;
+	}
+
+.box-opcoes-temas a {
+	width: 120%;
+}
+
+ 	.dropdown-media-feminismo img:hover {
+	  background-color: #905294;
+	}
+
+
+	.dropdown-media-feminismo:hover .dropdown-content-media-feminismo,.dropdown-media-saúde:hover  .dropdown-content-media-saúde,.dropdown-media-tecnologia:hover  .dropdown-content-media-tecnologia , .dropdown-media-artes:hover .dropdown-content-media-artes {
+		display: block;
+	}
+/*
+	.dropdown-media-feminismo:hover, .dropdown-media-saúde:hover, .dropdown-media-tecnologia:hover, .dropdown-media-artes:hover {
+	  background-color: #905294;
+
+	}*/
+
+
+
+	/*dropdown temas*/
+
+.dropdown-content-temas-feminismo, .dropdown-content-temas-saúde, .dropdown-content-temas-artes, .dropdown-content-temas-tecnologia {
+	margin-left: 100px;
+	margin-top: -20px;
+  display: none; /*nao exibir opções antes do hover*/
+  position: absolute;
+  border-radius:  0px 7px 7px 7px;
+  /*min-width: 160px;*/
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.dropdown-content-temas-feminismo {
+	background-color: #803387;
+}
+
+.dropdown-content-temas-feminismo a:hover {
+
+	 background-color: #905294;
+}
+
+.dropdown-content-temas-saúde a:hover {
+
+	background-color: rgba(0, 100, 250, 0.3);
+}
+
+.dropdown-content-temas-saúde {
+
+	background-color:  rgb(0, 100, 150);
+}
+
+
+.dropdown-content-temas-tecnologia{
+
+	background-color: rgb(53, 171, 39);
+}
+
+
+.dropdown-content-temas-tecnologia a:hover {
+
+	background-color: rgba(36, 142, 30,0.5);
+}
+
+
+
+.dropdown-content-temas-artes {
+
+	background-color: rgb(240, 118, 20);
+} 
+
+.dropdown-content-temas-artes a:hover {
+
+	background-color: rgba(220, 140, 70, 0.5);
+} 
+
+
+
+
+
+.dropdown-content-temas-feminismo a, .dropdown-content-temas-saúde a, .dropdown-content-temas-artes a, .dropdown-content-temas-tecnologia a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+}
+
+
+
+.dropdown-content-temas-feminismo a:hover, .dropdown-content-temas-saúde a:hover, .dropdown-content-temas-artes a:hover, .dropdown-content-temas-tecnologia a:hover  {
+	
+  border-radius:  0px 7px 7px 7px;
+}
+
+.dropdown-temas:hover .dropdown-content-temas-feminismo, .dropdown-temas:hover .dropdown-content-temas-saúde,.dropdown-temas:hover .dropdown-content-temas-artes,.dropdown-temas:hover .dropdown-content-temas-tecnologia {
+	display: block;
+}
+
+
+.pesquisar-media {
+	display: inline-flex;
+	position: fixed;
+	padding-top: 13px;
+	padding-right: 3%;
+	margin-left: 55%;
+	width: 35%;
+
+}
+
+
+.input-media {
+	width: 60%;
+	height: 30px;
+	border: none;
+
+	border-radius: 2px 3px;
+	font-size: 14px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
+}
+
+.button-media {
+	margin-left: 5px;
+	float: left;
+	width: 45%;
+	height: 30px;
+	border-color: white;
+	border-radius: 2px 3px;
+	margin-bottom: 5px;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0);
+	font-size: 15px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
+  /*box-shadow: 2px 2px rgba(0,0,0,0.1);*/
+}
+
+
+.button-media:hover {
+	background-color: rgba(250,250,250,0.1);
+
+} 
+
+.img-tema-media {
+	display: flex;
+	position: absolute;
+	margin-top: 7px;	
+	width: 10%;
+	margin-left: 90%;
+} 
+
+.img-tema-media img{
+	width: 50px;
+	height: 50px;
+
+	box-shadow: 0px 0px;
+}
+
+/*cards*/
+
+.cards{
+
+	text-align: center; 
+	margin-left: 18px;
+	margin-right: 0;
+
+}
+
+.cards h1 {
+	text-align: left;
+	margin-left: 20px;
+} 
+
+.card {
+	 
+  width: 320px;
+  text-align: left;
+}
+
+hr{
+	width: 100%;
+}
+ 
+/*end cards*/
+
+/*footer*/
+
+	footer p {
+		width: 30%;
+		font-size: 15px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
+	}
+
+
+	.footer-imgs {
+		margin-left: 8%;
+	}
+
+	footer img{
+		width: 1.7rem;
+		height: 1.7rem;
+  	margin: 10px;
+}
+
+}
+
+
+
+
+@media (min-width: 730px) and (max-width: 1080px)  {
+
+	.pesquisar {
+		width: 30%;
+		margin-right: -2%;
+	}
+
+	.input {
+		width: 45%;
+	}
+
+
+li {
+	font-size: 0.50cm;
+	
+	padding-left:8px; 	
+}
+
+.input {
+	margin-right: -5%;
+}
+
+	#last-a {
+		 margin-right: -10%;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+	.card {
+		margin: 2%;
+		width: 40%;
+		min-width: 290px;
+		max-width: 320px;
+	}
+
+
+	footer p {
+		width: 30%;
+		font-size: 16.5px;
+	  font-family: 'Lato', sans-serif;
+ 	 font-weight: 400;
+	}
+
+
+	.footer-imgs {
+		margin-left: 8%;
+	}
+
+	footer img{
+		width: 1.85rem;
+		height: 1.85rem;
+  	margin: 10px;
+}
+}
