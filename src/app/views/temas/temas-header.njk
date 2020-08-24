@@ -1,0 +1,71 @@
+<div class="nav-bar">
+	<div class="nav-bar-{{posts[0].subject}}">
+	 <div class="logoif">
+			<img  src="assets/logoif.jpg">
+		</div>
+		
+
+		<div class="opcoes-{{posts[0].subject}}"> 
+			<ul>
+				<li ><a href="/"  class="box-opcoes-{{posts[0].subject}}">Início</a></li>
+				<li >
+					<div class="dropdown"> 
+						<a id="drop-a" href=""  class="box-opcoes-{{posts[0].subject}}">Temas</a>
+							<div class="dropdown-content">
+								<div class="dropdown-content-{{posts[0].subject}}">
+
+								<a href="temas?category_name=Artes">Arte</a>
+								<a href="temas?category_name=Feminismo">Feminismo</a>
+								<a href="temas?category_name=Saúde">Saúde</a>
+								<a href="temas?category_name=Tecnologia" >Tecnologia</a>
+							</div>
+							 
+						</div>
+						
+					</div>
+				</li>
+				<li ><a href=""  class="box-opcoes-{{posts[0].subject}}">Sobre</a></li>
+				<li ><a href=""  class="box-opcoes-{{posts[0].subject}}" id="last-a">Contato</a ></li>
+
+				<div class="img-tema">
+					<img src="assets/{{posts[0].subject}}.png">
+				</div>
+
+				<div class="pesquisar">
+					<input class="input" type="search" placeholder="Buscar no blog" >
+					<button class="button">Buscar</button>
+				</div>
+			</ul>	
+		</div>
+	</div>
+
+
+	<!--mobile version-->
+
+	<div class="dropdown-media-{{posts[0].subject}}"> 
+			
+		<a id="drop-a-media" href=""  class="box-opcoes-media"><img src="assets/menu.png"></a>
+		<div class="dropdown-content-media-{{posts[0].subject}}">
+			
+				<a href="/"  class="box-opcoes">Início</a>
+			<div class="dropdown-temas"> 
+			 	<a href=""  class="box-opcoes-temas">Temas</a>
+			 	<div class="dropdown-content-temas-{{posts[0].subject}}">
+			 	<a href="temas?category_name=Artes">Arte</a>
+			 	<a href="temas?category_name=Feminismo">Feminismo</a>
+			 	<a href="temas?category_name=Saúde">Saúde</a>
+			 	<a href="temas?category_name=Tecnologia">Tecnologia</a>
+				</div>
+			</div>
+			<a href=""  class="box-opcoes">Sobre</a>
+			<a href=""  class="box-opcoes">Contato</a>
+		</div>
+	</div>
+	<div class="pesquisar-media">
+		<input class="input-media" type="search" placeholder="Buscar no blog" >
+		<button class="button-media">Buscar</button>
+	</div>
+	<div class="img-tema-media">
+			<img src="assets/{{posts[0].subject}}.png">
+		</div>
+</div>
