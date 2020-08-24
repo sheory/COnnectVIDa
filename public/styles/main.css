@@ -19,9 +19,6 @@
 }
 
 
-
-
-
 .opcoes {
 	width: 100%;
   position: relative;
@@ -86,11 +83,6 @@ li a {
 
 }
 
-.dropdown:hover {
-	background-color: rgba(43, 171, 39, 0.7);
-
-}
-
 .box-opcoes{
 	
 }
@@ -147,25 +139,162 @@ ul {
 
 
 
-body {
-	background-color: white;
+body {	
+	background-color: rgb(238,238,238);
 	font-family: 'Lato', sans-serif, 300;
 	margin: 0;
 }
 /*carousel*/
 
+/*Tema Semanal*/
+
+.container {
+	display: flex;
+	margin-right: 25px;
+}
+
+.temas-container {
+	display: grid;
+	height: 600px;
+}
+
+.tema-semanal-container {
+	
+	width: 80%;
+	height: 300px;
+	
+	padding: 15px;
+	padding-top: 80px;
+	background-color: white;
+	border-radius: 0 0 15px 0;
+
+	display: grid;
+	text-align: center;
+
+}
+
+.tema-semanal-container  h4, .temas-mensais-container  h4 {
+	padding-top: 12px;
+	margin-bottom: 0;
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+
+.tema-semanal-container hr{
+	
+	padding-top:0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -12px;
+	margin-bottom: 0;
+	height: 0.2px;
+}
+
+ .temas-mensais-container hr {
+
+ 	margin-top: -5px;
+	margin-bottom: 20px;
+	height: 0.2px;
+
+}
+
+.title-tema-semanal, .title-tema-mensal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 80%;
+	height: 100px;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+
+	font-family: sans-serif;
+	text-align: center;
+
+	background-color: rgba(106, 250, 101, 0.3);
+
+	padding: 7px;
+
+	border-radius: 0px;
+}
+
+
+.tema-semanal-container button {
+	transition: 0.2s;
+	width: 52%;
+	height: 35px;
+
+	color: white;
+  border: 1px solid black;
+  background-color:  white;
+  color: black;
+  border-radius: 15px; 
+  font-size: 13px;
+
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.tema-semanal-container button:hover {
+	 font-size: 13.4px;
+	 width: 53%;
+
+}
+
+
+/*temas-mensais*/
+.temas-mensais-container {
+	margin-top: 40px;
+	width: 80%;
+	height: 600px;
+	
+	padding: 15px;
+	padding-top: 20px;
+	background-color: white;
+	border-radius: 0 15px 15px 0;
+
+	display: grid;
+	text-align: center;
+}
+
+ .title-tema-mensal {
+ 	transition: 0.3s;
+
+	width: 80%;
+	height: 100px;
+	text-decoration: none;
+
+	margin-bottom: 20px;
+
+	color: black;
+	height: 80px;
+
+}
+
+ .title-tema-mensal:hover {
+ 	text-decoration: underline;
+
+ }
 
 /*Cards*/
 
 .cards{
 
+	background-color: white;
 
+	padding-left: 50px;
+	
+	padding-top: 20px;
 	/*justify-content: center;*/
-	margin-top: 100px;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-top: 55px;
+	margin-left: auto;
+	margin-right: auto;
 	/*text-align: center; */
-	width: 90%;
+	width: 75%;
 }
 
 
@@ -173,10 +302,14 @@ body {
 	 
   width: 308px;
   height: 412px;
-  margin: 10px;
+
+  margin-right: 10px;
+  margin-bottom: 20px;
+
   border: 1px solid #dcdcdc;
   /*float: left*/
   display: inline-grid;
+  justify-content: space-between;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 100%;
@@ -186,7 +319,8 @@ body {
 
 
 h4 {
-	font-size: 100%;
+	font-size: 19.7px;
+	margin-top: 10px;
 }
 
 h1 {
@@ -198,10 +332,11 @@ h1 {
 }
 
 hr{
-	width: 87%;
+	width: 96%;
 	margin-left: 0;
 }
 
+/*
 .last-update {
 	margin-bottom:0;
 	width: 99%;
@@ -211,8 +346,28 @@ hr{
   font-size:77%;
   text-align: justify;
 }
+*/
 
+p.last-update {
 
+	display: flex;
+	width: 100%;
+	height: 1.2rem;
+	width: 99%;
+	/*background-color:	rgba(214,199,199,0.2);*/
+	/*text-align: left;*/
+
+	font-family: 'Mulish', sans-serif;
+	color: rgba(0,0,0,0.6);
+	font-weight: 300;
+	font-size: 75.3%;
+  	border: 1px solid rgba(0,0,0,0.1);
+  	text-align: justify;
+  	align-items: center;
+	margin-top: 17px; 
+	margin-bottom: 0;
+
+}
 
 .card img {
 	width: 100%;
@@ -240,7 +395,7 @@ a.tag {
 
 .feminismo button a, .saúde button a, .tecnologia button a, .artes button a{
 	text-decoration: none;
-	color: black;
+	color: rgba(0,0,0,0.7);
 	transition: all 0.3s linear;
 }
 
@@ -299,7 +454,7 @@ a.tag {
 }
 
 .tag1 button:hover {
-	transform: scale(1.1);
+	transform: scale(1.04);
 }
 
 
@@ -307,7 +462,7 @@ a.tag {
 .tag1 p{
 	margin-left: 10%;
 } 
-*/
+
 
 .feminismo, .artes, .saúde, .tecnologia {
 
