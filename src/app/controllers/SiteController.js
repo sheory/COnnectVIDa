@@ -21,7 +21,7 @@ module.exports = {
         results = await Post.getPostsSubjects();
         const subjects = results[0];
 
-        return res.render('index', { posts, subjects });
+       return res.render('main/index', { posts, subjects });
     },
     async category(req, res) {
         const category = req.query.category_name;
@@ -45,7 +45,7 @@ module.exports = {
         results = await Post.getPostsSubjects();
         const subjects = results[0];
 
-         return res.render('temas', { posts, subjects });
+         return res.render('temas/temas', { posts, subjects });
 
     }
 }
