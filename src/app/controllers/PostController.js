@@ -69,7 +69,7 @@ module.exports = {
             results = await Post.findById(req.params.id);
             const post = results[0][0];
 
-            return res.json({ post });
+             return res.render('postagem/post', { post });
         } catch (error) {
             res.send('Algo deu errado!');
         }
