@@ -151,6 +151,7 @@ body {
 .container {
 	display: flex;
 	margin-right: 25px;
+	margin-left: 25px;
 }
 
 .temas-container {
@@ -166,7 +167,7 @@ body {
 	padding: 15px;
 	padding-top: 80px;
 	background-color: white;
-	border-radius: 0 0 15px 0;
+	border-radius: 0 0 5px  5px ;
 
 	display: grid;
 	text-align: center;
@@ -255,7 +256,7 @@ body {
 	padding: 15px;
 	padding-top: 20px;
 	background-color: white;
-	border-radius: 0 15px 15px 0;
+	border-radius: 5px ;
 
 	display: grid;
 	text-align: center;
@@ -558,32 +559,57 @@ footer img{
 }
 
 
+
+
 /*media-query*/
+/*responsividade*/
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 959px) {
 
-	.opcoes {
+	.menor-buscar button {
+		display: none;
+	}
+
+  .opcoes {
 		display: none;
 	}
 
 /*dropdawn*/
 
-
 	.dropdown-media {
 
 	  position: relative;
 	  display: block;
-	  width: 55px;
-		background-color:  rgba(34,170,34,0.9);
+	  width: 60px;
+	  background-color: rgb(36, 142, 56);
 		margin-left: 10px;
+		border: none;
+	}
+
+	.dropdown-media:hover {
+		cursor: move;
+		background-color: red;
+	}
+
+	button#drop-a.box-opcoes {
+		background-color: rgb(36, 142, 56);
+		border: none;
+	}
+
+	.box-opcoes button {
+		background-color: rgb(36, 142, 56);
+		border: none;
+		
 	}
 
 
  	.dropdown-media img {  	
- 		padding-left: 5px;
+ 		
  		height: 42px;
   	width: 42px;
-		background-color: rgba(34,170,34,0.9);
+		background-color: rgb(36, 142, 56);
+		margin-left: auto;
+		margin-right: auto;
   	margin-top: 4px;
   	margin-bottom: 3px;
 
@@ -603,7 +629,7 @@ footer img{
 	  z-index: 1;
 	}
 
-	.dropdown-content a {
+	.dropdown-content a, .dropdown-content button {
 	  color: white;
 	  text-decoration: none;
 	  display: block;
@@ -612,19 +638,22 @@ footer img{
  	 	font-weight: 400;
 	}
 
-	.dropdown-content a:hover {
+	.dropdown-content button {
+		background-color:  rgb(34,155,34);
+		border: none;
+		padding: 12px;
+	}
+
+
+
+	.dropdown-content a:hover, .dropdown-content button:hover {
 		background-color: rgba(34,170,34,0.9);
 	  border-radius:  0px 7px 7px 7px;
 	}
 
-.box-opcoes-temas a {
-	width: 120%;
-}
-
- 	.dropdown-media img:hover {
-		background-color: rgba(34,170,34,0.9);
+	.box-opcoes-temas a {
+		width: 120%;
 	}
-
 
 	.dropdown-media:hover .dropdown-content {
 		display: block;
@@ -637,81 +666,271 @@ footer img{
 	}
 
 
+	.pesquisar-media {
+
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		
+		padding-left: 30%;
+		padding-right: 3%;
+		text-align: center;
+		width: 280px;
+	}
+
+	.input-media {
+		width: 250px;
+		height: 30px;
+		border: none;
+
+		border-radius: 2px 3px;
+		font-size: 14px;
+		font-family: 'Lato', sans-serif;
+	 	font-weight: 400;
+	}
+
+	.button-media {
+		margin-left: 7px;
+		float: left;
+		width: 80px;
+		height: 30px;
+		border-color: white;
+		border-radius: 2px 3px;
+		
+		color: #FFFFFF;
+		background-color: rgb(34,155,34);
+		font-size: 15px;
+		font-family: 'Lato', sans-serif;
+	 	font-weight: 400;
+	  /*box-shadow: 2px 2px rgba(0,0,0,0.1);*/
+	}
+
+	/*dropdown temas*/
+
+	.dropdown-content-temas {
+		margin-left: 100px;
+		margin-top: -20px;
+	  display: none; /*nao exibir opções antes do hover*/
+	  position: absolute;
+		background-color: rgb(36, 142, 56);
+	  width: 150px;
+	  border-radius:  0px 7px 7px 7px;
+	  /*min-width: 160px;*/
+	  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+	  z-index: 1;
+	}
+
+	.dropdown-content-temas a {
+	  color: white;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  font-size: 17px;
+		font-family: 'Lato', sans-serif;
+	 	font-weight: 400;
+	}
+
+	#temas-a {
+		width: 100%;
+	}
+
+	.dropdown-content-temas a:hover {
+		background-color: rgba(34,170,34,0.9);
+
+
+	  border-radius:  0px 7px 7px 7px;
+	}
+
+	/*
+	.dropdown-temas:hover .dropdown-content-temas {
+		display: block;
+	}
+	*/
+	.opcoes {
+		display: none;
+	}
+
+	/*end-nav-bar*/
+
+	/*temas-container*/
+
+	.tema-semanal-container {
+		padding-top: 57px;
+	}
+
+	/*cards*/
+
+	.cards{
+		padding: 0;
+		text-align: center; 
+		margin-left: 5px;
+		margin-right: 0;
+
+	}
+
+	.cards h1 {
+		text-align: left;
+		margin-left: 15%;
+	} 
+
+	.card {
+		
+	  width: 320px;
+	  text-align: left;
+	}
+
+	hr{
+		width: 82%;
+	}
+	 
+	/*end cards*/
+
+	/*footer*/
+
+	footer p {
+		font-size: 15px;
+	  font-family: 'Lato', sans-serif;
+ 	 	font-weight: 400;
+		width: 30%;
+	}
+
+
+
+	.footer-imgs {
+		margin-left: 8%;
+	}
+
+	footer img{
+		width: 1.7rem;
+		height: 1.7rem;
+  	margin: 10px;
+	}
+
+}
+
+
+@media only screen and (max-width: 750px) {
+	
+	
+
+.opcoes {
+		display: none;
+	}
+
+	.pesquisar-media {
+		
+		padding-left: 22%;
+		padding-right: 3%;
+		text-align: center;
+		width: 45%;
+	}
+
+	.input-media {
+		width: 200px;
+		height: 30px;
+	}
+
+	.button-media {
+
+		width: 75px;
+		height: 30px;
+		
+	  /*box-shadow: 2px 2px rgba(0,0,0,0.1);*/
+	}
+	.opcoes {
+		display: none;
+	}
+
+	.tema-semanal-container button{
+		width: 55%;
+	}
+	/*end-nav-bar*/
+
+
+	/*cards*/
+
+	.cards{
+		padding: 0;
+		text-align: center; 
+		margin-left: 5px;
+		margin-right: 0;
+
+	}
+
+	.cards h1 {
+		text-align: left;
+		margin-left: 8%;
+	} 
+
+	.card {
+		
+	  width: 320px;
+	  text-align: left;
+	}
+
+	hr{
+		width: 90%;
+	}
+	 
+	/*end cards*/
+
+	/*footer*/
+
+	footer p {
+		font-size: 15px;
+	  font-family: 'Lato', sans-serif;
+ 	 	font-weight: 400;
+		width: 30%;
+	}
+
+
+
+	.footer-imgs {
+		margin-left: 8%;
+	}
+
+	footer img{
+		width: 1.7rem;
+		height: 1.7rem;
+  	margin: 10px;
+	}
+
+}
+
+
+@media only screen and (min-width: 560px) and (max-width: 670px) {
+	
+
+	.opcoes {
+		display: none;
+	}
+
 .pesquisar-media {
 
 	display: inline-flex;
-	padding-top: 13px;
-	padding-left: 45%;
+	justify-content: center;
+	align-items: center;
+	
+	padding-left: 15%;
 	padding-right: 3%;
 	text-align: center;
-	width: 35%;
+	width: 270px;
 }
 
 .input-media {
-	width: 60%;
+	width: 250px;
 	height: 30px;
 	border: none;
 
 	border-radius: 2px 3px;
-	 font-size: 14px;
-	  font-family: 'Lato', sans-serif;
- 	 	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+ 	font-weight: 400;
 }
 
 .button-media {
-	margin-left: 5px;
-	float: left;
-	width: 45%;
+	width: 75px;
 	height: 30px;
-	border-color: white;
-	border-radius: 2px 3px;
-	margin-bottom: 5px;
-	color: #FFFFFF;
-	background-color: rgb(34,155,34);
-	font-size: 15px;
-	font-family: 'Lato', sans-serif;
- 	font-weight: 400;
-  /*box-shadow: 2px 2px rgba(0,0,0,0.1);*/
-}
-
-	/*dropdown temas*/
-
-.dropdown-content-temas {
-	margin-left: 100px;
-	margin-top: -20px;
-  display: none; /*nao exibir opções antes do hover*/
-  position: absolute;
-	background-color: rgb(36, 142, 56);
-  width: 150px;
-  border-radius:  0px 7px 7px 7px;
-  /*min-width: 160px;*/
-  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
-  z-index: 1;
-}
-
-.dropdown-content-temas a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 17px;
-	font-family: 'Lato', sans-serif;
- 	font-weight: 400;
-}
-
-#temas-a {
-	width: 100%;
-}
-
-.dropdown-content-temas a:hover {
-	background-color: rgba(34,170,34,0.9);
-
-
-  border-radius:  0px 7px 7px 7px;
-}
-
-.dropdown-temas:hover .dropdown-content-temas {
-	display: block;
 }
 
 .opcoes {
@@ -721,29 +940,180 @@ footer img{
 /*end-nav-bar*/
 
 
+/*Tema Semanal*/
+
+.container {
+	display: inline-grid;/*um container embaixo do outro*/
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.temas-container {
+	margin-top: 80px;
+	display: flex; /*um container dos temas do lado do outro*/
+	height: 400px;
+}
+
+.tema-semanal-container {
+	
+	width: 30%;
+	margin-right: 10px;
+	height: 300px;
+	
+	padding: 15px;
+	padding-top: 20px;
+	background-color: white;
+	border-radius: 5px ;
+
+	text-align: center;
+}
+
+.tema-semanal-container  h4, .temas-mensais-container  h4 {
+	padding-top: 12px;
+	margin-bottom: 0;
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+
+.tema-semanal-container hr{
+	
+	padding-top:0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -12px;
+	margin-bottom: 0;
+	height: 0.2px;
+}
+
+
+
+.title-tema-semanal {
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+
+	width: 80%;
+	height: 100px;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+
+	border-radius: 0px;
+}
+
+
+
+.tema-semanal-container button {
+	transition: 0.2s;
+	width: 60%;
+	height: 35px;
+
+	color: white;
+  border: 1px solid black;
+  background-color:  white;
+  color: black;
+  border-radius: 15px; 
+  font-size: 13px;
+
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.tema-semanal-container button:hover {
+	 font-size: 13.4px;
+	 width: 53%;
+
+}
+
+
+/*temas-mensais*/
+	.temas-mensais-container {
+
+		margin-top: 0;
+
+		display: block;
+		width: 60%;
+		height: 300px;
+		
+		padding: 15px;
+		padding-top: 20px;
+		background-color: white;
+		border-radius: 5px ;
+	}
+
+	.weeks-1-2 {
+		display: flex;
+	}
+
+ .title-tema-mensal {
+ 	transition: 0.3s;
+
+	width: 80%;
+	height: 100px;
+	text-decoration: none;
+
+	margin-bottom: 20px;
+
+	color: black;
+
+}
+
+ .temas-mensais-container hr {
+
+ 	margin-top: 8px;
+ 	margin-right: auto;
+	margin-left: auto;
+	height: 0.2px;
+
+	}
+
+
+
+a.title-tema-mensal {
+	width: 42%;
+	height: 85px;
+}
+
+ .title-tema-mensal:hover {
+ 	text-decoration: underline;
+
+ }
+
+
 /*cards*/
 
 .cards{
-
+	
+	margin-top: -30px;
+	padding: 0;
+	padding-top: 10px;
 	text-align: center; 
-	margin-left: 5px;
-	margin-right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+
+	border-radius: 5px;
+
+	width: 100%;
 
 }
 
 .cards h1 {
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 10%;
 } 
 
 .card {
-	 
-  width: 320px;
+	
+  width: 330px;
   text-align: left;
 }
 
 hr{
-	width: 100%;
+	width: 90%;
 }
  
 /*end cards*/
@@ -772,36 +1142,292 @@ hr{
 }
 
 
+@media only screen and (max-width: 580px) {
+	
+	
 
-@media (min-width: 730px) and (max-width: 1080px)  {
-
-	.pesquisar {
-		width: 40%;
-		margin-right: -2%;
+	.opcoes {
+		display: none;
 	}
 
-	#last-a {
-		 margin-right: -50px;
+	.maior-buscar button {
+		display: none;
 	}
 
-	hr {
-		width: 90%;
+	.pesquisar-media {
+
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		
+		padding-left: 3%;
+		padding-right: 3%;
+		text-align: center;
+		width: 270px;
+		margin-left: 4%;
 	}
 
-	.card {
-		margin: 2%;
-		width: 40%;
-		min-width: 290px;
-		max-width: 320px;
+	.input-media {
+		width: 250px;
+		height: 30px;
+		border: none;
+
+		border-radius: 2px 3px;
+		font-size: 14px;
+		font-family: 'Lato', sans-serif;
+	 	font-weight: 400;
+	 	margin-right: 3%;
 	}
 
+	.menor-buscar img {
+		margin-top: 3px;
+		width: 25px;
+		height: 24px;
+		box-shadow: 0px 0px;
+	}
+	.menor-buscar button {
+		width: 37px;
+		height: 31px;
+		display: block;
+		background-color: rgb(34,155,34);
+		border: none;
+	}
+
+	
+	.dropdown-media {
+
+		margin-top: -1px;
+		margin-left: 5px;
+		
+	}
+
+
+.opcoes {
+	display: none;
+}
+
+/*end-nav-bar*/
+
+
+/*Tema Semanal*/
+
+.container {
+	display: inline-grid;/*um container embaixo do outro*/
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.temas-container {
+	margin-top: 80px;
+	display: flex; /*um container dos temas do lado do outro*/
+	height: 400px;
+}
+
+.tema-semanal-container {
+	
+	width: 30%;
+	margin-right: 10px;
+	height: 300px;
+	
+	padding: 15px;
+	padding-top: 20px;
+	background-color: white;
+	border-radius: 5px ;
+
+	text-align: center;
+}
+
+.temas-mensais-container  h4 {
+	padding-top: 12px;
+	margin-bottom: 0;
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+
+.tema-semanal-container  h4{
+	margin-top: -5px;
+	padding-top: 0;
+	margin-bottom: 0;
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+
+.tema-semanal-container hr{
+	
+	padding-top:0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -12px;
+	margin-bottom: 0;
+	height: 0.2px;
+}
+
+
+.title-tema-semanal {
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+
+	width: 80%;
+	height: 100px;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+
+	border-radius: 0px;
+}
+
+
+
+.tema-semanal-container button {
+
+	transition: 0.2s;
+	width: 80%;
+	height: 35px;
+
+	color: white;
+  border: 1px solid black;
+  background-color:  white;
+  color: black;
+  border-radius: 10px; 
+  font-size: 13px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tema-semanal-container button:hover {
+	 width: 80%; 
+  font-size: 13px;
+}
+
+
+/*temas-mensais*/
+	.temas-mensais-container {
+
+		margin-top: 0;
+
+		display: block;
+		width: 60%;
+		height: 300px;
+		
+		padding: 15px;
+		padding-top: 20px;
+		background-color: white;
+		border-radius: 5px ;
+	}
+
+	.weeks-1-2 {
+		display: flex;
+	}
+
+ .title-tema-mensal {
+ 	transition: 0.3s;
+
+	width: 80%;
+	height: 100px;
+	text-decoration: none;
+
+	margin-bottom: 20px;
+
+	color: black;
+
+}
+
+ .temas-mensais-container hr {
+
+ 	margin-top: 8px;
+ 	margin-right: auto;
+	margin-left: auto;
+	height: 0.2px;
+
+	}
+
+
+
+a.title-tema-mensal {
+	width: 42%;
+	height: 85px;
+}
+
+ .title-tema-mensal:hover {
+ 	text-decoration: underline;
+
+ }
+
+
+/*cards*/
+
+.cards{
+	
+	margin-top: -30px;
+	padding: 0;
+	padding-top: 10px;
+	text-align: center; 
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+
+	border-radius: 5px;
+
+	width: 100%;
+
+}
+
+.cards h1 {
+	text-align: left;
+	margin-left: 10%;
+} 
+
+.card {
+	
+  width: 330px;
+  text-align: left;
+}
+
+hr{
+	width: 90%;
+}
+
+
+
+p.last-update {
+
+	display: flex;
+	width: 100%;
+	height: 1.36em;
+	width: 99%;
+	/*background-color:	rgba(214,199,199,0.2);*/
+	/*text-align: left;*/
+
+	font-family: 'Mulish', sans-serif;
+	color: rgba(0,0,0,0.6);
+	font-weight: 300;
+	font-size: 75.3%;
+  	border: 1px solid rgba(0,0,0,0.1);
+  	text-align: justify;
+  	align-items: center;
+	margin-top: 17px; 
+	margin-bottom: 0;
+
+}
+ 
+/*end cards*/
+
+/*footer*/
 
 	footer p {
-		width: 30%;
-		font-size: 16.5px;
+		font-size: 15px;
 	  font-family: 'Lato', sans-serif;
- 	 font-weight: 400;
+ 	 	font-weight: 400;
+		width: 30%;
 	}
+
 
 
 	.footer-imgs {
@@ -809,8 +1435,8 @@ hr{
 	}
 
 	footer img{
-		width: 1.85rem;
-		height: 1.85rem;
+		width: 1.7rem;
+		height: 1.7rem;
   	margin: 10px;
-}
+	}
 }
