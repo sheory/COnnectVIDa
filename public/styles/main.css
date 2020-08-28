@@ -18,7 +18,6 @@
 	box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
 }
 
-
 .opcoes {
 	width: 100%;
   position: relative;
@@ -49,7 +48,6 @@ li a {
   display: inline-block;
 }
 
-
 .dropdown-content {
   display: none; /*nao exibir opções antes do hover*/
   position: absolute;
@@ -73,8 +71,6 @@ li a {
 
 .dropdown-content a:hover {
 	background-color: rgba(34,170,34,0.9);
-
-
   border-radius:  0px 7px 7px 7px;
 }
 
@@ -100,7 +96,6 @@ ul {
 	margin-right: -200px;
 }
 
-
 .pesquisar {
 	margin-top: -3px;
 	width: 30%;
@@ -110,7 +105,6 @@ ul {
 }
 
 .input {
-
   color: #495057;
   width: 137px;
   background-color: #fff;
@@ -137,8 +131,6 @@ ul {
 	background-color: rgba(43, 171, 39, 0.7);
 }
 
-
-
 body {	
 	background-color: rgb(238,238,238);
 	font-family: 'Lato', sans-serif, 300;
@@ -160,15 +152,12 @@ body {
 }
 
 .tema-semanal-container {
-	
 	width: 80%;
 	height: 300px;
-	
 	padding: 15px;
 	padding-top: 80px;
 	background-color: white;
 	border-radius: 0 0 5px  5px ;
-
 	display: grid;
 	text-align: center;
 
@@ -182,9 +171,7 @@ body {
 	font-weight: 300;
 }
 
-
 .tema-semanal-container hr{
-	
 	padding-top:0;
 	margin-right: auto;
 	margin-left: auto;
@@ -194,32 +181,24 @@ body {
 }
 
  .temas-mensais-container hr {
-
  	margin-top: -5px;
 	margin-bottom: 20px;
 	height: 0.2px;
-
 }
 
 .title-tema-semanal, .title-tema-mensal {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	width: 80%;
 	height: 100px;
-
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0px;
-
 	font-family: sans-serif;
 	text-align: center;
-
 	background-color: rgba(106, 250, 101, 0.3);
-
 	padding: 7px;
-
 	border-radius: 0px;
 }
 
@@ -243,34 +222,27 @@ body {
 .tema-semanal-container button:hover {
 	 font-size: 13.4px;
 	 width: 53%;
-
 }
-
 
 /*temas-mensais*/
 .temas-mensais-container {
 	margin-top: 40px;
 	width: 80%;
 	height: 600px;
-	
 	padding: 15px;
 	padding-top: 20px;
 	background-color: white;
 	border-radius: 5px ;
-
 	display: grid;
 	text-align: center;
 }
 
  .title-tema-mensal {
  	transition: 0.3s;
-
 	width: 80%;
 	height: 100px;
 	text-decoration: none;
-
 	margin-bottom: 20px;
-
 	color: black;
 	height: 80px;
 
@@ -278,46 +250,33 @@ body {
 
  .title-tema-mensal:hover {
  	text-decoration: underline;
-
  }
 
 /*Cards*/
 
 .cards{
-
 	background-color: white;
-
 	padding-left: 50px;
-	
 	padding-top: 20px;
-	/*justify-content: center;*/
 	margin-top: 55px;
 	margin-left: auto;
 	margin-right: auto;
-	/*text-align: center; */
 	width: 75%;
 }
 
-
 .card {
-	 
   width: 308px;
   height: 412px;
-
   margin-right: 10px;
   margin-bottom: 20px;
-
   border: 1px solid #dcdcdc;
-  /*float: left*/
   display: inline-grid;
   justify-content: space-between;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 100%;
-
 	transition: all 0.3s linear;
 }
-
 
 h4 {
 	font-size: 19.7px;
@@ -337,27 +296,11 @@ hr{
 	margin-left: 0;
 }
 
-/*
-.last-update {
-	margin-bottom:0;
-	width: 99%;
-	height: 1.2rem;
-	font-family: 'Mulish', sans-serif;
-  border: 1px solid rgba(0,0,0,0.1);
-  font-size:77%;
-  text-align: justify;
-}
-*/
-
 p.last-update {
-
 	display: flex;
 	width: 100%;
 	height: 1.2rem;
 	width: 99%;
-	/*background-color:	rgba(214,199,199,0.2);*/
-	/*text-align: left;*/
-
 	font-family: 'Mulish', sans-serif;
 	color: rgba(0,0,0,0.6);
 	font-weight: 300;
@@ -374,7 +317,6 @@ p.last-update {
 	width: 100%;
 	height: 220px;
 }
-
 
 button {
 	width: 100%;
@@ -393,13 +335,11 @@ a.tag {
 	margin-left: 3%;
 }
 
-
 .feminismo button a, .saúde button a, .tecnologia button a, .artes button a{
 	text-decoration: none;
 	color: rgba(0,0,0,0.7);
 	transition: all 0.3s linear;
 }
-
 
 .feminismo button {
 	
@@ -407,13 +347,10 @@ a.tag {
 	border: 1px solid  rgba(176,143,200,0.7);
 }
 
-
 .saúde button {
 	background-color: rgba(186,225,255,0.7);
 	border: 1px solid  rgba(186,225,255,0.7);
 }
-
-
 
 .tecnologia button {
 	background-color: rgba(139, 241, 139, 0.7);
@@ -440,13 +377,11 @@ a.tag {
 .tecnologia button:hover {
 	background-color: rgba(139, 241, 139, 0.9);
 	border: 1px solid  rgba(139, 241, 139, 0.9);
-
 }
 
 .artes button:hover{
 	background-color: rgba(255, 233, 129, 0.9);
 	border: 1px solid  rgba(255, 233, 129, 0.9);
-	
 }
 
 .tag1 {
@@ -457,8 +392,6 @@ a.tag {
 .tag1 button:hover {
 	transform: scale(1.04);
 }
-
-
 
 .tag1 p{
 	margin-left: 10%;
@@ -496,7 +429,6 @@ a.tag {
 	background-color: rgba(139, 241, 139, 0.2);
 }
 
-
 .last-update-tecnologia{
 	background-color: rgba(139, 241, 139, 0.5);
 }
@@ -509,7 +441,6 @@ a.tag {
 	background-color: rgba(255, 233, 129, 0.5);
 }
 
-
 /*footer*/
 
 footer	{
@@ -521,14 +452,11 @@ footer	{
 }
 
 footer p {
-	
 	font-family: 'Lato', sans-serif; 
 	margin-left: 10px;
 	width: 17%;
 	font-size: 1rem;
 }
-
-
 
 footer img{
 	width: 2rem;
@@ -547,9 +475,6 @@ footer img{
 	text-align: center;
 }
 
-
-
-
 .dropdown-media {
 	display: none;
 }
@@ -558,11 +483,31 @@ footer img{
 	display: none;
 }
 
-
-
-
 /*media-query*/
 /*responsividade*/
+@media only screen and (min-width: 959px) and (max-width: 1024px) {
+	
+	.card{
+		font-size: 18px;
+		height: 430px;
+	}
+
+	.tag1 {
+		width: 6.2rem;
+		margin-left: 62%; 
+		margin-top: -12px;
+	}
+
+	.tag1 a {
+		font-size: 15px;
+	}
+
+	p.last-update {
+		margin-top: 10px; 
+		margin-bottom: 0;
+	}
+}
+
 
 @media only screen and (max-width: 959px) {
 
@@ -602,7 +547,6 @@ footer img{
 		
 	}
 
-
  	.dropdown-media img {  	
  		
  		height: 42px;
@@ -612,10 +556,7 @@ footer img{
 		margin-right: auto;
   	margin-top: 4px;
   	margin-bottom: 3px;
-
   	box-shadow: 0px 0px;
-
-
  	}
 
 	.dropdown-content {
@@ -644,8 +585,6 @@ footer img{
 		padding: 12px;
 	}
 
-
-
 	.dropdown-content a:hover, .dropdown-content button:hover {
 		background-color: rgba(34,170,34,0.9);
 	  border-radius:  0px 7px 7px 7px;
@@ -664,7 +603,6 @@ footer img{
 		background-color: rgba(43, 171, 39, 0.7);
 
 	}
-
 
 	.pesquisar-media {
 
@@ -741,11 +679,6 @@ footer img{
 	  border-radius:  0px 7px 7px 7px;
 	}
 
-	/*
-	.dropdown-temas:hover .dropdown-content-temas {
-		display: block;
-	}
-	*/
 	.opcoes {
 		display: none;
 	}
@@ -765,7 +698,6 @@ footer img{
 		text-align: center; 
 		margin-left: 5px;
 		margin-right: 0;
-
 	}
 
 	.cards h1 {
@@ -794,8 +726,6 @@ footer img{
 		width: 30%;
 	}
 
-
-
 	.footer-imgs {
 		margin-left: 8%;
 	}
@@ -805,14 +735,10 @@ footer img{
 		height: 1.7rem;
   	margin: 10px;
 	}
-
 }
-
 
 @media only screen and (max-width: 750px) {
 	
-	
-
 .opcoes {
 		display: none;
 	}
@@ -831,12 +757,10 @@ footer img{
 	}
 
 	.button-media {
-
 		width: 75px;
 		height: 30px;
-		
-	  /*box-shadow: 2px 2px rgba(0,0,0,0.1);*/
 	}
+
 	.opcoes {
 		display: none;
 	}
@@ -845,7 +769,6 @@ footer img{
 		width: 55%;
 	}
 	/*end-nav-bar*/
-
 
 	/*cards*/
 
@@ -883,8 +806,6 @@ footer img{
 		width: 30%;
 	}
 
-
-
 	.footer-imgs {
 		margin-left: 8%;
 	}
@@ -894,23 +815,18 @@ footer img{
 		height: 1.7rem;
   	margin: 10px;
 	}
-
 }
 
-
 @media only screen and (min-width: 560px) and (max-width: 670px) {
-	
 
 	.opcoes {
 		display: none;
 	}
 
 .pesquisar-media {
-
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	
 	padding-left: 15%;
 	padding-right: 3%;
 	text-align: center;
@@ -921,7 +837,6 @@ footer img{
 	width: 250px;
 	height: 30px;
 	border: none;
-
 	border-radius: 2px 3px;
 	font-size: 14px;
 	font-family: 'Lato', sans-serif;
@@ -939,7 +854,6 @@ footer img{
 
 /*end-nav-bar*/
 
-
 /*Tema Semanal*/
 
 .container {
@@ -955,16 +869,13 @@ footer img{
 }
 
 .tema-semanal-container {
-	
 	width: 30%;
 	margin-right: 10px;
 	height: 300px;
-	
 	padding: 15px;
 	padding-top: 20px;
 	background-color: white;
 	border-radius: 5px ;
-
 	text-align: center;
 }
 
@@ -976,9 +887,7 @@ footer img{
 	font-weight: 300;
 }
 
-
 .tema-semanal-container hr{
-	
 	padding-top:0;
 	margin-right: auto;
 	margin-left: auto;
@@ -987,37 +896,28 @@ footer img{
 	height: 0.2px;
 }
 
-
-
 .title-tema-semanal {
 	/*display: flex;*/
 	align-items: center;
 	justify-content: center;
-
 	width: 80%;
 	height: 100px;
-
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0px;
-
 	border-radius: 0px;
 }
-
-
 
 .tema-semanal-container button {
 	transition: 0.2s;
 	width: 60%;
 	height: 35px;
-
 	color: white;
   border: 1px solid black;
   background-color:  white;
   color: black;
   border-radius: 15px; 
   font-size: 13px;
-
   margin-left: auto;
   margin-right: 10px;
 }
@@ -1025,19 +925,14 @@ footer img{
 .tema-semanal-container button:hover {
 	 font-size: 13.4px;
 	 width: 53%;
-
 }
-
 
 /*temas-mensais*/
 	.temas-mensais-container {
-
 		margin-top: 0;
-
 		display: block;
 		width: 60%;
 		height: 300px;
-		
 		padding: 15px;
 		padding-top: 20px;
 		background-color: white;
@@ -1049,17 +944,13 @@ footer img{
 	}
 
  .title-tema-mensal {
- 	transition: 0.3s;
-
-	width: 80%;
-	height: 100px;
-	text-decoration: none;
-
-	margin-bottom: 20px;
-
-	color: black;
-
-}
+	 	transition: 0.3s;
+		width: 80%;
+		height: 100px;
+		text-decoration: none;
+		margin-bottom: 20px;
+		color: black;
+	}
 
  .temas-mensais-container hr {
 
@@ -1072,50 +963,50 @@ footer img{
 
 
 
-a.title-tema-mensal {
-	width: 42%;
-	height: 85px;
-}
+	a.title-tema-mensal {
+		width: 42%;
+		height: 85px;
+	}
 
- .title-tema-mensal:hover {
- 	text-decoration: underline;
+	 .title-tema-mensal:hover {
+	 	text-decoration: underline;
 
- }
+	 }
 
 
-/*cards*/
+	/*cards*/
 
-.cards{
-	
-	margin-top: -30px;
-	padding: 0;
-	padding-top: 10px;
-	text-align: center; 
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 20px;
+	.cards{
+		
+		margin-top: -30px;
+		padding: 0;
+		padding-top: 10px;
+		text-align: center; 
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
 
-	border-radius: 5px;
+		border-radius: 5px;
 
-	width: 100%;
+		width: 100%;
 
-}
+	}
 
-.cards h1 {
-	text-align: left;
-	margin-left: 10%;
-} 
+	.cards h1 {
+		text-align: left;
+		margin-left: 10%;
+	} 
 
-.card {
-	
-  width: 330px;
-  text-align: left;
-}
+	.card {
+		
+	  width: 330px;
+	  text-align: left;
+	}
 
-hr{
-	width: 90%;
-}
- 
+	hr{
+		width: 90%;
+	}
+	 
 /*end cards*/
 
 /*footer*/
@@ -1126,8 +1017,6 @@ hr{
  	 	font-weight: 400;
 		width: 30%;
 	}
-
-
 
 	.footer-imgs {
 		margin-left: 8%;
@@ -1143,8 +1032,6 @@ hr{
 
 
 @media only screen and (max-width: 580px) {
-	
-	
 
 	.opcoes {
 		display: none;
@@ -1155,16 +1042,14 @@ hr{
 	}
 
 	.pesquisar-media {
-
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		
-		padding-left: 3%;
+		padding-left: 2%;
 		padding-right: 3%;
 		text-align: center;
 		width: 270px;
-		margin-left: 4%;
+		margin-left: 7%;
 	}
 
 	.input-media {
@@ -1185,6 +1070,7 @@ hr{
 		height: 24px;
 		box-shadow: 0px 0px;
 	}
+
 	.menor-buscar button {
 		width: 37px;
 		height: 31px;
@@ -1193,118 +1079,109 @@ hr{
 		border: none;
 	}
 
-	
 	.dropdown-media {
-
 		margin-top: -1px;
 		margin-left: 5px;
 		
 	}
 
+	.opcoes {
+		display: none;
+	}
 
-.opcoes {
-	display: none;
-}
+	/*end-nav-bar*/
 
-/*end-nav-bar*/
+	/*Tema Semanal*/
 
+	.container {
+		display: inline-grid;/*um container embaixo do outro*/
+		margin-right: 25px;
+		margin-left: 25px;
+	}
 
-/*Tema Semanal*/
+	.temas-container {
+		margin-top: 80px;
+		display: flex; /*um container dos temas do lado do outro*/
+		height: 400px;
+	}
 
-.container {
-	display: inline-grid;/*um container embaixo do outro*/
-	margin-right: 25px;
-	margin-left: 25px;
-}
+	.tema-semanal-container {
+		width: 30%;
+		margin-right: 10px;
+		height: 300px;	
+		padding: 15px;
+		padding-top: 20px;
+		background-color: white;
+		border-radius: 5px ;
+		text-align: center;
+	}
 
-.temas-container {
-	margin-top: 80px;
-	display: flex; /*um container dos temas do lado do outro*/
-	height: 400px;
-}
-
-.tema-semanal-container {
-	
-	width: 30%;
-	margin-right: 10px;
-	height: 300px;
-	
-	padding: 15px;
-	padding-top: 20px;
-	background-color: white;
-	border-radius: 5px ;
-
-	text-align: center;
-}
-
-.temas-mensais-container  h4 {
-	padding-top: 12px;
-	margin-bottom: 0;
-	font-size: 22px;
-	font-family: sans-serif;
-	font-weight: 300;
-}
+	.temas-mensais-container  h4 {
+		padding-top: 12px;
+		margin-bottom: 0;
+		font-size: 22px;
+		font-family: sans-serif;
+		font-weight: 300;
+	}
 
 
-.tema-semanal-container  h4{
-	margin-top: -5px;
-	padding-top: 0;
-	margin-bottom: 0;
-	font-size: 22px;
-	font-family: sans-serif;
-	font-weight: 300;
-}
+	.tema-semanal-container  h4{
+		margin-top: 7px;
+		font-size: 22px;
+		font-family: sans-serif;
+		font-weight: 300;
+	}
 
 
-.tema-semanal-container hr{
-	
-	padding-top:0;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: -12px;
-	margin-bottom: 0;
-	height: 0.2px;
-}
+	.tema-semanal-container hr{
+		
+		padding-top:0;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: -12px;
+		margin-bottom: 0;
+		height: 0.2px;
+	}
 
 
-.title-tema-semanal {
-	/*display: flex;*/
-	align-items: center;
-	justify-content: center;
+	.title-tema-semanal {
+		/*display: flex;*/
+		align-items: center;
+		justify-content: center;
 
-	width: 80%;
-	height: 100px;
+		width: 80%;
+		height: 100px;
 
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 0px;
 
-	border-radius: 0px;
-}
+		border-radius: 0px;
+	}
 
 
 
-.tema-semanal-container button {
+	.tema-semanal-container button {
 
-	transition: 0.2s;
-	width: 80%;
-	height: 35px;
+		transition: 0.2s;
+		width: 80%;
+		height: 35px;
 
-	color: white;
-  border: 1px solid black;
-  background-color:  white;
-  color: black;
-  border-radius: 10px; 
-  font-size: 13px;
+		color: white;
+	  border: 1px solid black;
+	  background-color:  white;
+	  color: black;
+	  border-radius: 10px; 
+	  font-size: 13px;
 
-  margin-left: auto;
-  margin-right: auto;
-}
+	  margin-left: auto;
+	  margin-right: auto;
+	}
 
-.tema-semanal-container button:hover {
-	 width: 80%; 
-  font-size: 13px;
-}
+	.tema-semanal-container button:hover {
+		 width: 80%; 
+	  font-size: 13px;
+	}
 
 
 /*temas-mensais*/
@@ -1348,74 +1225,69 @@ hr{
 
 	}
 
+	a.title-tema-mensal {
+		width: 42%;
+		height: 85px;
+	}
 
+	 .title-tema-mensal:hover {
+	 	text-decoration: underline;
 
-a.title-tema-mensal {
-	width: 42%;
-	height: 85px;
-}
+	 }
 
- .title-tema-mensal:hover {
- 	text-decoration: underline;
+	/*cards*/
 
- }
+	.cards{
+		
+		margin-top: -30px;
+		padding: 0;
+		padding-top: 10px;
+		text-align: center; 
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
 
+		border-radius: 5px;
 
-/*cards*/
+		width: 100%;
 
-.cards{
-	
-	margin-top: -30px;
-	padding: 0;
-	padding-top: 10px;
-	text-align: center; 
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 20px;
+	}
 
-	border-radius: 5px;
+	.cards h1 {
+		text-align: left;
+		margin-left: 10%;
+	} 
 
-	width: 100%;
+	.card {
+		
+	  width: 330px;
+	  text-align: left;
+	}
 
-}
+	hr{
+		width: 90%;
+	}
 
-.cards h1 {
-	text-align: left;
-	margin-left: 10%;
-} 
+	p.last-update {
 
-.card {
-	
-  width: 330px;
-  text-align: left;
-}
+		display: flex;
+		width: 100%;
+		height: 1.36em;
+		width: 99%;
+		/*background-color:	rgba(214,199,199,0.2);*/
+		/*text-align: left;*/
 
-hr{
-	width: 90%;
-}
+		font-family: 'Mulish', sans-serif;
+		color: rgba(0,0,0,0.6);
+		font-weight: 300;
+		font-size: 75.3%;
+	  	border: 1px solid rgba(0,0,0,0.1);
+	  	text-align: justify;
+	  	align-items: center;
+		margin-top: 17px; 
+		margin-bottom: 0;
 
-
-
-p.last-update {
-
-	display: flex;
-	width: 100%;
-	height: 1.36em;
-	width: 99%;
-	/*background-color:	rgba(214,199,199,0.2);*/
-	/*text-align: left;*/
-
-	font-family: 'Mulish', sans-serif;
-	color: rgba(0,0,0,0.6);
-	font-weight: 300;
-	font-size: 75.3%;
-  	border: 1px solid rgba(0,0,0,0.1);
-  	text-align: justify;
-  	align-items: center;
-	margin-top: 17px; 
-	margin-bottom: 0;
-
-}
+	}
  
 /*end cards*/
 
@@ -1429,7 +1301,6 @@ p.last-update {
 	}
 
 
-
 	.footer-imgs {
 		margin-left: 8%;
 	}
@@ -1439,4 +1310,214 @@ p.last-update {
 		height: 1.7rem;
   	margin: 10px;
 	}
+}
+
+@media only screen and (max-width: 480px) {
+
+ 	.dropdown-media img {  	
+ 		
+ 		height: 35px;
+  	width: 35px;
+  	margin-top: 10px;
+
+ 	}
+
+	.pesquisar-media {
+
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		
+		padding-left: 0;
+		padding-right: 3%;
+		text-align: center;
+		width: 270px;
+		margin-left: 2%;
+	}
+
+	.input-media {
+		width: 250px;
+		height: 30px;
+		border: none;
+
+		border-radius: 2px 3px;
+		font-size: 14px;
+		font-family: 'Lato', sans-serif;
+	 	font-weight: 400;
+	 	margin-right: 3%;
+	}
+
+	.menor-buscar img {
+		margin-top: 3px;
+		width: 25px;
+		height: 24px;
+		box-shadow: 0px 0px;
+	}
+
+	.menor-buscar button {
+		width: 37px;
+		height: 31px;
+		display: block;
+		background-color: rgb(34,155,34);
+		border: none;
+	}
+
+
+
+	.container {
+		display: inline-grid;/*um container embaixo do outro*/
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	/*tema semnanal*/
+
+	.temas-container {
+		margin-top: 80px;
+		display: flex; /*um container dos temas do lado do outro*/
+		height: 380px;
+	}
+
+	.tema-semanal-container {
+		
+		width: 30%;
+		margin-right: 10px;
+		height: 270px;
+		
+		padding: 15px;
+		padding-top: 20px;
+		background-color: white;
+		border-radius: 5px ;
+
+		text-align: center;
+	}
+
+	.temas-mensais-container  h4 {
+		padding-top: 12px;
+		margin-bottom: 0;
+		font-size: 22px;
+		font-family: sans-serif;
+		font-weight: 300;
+	}
+
+
+	.tema-semanal-container  h4{
+		margin-top: -5px;
+		padding-top: 0;
+		margin-bottom: 0;
+		font-size: 22px;
+		font-family: sans-serif;
+		font-weight: 300;
+	}
+
+
+	.tema-semanal-container hr{
+		
+		padding-top:0;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: -12px;
+		margin-bottom: 0;
+		height: 0.2px;
+	}
+
+
+	.title-tema-semanal {
+		/*display: flex;*/
+		align-items: center;
+		justify-content: center;
+
+		width: 80%;
+		height: 100px;
+
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 0px;
+
+		border-radius: 0px;
+	}
+
+
+
+	.tema-semanal-container button {
+
+		transition: 0.2s;
+		width: 80%;
+		height: 35px;
+
+		color: white;
+	  border: 1px solid black;
+	  background-color:  white;
+	  color: black;
+	  border-radius: 10px; 
+	  font-size: 12px;
+
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.tema-semanal-container button:hover {
+		 width: 80%; 
+	  font-size: 13px;
+	}
+
+
+/*temas-mensais*/
+	.temas-mensais-container {
+
+		margin-top: 0;
+
+		display: block;
+		width: 60%;
+		height: 270px;
+		
+		padding: 15px;
+		padding-top: 20px;
+		background-color: white;
+		border-radius: 5px ;
+	}
+
+	.weeks-1-2 {
+		display: flex;
+	}
+
+ .title-tema-mensal {
+ 	transition: 0.3s;
+
+	height: 100px;
+	text-decoration: none;
+
+	margin-bottom: 5px;
+
+	color: black;
+
+}
+
+ .temas-mensais-container hr {
+
+ 	margin-top: 8px;
+ 	margin-right: auto;
+	margin-left: auto;
+	height: 0.2px;
+
+	}
+
+	.temas-mensais-container h4 {
+		margin-top: -5px;
+	}
+
+
+
+	a.title-tema-mensal {
+		width: 40%;
+		height: 85px;
+	}
+
+ .title-tema-mensal:hover {
+ 	text-decoration: underline;
+
+ }
+
+ .cards {
+ 	margin-top: -50px;
+ }
 }
