@@ -40,32 +40,55 @@
 	</div>
 
 
-	<!--mobile version-->
+<!--	mobile version-->
 
 	<div class="dropdown-media-{{posts[0].subject}}"> 
-			
-		<a id="drop-a-media" href=""  class="box-opcoes-media"><img src="assets/menu.png"></a>
-		<div class="dropdown-content-media-{{posts[0].subject}}">
-			
-				<a href="/"  class="box-opcoes">Início</a>
+		<button onclick="show_hide()" id="drop-a"  class="box-opcoes-{{posts[0].subject}}"><img src="assets/menu.png"></button>	
+		
+		<div class="dropdown-content-media-{{posts[0].subject}}" id="dropdown-content-{{posts[0].subject}}" style="display: none;">
+			<a href="/"  class="box-opcoes-{{posts[0].subject}}" >Início</a>
 			<div class="dropdown-temas"> 
-			 	<a href=""  class="box-opcoes-temas">Temas</a>
-			 	<div class="dropdown-content-temas-{{posts[0].subject}}">
+				<button onclick="show_hide_temas()" href=""  class="box-opcoes-temas">Temas</button>
+			 	<div class="dropdown-content-temas-{{posts[0].subject}}" id="dropdown-content-temas-{{posts[0].subject}}"  style="display: none;">
 			 	<a href="temas?category_name=Artes">Arte</a>
 			 	<a href="temas?category_name=Feminismo">Feminismo</a>
 			 	<a href="temas?category_name=Saúde">Saúde</a>
 			 	<a href="temas?category_name=Tecnologia">Tecnologia</a>
 				</div>
 			</div>
-			<a href=""  class="box-opcoes">Sobre</a>
-			<a href=""  class="box-opcoes">Contato</a>
+			<a href=""  class="box-opcoes-{{posts[0].subject}}">Sobre</a>
+			<a href=""  class="box-opcoes-{{posts[0].subject}}">Contato</a>
 		</div>
 	</div>
 	<div class="pesquisar-media">
 		<input class="input-media" type="search" placeholder="Buscar no blog" >
-		<button class="button-media">Buscar</button>
+		<button class="button-media-{{posts[0].subject}}" ><img src="assets/search.png"></button>
+		
 	</div>
-	<div class="img-tema-media">
-			<img src="assets/{{posts[0].subject}}.png">
-		</div>
+	<div  class="img-tema-media">
+		<img src="assets/{{posts[0].subject}}.png">
+	</div>
 </div>
+
+
+<script type="text/javascript">
+	function show_hide() {
+		var click = document.getElementById("dropdown-content-{{posts[0].subject}}");
+		if(click.style.display === "none") {
+			click.style.display = "block";
+		} else {
+			click.style.display = "none";
+		}
+	}
+
+
+function show_hide_temas() {
+		var click = document.getElementById("dropdown-content-temas-{{posts[0].subject}}");
+		if(click.style.display === "none") {
+			click.style.display = "block";
+		} else {
+			click.style.display = "none";
+		}
+	}
+</script> 
+
