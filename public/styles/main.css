@@ -256,7 +256,8 @@ body {
 
 .cards{
 	background-color: white;
-	padding-left: 50px;
+	padding-left: 40px;
+	padding-right: 20px;
 	padding-top: 20px;
 	margin-top: 55px;
 	margin-left: auto;
@@ -292,7 +293,7 @@ h1 {
 }
 
 hr{
-	width: 96%;
+	width: 98%;
 	margin-left: 0;
 }
 
