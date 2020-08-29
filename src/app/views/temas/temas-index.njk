@@ -1,7 +1,12 @@
 <div class="cards">
-
-	<h1> Postagens recentes <hr></h1>
-
+	<div class="header">
+		<h1> Postagens recentes </h1>
+		<div  class="img-tema-mobile">
+			<img src="assets/{{posts[0].subject}}-black.png">
+	</div>
+	<hr>
+	</div>
+	
 	{%for post in posts%}
 	<div class="card">
 		<div class="{{post.subject}}"> 
