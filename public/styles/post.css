@@ -1,15 +1,18 @@
-/*nav-bar*/
+
 
 .nav-bar {
-	position: fixed;
+
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
 	height: 3.5rem;
 	display: flex;
-
+	background-color: red;
 }
+
+
 
 
 .nav-bar-artes {
@@ -32,9 +35,10 @@
 
 
 .nav-bar-saúde {
-	background-color: rgb(0, 91, 150);
+	background-color: rgba(0, 91, 150, 0.9);
 	width: 100%;
 }
+
 
 .nav-bar img {
 	margin-top: -5px;
@@ -52,12 +56,21 @@
 	width: 100%;
 }
 
+ul { 
+	text-align: center;
+	margin-top: -76px;
+	
+	padding-left: 120px;
+}
+
+
 li {
-	display: inline;
+	display: inline-flex;
 	font-size: 0.55cm;
 	/*border: 2em;*/
 	float: center;
-	padding-left:20px; 	
+	padding-left:17px;
+	paint-order: 17px; 	
 }
 
 li a {
@@ -72,6 +85,7 @@ li a {
 	/*margin-right: 50px;*/
 
 }
+
 
 
 
@@ -95,10 +109,7 @@ a.box-opcoes-feminismo:hover {
 	background-color: #805284;
 }
 
-ul {
-	text-align: center;
 
-}
 
 #last-a {
 	margin-right: -200px;
@@ -139,21 +150,22 @@ ul {
 }
 
 .button:hover {
-	background-color: rgba(250, 250, 250, 0.1);
+	background-color: rgba(250,250,250,0.1);
 }
 
 .pesquisar {
-	top: -80px;
+	padding-top: 12px;
 	width: 15rem;
 	float: right;
-	margin-right: -20px;
+	margin-right: 20px;
 
 }
 
 .img-tema {
-	margin-top: -7px;	
-	width: 10%;
+	padding-top: 6px;	
+	width: 8%;
 	float: right;
+	margin-right: 10px;
 } 
 
 .img-tema img{
@@ -165,13 +177,12 @@ ul {
 
 
 
-
 /*dropdown*/
 .dropdown {
   position: relative;
   display: inline-block;
   text-align: center;
-  margin:0;
+  margin-top:5px;
 }
 
 
@@ -244,228 +255,323 @@ ul {
 }
 
 
-hr{
-	width: 83%;
-	margin-left: 0;
-}
+/*end nav-bar*/
+
 
 body {
-	height: 100%;
-}
-
-/*cards*/
-
-.cards{
-
-	/*justify-content: center;*/
-	margin-top: 100px;
-	margin-left: 10%;
-	margin-right: 10%;
-	/*text-align: center; */
-	width: 90%;
-}
-
-
-h4 {
-	font-size: 100%;
-}
-
-
-h1 {
-
-	font-family: 'Lato', sans-serif;
-	font-weight: 500; 
-	font-size: 25px;
-
-}
-
-.card {
-	 
-  /* Add shadows to create the "card" effect */
-  /*box-shadow: 1px 0 0 0 rgba(0,0,0,0.1);*/
-  /*transition: 0.3s;*/
-  width: 308px;
-  height: 420px;
-  margin: 10px;
-  border: 1px solid #dcdcdc;
-  /*float: left*/
-  display: inline-grid;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 100%;
-	transition: all 0.3s linear;
-}
-
-.card img {
-	width: 100%;
-	height: 220px;
-}
-
-/*
-.texto {
-	margin-top: -20px;
-	margin-left: 3%;
-	font-size: 1rem;
-}*/ 
-
- button {
-	width: 7rem;
-	height: 1.5rem;
-	border-radius: 6px;
-	border: 1px solid white;
-	background-color:  rgba(0, 91, 150, 0.9);
-	float: right;
-	margin-right: 1rem;
-
-}
-
-.feminismo button a, .saúde button a, .tecnologia button a, .artes button a{
-	text-decoration: none;
-	color: black;
-	transition: all 0.3s linear;
-}
-
-.feminismo button {
-	
-	background-color: rgba(176,143,200,0.7);
-	border: 1px solid  rgba(176,143,200,0.7);
-}
-
-
-.saúde button {
-	background-color: rgba(186,225,255,0.7);
-	border: 1px solid  rgba(186,225,255,0.7);
-}
-
-
-
-.tecnologia button {
-	background-color: rgba(139, 241, 139, 0.7);
-	border: 1px solid  rgba(139, 241, 139, 0.7);
-}
-
-
-.artes button {
-	background-color: rgba(255, 233, 129, 0.7);
-	border: 1px solid  rgba(255, 233, 129, 0.7);
-
-}
-
-.feminismo button:hover {
-	background-color: rgba(176,143,200,0.9);
-	border: 1px solid  rgba(176,143,200,0.9);
-}
-
-.saúde button:hover {
-	background-color: rgba(186,225,255,0.9);
-	border: 1px solid  rgba(186,225,255,0.9);
-}
-
-.tecnologia button:hover {
-	background-color: rgba(139, 241, 139, 0.9);
-	border: 1px solid  rgba(139, 241, 139, 0.9);
-
-}
-
-.artes button:hover{
-	background-color: rgba(255, 233, 129, 0.9);
-	border: 1px solid  rgba(255, 233, 129, 0.9);
-	
-}
-
-.tag1 {
-	width: 6rem;
-	margin-left: 70%; 
-	/*margin-right: .5rem!important;*/
-}
-
-.tag1 button:hover {
-	transform: scale(1.1);
-}
-
-p.last-update {
-
-	display: flex;
-	width: 100%;
-	height: 1.2rem;
-	width: 99.7%;
-	font-family: 'Mulish', sans-serif;
-	color: rgba(0,0,0,0.6);
-	font-weight: 300;
-	font-size: 85%;
-  	border: 1px solid rgba(0,0,0,0.1);
-  	text-align: justify;
-  	align-items: center;
-	margin-top: 62px; 
-	margin-bottom: 0;
-
-}
-
-
-.texto  h4 {
-	margin-left: 10px;
-}
-
-.previa-post {
-	margin-left: 10px;
-}
-
-
-.last-update-feminismo{
-	background-color: rgba(176,143,200,0.5);
-
-}
-
-.feminismo {
-	background-color: rgba(176,143,200,0.2);
-
-}
-.saúde {
-	background-color: rgba(186,225,255,0.2);
-}
-
-.last-update-saúde{
-	background-color: rgba(186,225,255,0.5);
-}
-
-.tecnologia {
-	background-color: rgba(139, 241, 139, 0.2);
-}
-
-
-.last-update-tecnologia{
-	background-color: rgba(139, 241, 139, 0.5);
-}
-
-.artes {
-	background-color: rgba(255, 233, 129, 0.2);
-}
-
-.last-update-artes {
-	background-color: rgba(255, 233, 129, 0.5);
-}
-
-
-.titulo {
-	font-weight: 500;
-	font-size: 1.2rem;
-}
-
-img	{
-	width: 80%;
-	height: 300px;
-
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body {
-	font-family: 'Lato', sans-serif;
+	background-color: rgb(238,238,238);
 	margin: 0;
 }
 
+/*container*/
+.container {
 
+	border-radius: 7px;
+
+	display: grid;
+	margin-right: auto;
+	margin-left: auto;
+
+	margin-top: 55px;
+	width: 70%;
+
+	min-width: 600px;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+
+.img-post {
+
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 360px;
+	height: 400px;
+	margin-top: 20px;
+}
+
+img.img-post {
+	border-radius: 8px;
+	
+
+}
+
+.title {
+	padding: 10px 35px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 40px;
+}
+
+audio {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 40px;
+}
+
+.text {
+	padding-top: 30px;	
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+p {
+	font-family:  sans-serif;
+	line-height: 1.6;
+	font-size: 17px;
+	text-align: justify;
+}
+
+video {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 400px;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 10px;
+}
+
+
+.data-post {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	
+
+	text-align: right;
+	padding-bottom: 0;
+}
+
+p.data-post {
+	font-size: 12px;
+	font-family: sans-serif;
+	color: rgba(0,0,0,0.7);
+}
+
+/*Fazer comentários*/
+.comments {
+
+	border-radius: 7px;
+
+	display: grid;
+	margin-right: auto;
+	margin-left: auto;
+
+	margin-top: 50px;
+	margin-bottom: 25px;
+	width: 70%;
+
+	min-width: 600px;
+	background-color: white;
+}
+
+form {
+	padding-top: 20px;
+	font-family:  sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	display: grid;
+}
+
+h4 {
+	text-align: center;
+	font-size: 20px;
+}
+
+.dados {
+	display: inline-flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.dados input {
+	margin: 20px;
+	width: 40%;
+	height: 40px;
+}
+
+.comment {
+
+	margin-right: auto;
+	margin-left: auto;
+	width: 88%;
+
+}
+
+textarea {
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 50px;
+	font: 400 13.3333px Arial;
+
+}
+
+.comments textarea, .comments input {
+	font-size: 15px;
+	text-align: left;
+	border-width: 1.4px;
+	border-radius: 5px;
+	border-color: rgba(0,0,0,0.3);
+}
+
+.comment-button {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 9px;
+	margin-right: auto;
+	margin-left: auto;
+
+	font-family: sans-serif;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 4px 10px;
+	color: white;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0);
+}
+
+.comment-button:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+
+/*comentarios feitos*/
+
+
+.comments-container {
+
+	min-width: 585px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+
+	background-color: white;
+	width: 69%;
+	margin-right: auto;
+	margin-left: auto;
+
+
+	border-radius: 7px;
+}
+
+
+.comentario {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 15px;
+	background-color: rgba(0,0,0,0.1);
+	display: grid;
+	border-radius: 10px;
+	height: 100px;
+	align-items: center;
+	
+}
+
+.dados-comments-container {
+	width: 30%;
+	display: flex;
+
+	margin: 10px;
+	margin-top: -10px;
+}
+
+.comment-text {
+	margin: 10px;
+	margin-top: -30px;
+} 
+
+h6,  p.data, p.dot {
+
+	font-family: sans-serif;
+	font-weight:300;
+	font-size: 13px;
+	margin-right: 10px;
+	color: rgba(0,0,0,0.7);
+}
+
+h6 {
+	margin-top: 12px;
+
+}
+
+hr {
+	width: 80%;
+}
+
+.comments-container h4 {
+	font-family:  sans-serif;
+	text-align: left;
+	
+	padding-bottom: 10px;
+	padding-top: 40px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+p.data {
+
+	margin-top: 10px;
+
+	font-size: 12px;
+}
+
+p.dot {
+	margin-top: 10px;
+
+	font-size: 12px;
+}
+
+/*
+h6 {
+	margin-top: 50%;
+	font-family: sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+
+
+	border-style: solid ;
+	border-radius: 7px;
+	padding: 10px;
+
+	border-width: 1.5px;
+	border-color: rgba(0,0,0,0.4);
+
+	width: 90px;
+}
+/*
+
+
+
+
+h6 , p.data  {
+	font-family: sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+
+
+	border-style: solid ;
+	border-radius: 7px;
+	padding: 10px;
+
+	border-width: 1.5px;
+	border-color: rgba(0,0,0,0.4);
+
+
+	margin-right: 10px;
+}
+*/
 
 /*footer*/
 
@@ -473,7 +579,6 @@ footer	{
 	color: white;
 	width: 100%;
 	height: 85px;
-	background-color: rgba(36, 142, 56);
 	display: flex;
 }
 
@@ -523,638 +628,3 @@ footer img{
 	text-align: center;
 }
 
-
-.pesquisar-media {
-	display: none;
-}
-
-.dropdown-media-feminismo, .dropdown-media-saúde, .dropdown-media-tecnologia ,.dropdown-media-artes {
-	display: none; 
-}
-
-.img-tema-media {
-	display: none;
-}
-
-.box-opcoes-media {
-	display: none;
-}
-
-
-
-
-/*media-query*/
-/*responsividade*/
-@media only screen and (min-width: 959px) and (max-width: 1024px) {
-
-	li {
-		font-size: 0.50cm;
-		padding-left:15px; 	
-	}
-
-	li a {
-		
-		padding-top: 14px ;
-		padding-bottom: 14px;
-		padding-left: 14px;
-		padding-right:14px; 	
-	}
-
-	#last-a {
-		margin-right: -90px;
-	}
-
-.cards {
-		width: 80%;
-		background-color: white;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 40px;
-		padding-bottom: 10px;
-		padding-top: 10px;
-	}
-
-	hr {
-		width: 95%;
-	}
-
-	.card {
-		width: 43%;
-	}
-
-	.tag1 button {
-		width: 112px;
-		margin-right: 20%;
-	}
-
-	p.last-update {
-		margin-top: 62px;
-	}
-
-
-	footer p {
-		margin-left: 10px;
-		width: 20%;
-		font-size: 1rem;
-	}
-
-
-
-	footer img{
-		width: 1.8rem;
-		height: 1.8rem;
-	  margin: 10px;
-	}
-
-	.footer-imgs {
-	  width: 30%;
-	}
-
-
-}
-
-@media only screen and (max-width: 959px) {
-
-	.opcoes-feminismo, .opcoes-saúde, .opcoes-artes, .opcoes-tecnologia  {
-		display: none;
-	}
-
-	.pesquisar-media {
-		display: block;
-		
-		}
-
-	.dropdown-media-feminismo, .dropdown-media-saúde, .dropdown-media-tecnologia ,.dropdown-media-artes {
-		display: block; 
-	}
-
-	.img-tema-media {
-		display: block;
-	}
-
-	.box-opcoes-media {
-		display: block;
-	}
-	/*dropdawn*/
-
-	.dropdown-media-feminismo, .dropdown-media-saúde, .dropdown-media-tecnologia ,.dropdown-media-artes{
-		position: absolute;
-	  display: block;
-	  width: 50px;
-	  height: 56px;
-		margin-left: 60px;
-		border: none;
-	}
-
-	.dropdown-media-feminismo button {
-		background-color: red;
-	}
-
-	 button#drop-a.box-opcoes-feminismo, button#drop-a.box-opcoes-saúde, button#drop-a.box-opcoes-tecnologia, button#drop-a.box-opcoes-artes   {
-		padding: 0;
-		width: 50px;
-	  height: 56px;
-		border: none;
-		margin-right: 0;
-		background-color: rgba(0,0,0,0.0);
-	}
-
-	.box-opcoes-feminismo button, .box-opcoes-saúde button, .box-opcoes-artes button, .box-opcoes-tecnologia button {
-		background-color: rgb(36, 142, 56);
-		border: none;
-		
-	}
-
- 	.dropdown-media-feminismo img, .dropdown-media-saúde img, .dropdown-media-tecnologia img,.dropdown-media-artes img{  	
- 		
- 		height: 40px;
-  	width: 40px;
-  	margin-top: 4px;
-  	margin-bottom: 3px;
-  	box-shadow: 0px 0px;
- 	}
-
- 	.dropdown-media-feminismo img {
- 		background-color: #803387;
- 	}
-
- .dropdown-media-artes img{
- 		background-color: #E66820
- 	}
-
- 	.dropdown-media-tecnologia img{
- 		background-color: rgb(36, 142, 30);
- 	}
-
-
- 	.dropdown-media-saúde img{
- 		background-color: rgb(0, 91, 150);
- 	}
-
-	#dropdown-content-feminismo, 	#dropdown-content-saúde , 	#dropdown-content-artes, 	#dropdown-content-tecnologia {
-		margin-top: 50px;
-		text-align: center;
-	  display: none; /*nao exibir opções antes do hover*/
-	  position: fixed;
-	  background-color:red;
-	  border-radius:  0px 7px 7px 7px;
-	  padding: 0;
-	  width: 120px;
-	  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
-	  z-index: 1;
-
-	}
-
-	#dropdown-content-feminismo, 	#dropdown-content-feminismo button {
-		background-color: #803387;
-	}
-
-	#dropdown-content-saúde, 	#dropdown-content-saúde button {
-		background-color: rgb(0, 91, 150);
-	}
-
-	#dropdown-content-artes, 	#dropdown-content-artes button{
-
- 		background-color: #E66820
-	}
-
-	#dropdown-content-tecnologia, 	#dropdown-content-tecnologia button {
- 		background-color: rgb(36, 142, 30);
-
-	}
-
-	.dropdown-content-temas-feminismo {
-	 
-		background-color: #903390;
-	}
-
-	.dropdown-content-temas-saúde {
-
-	  background-color: rgb(0, 91, 130);
-	}
-
-	.dropdown-content-temas-artes {
-
-		background-color: #E66807;
-
-	}
-
-	.dropdown-content-temas-tecnologia {
-	 
-		background-color: rgb(40, 152, 10);
-	}
-
-	button {
-		margin-right: 0;
-	}
-
-	a.box-opcoes-feminismo, button.box-opcoes-feminismo, a.box-opcoes-saúde, button.box-opcoes-saúde, a.box-opcoes-tecnologia, a.box-opcoes-artes {
-
-		color: white;
-	  text-decoration: none;
-	  display: block;
-	  font-size: 16.5px;
-	  font-family: 'Lato', sans-serif;
- 	 	font-weight: 400;
-		border: none;
-		padding-left: 0;
-		margin-right: 0;
-		padding-bottom: 10px;
-		padding-top: 10px;
-		width: 120px;
-
-	}
-
-	button.box-opcoes-temas {
-		font-size: 17px;
-	  font-family: 'Lato', sans-serif;
- 	 	font-weight: 400;
-		padding-bottom: 10px;
-		padding-top: 0;
-		border-radius: 0;
-		height: 41px;
-		width: 120px;
-		margin-left: 0;
-		border: none;
-		color: white;
-	}
-
-	 #dropdown-content-feminismo button, #dropdown-content-saúde button, #dropdown-content-tecnologia button,{
-		border: none;
-		color: white;
-
-	}
-
-	.box-opcoes-temas a {
-		width: 120%;
-	}
-
-	/*dropdown temas*/
-
-	.dropdown-content-temas-feminismo, .dropdown-content-temas-saúde, .dropdown-content-temas-tecnologia, .dropdown-content-temas-artes {
-		margin-left: 90px;
-	  display: none; /*nao exibir opções antes do hover*/
-	  position: absolute;
-	  width: 100px;
-	  border-radius:  0px 7px 7px 7px;
-	  /*min-width: 160px;*/
-	  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
-	  z-index: 1;
-	}
-
-	.dropdown-content-temas-feminismo a, .dropdown-content-temas-saúde a, .dropdown-content-temas-tecnologia a, .dropdown-content-temas-artes a {
-	  color: white;
-	  padding-bottom: 10px;
-		padding-top: 10px;
-	  text-decoration: none;
-	  display: block;
-	  font-size: 15px;
-		font-family: 'Lato', sans-serif;
-	 	font-weight: 400;
-	}
-
-	#temas-a {
-		width: 100%;
-	}
-
-	.dropdown-content-temas a:hover {
-		background-color: rgba(34,170,34,0.9);
-
-
-	  border-radius:  0px 7px 7px 7px;
-	}
-
-	.pesquisar-media {
-		position: fixed;
-		margin-left: 35%;
-		margin-top: 12.5px;
-		width: 280px;
-		height: 50px;
-	}
-
-	.input-media {
-		width: 88%;
-		height: 30px;
-		border: none;
-		border-radius: 4px;
-	}
-
-	.button-media-feminismo, .button-media-saúde, .button-media-artes, .button-media-tecnologia{
-		height: 30px;
-		width: 30px;
-		color: white;
-		border-radius: 4px;
-		border: none;
-		background-color: rgba(0,0,0,0.0);
-		margin-top: 2px;
-
-	}
-
-	.button-media-feminismo img, .button-media-artes img, .button-media-saúde img, .button-media-tecnologia img    {
-		width: 25px;
-		height: 25px;
-		box-shadow: 0px 0px;
-	}
-
-	.img-tema-media {
-		margin-top: 7px;
-		position: fixed;
-		margin-left: 90%;
-		
-	}
-
-	.img-tema-media img {
-		width: 50px;
-		height: 50px;
-		box-shadow: 0px 0px;
-		margin-top: 3px
-		background-color:red;
-	}
-
-	/*cards*/
-
-	.cards {
-		margin-top: 60px;
-		width: 80%;
-		background-color: white;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 40px;
-		padding-bottom: 10px;
-		padding-top: 10px;
-	}
-
-	hr {
-		width: 95%;
-	}
-
-	.card {
-		width: 43%;
-	}
-
-	.tag1 button {
-		width: 112px;
-		margin-right: 20%;
-	}
-
-
-	.faminismo button a, .saúde button a, .tecnologia button a, .artes button a {
-		color: rgba(0,0,0,0.7);
-	}
-
-	footer p {
-		width: 25%;
-		font-size: 0.9rem;
-	}
-
-
-	footer img{
-		width: 1.6rem;
-		height: 1.6rem;
-	  margin: 10px;
-	}
-
-	.footer-imgs {
-	  width: 42%;
-	}
-
-	p.last-update {
-		margin-top: 62px;
-	}
-
-}
-
-@media only screen and (max-width: 817px) {
-
-	/*cards*/
-
-	.cards {
-		width: 85%;
-		padding-left: 10px;
-		padding-bottom: 10px;
-		padding-top: 10px;
-	}
-
-	h4 {
-		margin-top: 12px;
-	}
-
-	hr {
-		width: 95%;
-	}
-
-	.card {
-		width: 45%;
-		height: 400px;
-	}
-
-	.tag1 button {
-
-		margin-top: -5px;
-	}
-
-	p.last-update {
-		margin-top: 52px;
-	}
-
-	footer p {
-		width: 20%;
-		font-size: 0.85rem;
-	}
-
-	.footer-imgs {
-	  width: 40%;
-	}
-
-}
-
-
-@media only screen and (min-width: 746px) and (max-width: 774px) {
-
-	.cards {
-		width: 90%;
-	}
-
-	.card {
-		font-size: 95%;
-		height: 380px;
-	}
-
-	.card img {
-		height: 200px;
-	}
-
-	.tag1 button {
-
-		margin-top: 0px;
-	}
-
-	.tag1 a {
-		font-size: 13.5px;
-
-	}
-
-	p.last-update {
-		margin-top: 55px;
-	}
-
-	footer p {
-		width: 25%;
-		font-size: 0.85rem;
-	}
-
-	footer img{
-		width: 1.5rem;
-		height: 1.5rem;
-	  margin: 10px;
-	}
-
-	.footer-imgs {
-	  width: 45%;
-	}
-
-}
-
-
-@media only screen and (max-width: 746px) {
-
-	.cards {
-		text-align: center;
-
-	}
-
-	.card {
-		text-align: left;
-		width: 60%;
-		max-width: 340px;
-		min-width: 320px;
-	} 
-
-	h1 {
-		text-align: left;
-	}
-
-	footer p {
-		width: 30%;
-		font-size: 0.85rem;
-	}
-
-	footer img{
-		width: 1.5rem;
-		height: 1.5rem;
-	  margin: 10px;
-	}
-
-	.footer-imgs {
-	  width: 42%;
-	}
-
-}
-
-
-@media only screen and (max-width: 570px) {
-	
-	.dropdown-media-feminismo, .dropdown-media-saúde, .dropdown-media-tecnologia ,.dropdown-media-artes{
-	
-	  width: 40px;
-	  height: 46px;
-		margin-left: 70px;
-	}	
-
-	.pesquisar-media {
-
-		margin-left: 27%;
-		margin-top: 12.5px;
-		width: 280px;
-		height: 50px;
-	}
-
-	.input-media {
-		width: 88%;
-		height: 30px;
-	}
-
-	.button-media-feminismo, .button-media-saúde, .button-media-artes, .button-media-tecnologia{
-		height: 30px;
-		width: 30px;
-		margin-top: 2px;
-	}
-
-	.button-media-feminismo img, .button-media-artes img, .button-media-saúde img, .button-media-tecnologia img    {
-		width: 25px;
-		height: 25px;
-	}
-
-	footer p {
-		width: 45%;
-		font-size: 0.7rem;
-	}
-
-	footer img{
-		width: 1.3rem;
-		height: 1.3rem;
-	  margin: 10px;
-	}
-
-	.footer-imgs {
-		margin-top: 30px;
-	  width: 80%;
-	}
-
-}
-
-.img-tema-mobile {
-	display: none;
-}
-
-@media only screen and (max-width: 470px) {
-	body{
-		min-width: 400px;
-	}
-
-	.cards {
-		min-width: 350px;
-	}
-
-	.img-tema-media {
-		display: none;
-	}
-
-	.img-tema-mobile {
-		display: block;
-	}
-	
-	.pesquisar-media {
-
-		margin-left: 30%;
-		margin-top: 12.5px;
-		width: 270px;
-		height: 50px;
-	}
-	
-	.input-media {
-		width: 85%;
-		height: 30px;
-	}
-
-	.header {
-		width: 100%;
-		height: 80px;
-	}
-
-	.img-tema-mobile img {
-		width: 47px;
-		height: 47px;
-		float: right;
-		margin-top: -57px;
-		margin-right: 15px;
-	}
-
-	h1 {
-		width: 75%;
-	}
-
-	p.last-update {
-		margin-top: 50px;
-	}
-}
