@@ -488,10 +488,7 @@ footer img{
 /*responsividade*/
 @media only screen and (min-width: 959px) and (max-width: 1024px) {
 	
-	.card{
-		font-size: 18px;
-		height: 430px;
-	}
+
 
 	.tag1 {
 		width: 6.2rem;
@@ -506,6 +503,24 @@ footer img{
 	p.last-update {
 		margin-top: 10px; 
 		margin-bottom: 0;
+	}
+
+	.cards{
+		padding: 0;
+		text-align: center;
+		margin-left: 5px;
+		margin-right: 0;
+		padding-left: 20px;
+	}
+
+	.card{
+		font-size: 18px;
+		height: 430px;
+		text-align: left;
+	}
+
+	h1 {
+		text-align: left;
 	}
 }
 
