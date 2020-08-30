@@ -121,7 +121,17 @@ module.exports = {
 
             const comments = results[0];
 
-            return res.json({ post, video, images, audio, comments });
+            for (let i = 0; i < comments.length; i++) {
+                let datetime = new Date(comments[i].created_at);
+                let convert = date(datetime.getTime());
+                comments[i].created_at = `${convert.format} às ${convert.hourFormat}`;
+    
+                datetime = new Date(comments[i].updated_at);
+                convert = date(datetime.getTime());
+                comments[i].updated_at = `${convert.format} às ${convert.hourFormat}`;
+            }
+
+            return res.render('postagens/post', { post, video, images, audio, comments });
         } catch (error) {
             res.send('Algo deu errado!');
         }
