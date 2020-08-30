@@ -49,7 +49,9 @@ module.exports = {
 
     },
     about(req, res){
-
         return res.render('sobre/sobre');
+    },
+    contact(req, res){
+        return res.send('Página de contato');
     }
 }

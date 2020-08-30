@@ -18,6 +18,7 @@ routes.delete('/posts/:id', PostController.delete);
 routes.get('/', SiteController.index);
 routes.get('/temas', SiteController.category);
 routes.get('/sobre', SiteController.about);
+routes.get('/contato', SiteController.contact);
 
 //POSTS COMMENTS
 routes.post('/postcomment/:postId', PostCommentController.post);
