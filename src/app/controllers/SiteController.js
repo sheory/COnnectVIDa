@@ -47,5 +47,9 @@ module.exports = {
 
          return res.render('temas/temas', { posts, subjects });
 
+    },
+    about(req, res){
+        
+        return res.render('sobre/sobre');
     }
 }

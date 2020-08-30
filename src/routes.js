@@ -16,5 +16,6 @@ routes.delete('/posts/:id', PostController.delete);
 //SITE
 routes.get('/', SiteController.index);
 routes.get('/temas', SiteController.category);
+routes.get('/sobre', SiteController.about);
 
 module.exports = routes;
