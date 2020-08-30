@@ -342,6 +342,15 @@ video {
 	border-radius: 10px;
 }
 
+iframe{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 400px;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 10px;
+}
+
 
 .data-post {
 	width: 80%;
