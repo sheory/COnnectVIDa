@@ -3,6 +3,7 @@ const routes = express.Router();
 
 const SiteController = require('./app/controllers/SiteController');
 const PostController = require('./app/controllers/PostController');
+const PostCommentController = require('./app/controllers/PostCommentsController');
 
 
 
@@ -17,5 +18,8 @@ routes.delete('/posts/:id', PostController.delete);
 routes.get('/', SiteController.index);
 routes.get('/temas', SiteController.category);
 routes.get('/sobre', SiteController.about);
+
+//POSTS COMMENTS
+routes.post('/postcomment/:postId', PostCommentController.post);
 
 module.exports = routes;

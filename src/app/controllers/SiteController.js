@@ -20,7 +20,7 @@ module.exports = {
 
         results = await Post.getPostsSubjects();
         const subjects = results[0];
-
+        
        return res.render('main/index', { posts, subjects });
     },
     async category(req, res) {
@@ -49,7 +49,7 @@ module.exports = {
 
     },
     about(req, res){
-        
+
         return res.render('sobre/sobre');
     }
 }

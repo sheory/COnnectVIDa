@@ -1,4 +1,7 @@
 const Post = require('../models/Post');
+const File = require('../models/File');
+const PostComment = require('../models/PostComment');
+const { date } = require('../../libs/utils');
 
 module.exports = {
     async index(req, res) {
@@ -24,10 +27,31 @@ module.exports = {
 
             await Post.create(req.body);
 
-            const results = await Post.findLastInsert();
+            let results = await Post.findLastInsert();
             const post = results[0][0];
 
-            return res.json({ post });
+            const filesPromise = req.body.files.map(file => File.create(file, post.id));
+
+            await Promise.all(filesPromise);
+
+            let video;
+            const images = [];
+            let audio;
+
+            results = await File.all(post.id);
+
+            for (let i = 0; i < results[0].length; i++) {
+                if (results[0][i].type === 'image') {
+                    images.push(results[0][i]);
+                } else if (results[0][i].type === 'video') {
+                    video = results[0][i];
+                } else if (results[0][i].type === 'audio') {
+                    audio = results[0][i];
+                }
+            }
+
+            return res.json({ post, video, images, audio });
+
         } catch (error) {
             return res.send("Algo deu errado!");
         }
@@ -69,7 +93,35 @@ module.exports = {
             results = await Post.findById(req.params.id);
             const post = results[0][0];
 
-            return res.render('postagems/post', { post });
+            let video;
+            const images = [];
+            let audio;
+
+            results = await File.all(post.id);
+
+            for (let i = 0; i < results[0].length; i++) {
+                if (results[0][i].type === 'image') {
+                    images.push(results[0][i]);
+                } else if (results[0][i].type === 'video') {
+                    video = results[0][i];
+                } else if (results[0][i].type === 'audio') {
+                    audio = results[0][i];
+                }
+            }
+
+            let datetime = new Date(post.created_at);
+            let convert = date(datetime.getTime());
+            post.created_at = `${convert.format} às ${convert.hourFormat}`;
+
+            datetime = new Date(post.updated_at);
+            convert = date(datetime.getTime());
+            post.updated_at = `${convert.format} às ${convert.hourFormat}`;
+
+            results = await PostComment.all(post.id);
+
+            const comments = results[0];
+
+            return res.json({ post, video, images, audio, comments });
         } catch (error) {
             res.send('Algo deu errado!');
         }

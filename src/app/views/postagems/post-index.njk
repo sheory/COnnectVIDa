@@ -64,18 +64,18 @@
 </div>
 
 <div class="comments"> 
-	<form>
+	<form method="POST" action="/postcomment/{{post.id}}">
 		<h4>DEIXE SEU COMENTÁRIO</h4>
 		<div class="dados">
-			<input type="text" placeholder="Seu nome">
-   		<input type="text" placeholder="Seu email">
+			<input type="text" placeholder="Seu nome" name="name" required>
+   		<input type="email" placeholder="Seu email" name="email" required>
 		</div>
 
   	<div class="comment">
-  		<textarea rows="4"  placeholder="Deixe aqui seu comentário..."></textarea>
+  		<textarea rows="4"  placeholder="Deixe aqui seu comentário..." name="body" required></textarea>
   	</div>
   	
-  	<button class="comment-button">Enviar Comentário</button>
+  	<button type="submit" class="comment-button">Enviar Comentário</button>
 	</form>
 </div>
 
