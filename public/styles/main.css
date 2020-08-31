@@ -336,13 +336,13 @@ a.tag {
 	margin-left: 3%;
 }
 
-.feminismo button a, .saúde button a, .tecnologia button a, .artes button a{
+.literatura button a, .saúde button a, .tecnologia button a, .artes button a{
 	text-decoration: none;
 	color: rgba(0,0,0,0.7);
 	transition: all 0.3s linear;
 }
 
-.feminismo button {
+.literatura button {
 	
 	background-color: rgba(176,143,200,0.7);
 	border: 1px solid  rgba(176,143,200,0.7);
@@ -365,7 +365,7 @@ a.tag {
 
 }
 
-.feminismo button:hover {
+.literatura button:hover {
 	background-color: rgba(176,143,200,0.9);
 	border: 1px solid  rgba(176,143,200,0.9);
 }
@@ -399,21 +399,21 @@ a.tag {
 } 
 
 
-.feminismo, .artes, .saúde, .tecnologia {
+.literatura, .artes, .saúde, .tecnologia {
 
 	 height: 410px;
 }
 
-.feminismo {
+.literatura {
 	background-color: rgba(176,143,200,0.2);
 
 }
-.last-update-feminismo, .last-update-saúde, .last-update-tecnologia , .last-update-artes {
+.last-update-literatura, .last-update-saúde, .last-update-tecnologia , .last-update-artes {
 	margin-left: -10px;
 	width: 104%;
 }
 
-.last-update-feminismo{
+.last-update-literatura{
 	background-color: rgba(176,143,200,0.5);
 
 }
