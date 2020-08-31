@@ -265,7 +265,13 @@ body {
 	width: 75%;
 }
 
+h4 a {
+	text-decoration: none;
+}
+
 .card {
+
+	text-decoration: none;
   width: 308px;
   height: 412px;
   margin-right: 10px;
@@ -277,11 +283,20 @@ body {
   font-weight: 300;
   font-size: 100%;
 	transition: all 0.3s linear;
+
+
+	color: black;
 }
+
 
 h4 {
 	font-size: 19.7px;
 	margin-top: 10px;
+	color: black;
+}
+
+a.title {
+	color: black;
 }
 
 h1 {
@@ -290,6 +305,7 @@ h1 {
 	font-weight: 500; 
 	font-size: 25px;
 
+	color: black;
 }
 
 hr{
@@ -794,6 +810,18 @@ h4.img-title {
 
 	hr{
 		width: 82%;
+	}
+
+	a.title {
+		text-decoration: none;
+
+    text-decoration-line: none;
+	}
+
+ 	a  {
+		text-decoration: none;
+
+    text-decoration-line: none;
 	}
 	 
 	/*end cards*/
