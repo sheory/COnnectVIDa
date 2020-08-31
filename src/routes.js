@@ -19,6 +19,7 @@ routes.get('/', SiteController.index);
 routes.get('/temas', SiteController.category);
 routes.get('/sobre', SiteController.about);
 routes.get('/contato', SiteController.contact);
+routes.post('/busca', SiteController.search);
 
 //POSTS COMMENTS
 routes.post('/postcomment/:postId', PostCommentController.post);

@@ -1,0 +1,30 @@
+{% extends 'main/layout.njk' %}
+
+
+{% block content %}
+<div class="cards">
+
+		<h1> Você pesquisou por "{{filter}}" <hr></h1>
+
+		{%for post in posts%}
+		<div class="card">
+			<div class="{{post.subject}}"> 
+				<img src="{{post.image}}">
+				<div class="texto">
+					<h4> <b> {{post.title}} </b></h4>
+					<p> {{post.subtitle}}</p>
+					<div class="tag1">
+						<button> <a href="temas?category_name={{post.subject}}"> +{{post.subject}}</a></button> 
+					</div>
+					
+					{%if post.subject %}
+						<div class="last-update-{{post.subject}}">
+		   			<p class="last-update" >{{post.updated_at}}</p>
+		   			</div>
+		   		{%endif%}
+				</div>
+			</div>						
+		</div>
+		{%endfor%}
+	</div>
+{% endblock %}

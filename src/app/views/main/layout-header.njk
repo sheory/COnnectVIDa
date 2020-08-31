@@ -16,10 +16,12 @@
 				 	</li>
 
 				 	<li ><a href="/sobre"  class="box-opcoes">Sobre</a></li>
-				 	<li ><a href=""  class="box-opcoes" id="last-a">Contato</a></li>
+				 	<li ><a href="/contato"  class="box-opcoes" id="last-a">Contato</a></li>
 				 	<div class="pesquisar">
-				 		<input class="input" type="search" placeholder="Buscar no blog" >
-				 		<button class="button">Buscar</button>
+				 		<form action="/busca" method="POST">
+						  <input class="input" type="search" placeholder="Buscar no blog" name="filter">
+				 		  <button type="submit" class="button">Buscar</button>
+						</form>
 				 	</div>
 			 </ul>	
 

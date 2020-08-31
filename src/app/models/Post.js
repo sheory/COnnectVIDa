@@ -66,7 +66,9 @@ module.exports = {
         if(category){
             query = `SELECT * FROM posts WHERE subject LIKE '${category}'`;
         }else{
-            query = `SELECT * FROM posts`;
+            query = `SELECT * FROM posts WHERE title LIKE '%${filter}%'
+            OR subtitle LIKE '%${filter}%' OR subject LIKE '%${filter}%' 
+            OR body LIKE '%${filter}%'`;
         }
 
         return db.promise().query(query);
