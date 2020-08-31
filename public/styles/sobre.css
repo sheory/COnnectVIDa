@@ -437,6 +437,22 @@ footer img{
     margin-left: 0;
   }
 
+  
+  footer p {
+    width: 45%;
+    font-size: 0.7rem;
+  }
+
+  footer img{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 10px;
+  }
+
+  .footer-imgs {
+    margin-top: 30px;
+    width: 80%;
+  }
 }
 
 
