@@ -30,7 +30,7 @@ module.exports = {
         return db.promise().query(`SELECT * FROM posts WHERE id = ${id}`);
     },
     all() {
-        return db.promise().query('SELECT * FROM posts');
+        return db.promise().query('SELECT * FROM posts ORDER BY created_at DESC');
     },
     findRecents() {
         return db.promise().query('SELECT * FROM posts ORDER BY created_at DESC LIMIT 9');
@@ -64,11 +64,11 @@ module.exports = {
         let query = '';
 
         if(category){
-            query = `SELECT * FROM posts WHERE subject LIKE '${category}'`;
+            query = `SELECT * FROM posts WHERE subject LIKE '${category}' ORDER BY created_at DESC`;
         }else{
             query = `SELECT * FROM posts WHERE title LIKE '%${filter}%'
             OR subtitle LIKE '%${filter}%' OR subject LIKE '%${filter}%' 
-            OR body LIKE '%${filter}%'`;
+            OR body LIKE '%${filter}%' ORDER BY created_at DESC`;
         }
 
         return db.promise().query(query);

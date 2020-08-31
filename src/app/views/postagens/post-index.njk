@@ -18,7 +18,9 @@
     <input type="hidden" id="post-body-input" value="{{post.body}}">
 
   {% if video %}
-    <iframe src="{{video.src}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="text-align: center;">
+      <iframe src="{{video.src}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   {% endif %}
   <p class="data-post">Publicado em:
     {{post.updated_at}}</p>
