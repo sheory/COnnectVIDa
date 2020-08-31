@@ -1,94 +1,101 @@
 <nav class="nav-bar">
-	<div class="nav-bar-{{post.subject}}" id="desktop">
-		<img class="logo" src="assets/logo.png">
+  <div class="nav-bar-{{post.subject}}" id="desktop">
+    <img class="logo" src="assets/logo.png">
 
-		<div class="opcoes"> 
-			<ul>
-				<li ><a href="/"  class="box-opcoes-{{post.subject}}">Início</a></li>
-				<li >
-					<div class="dropdown"> 
-						<a id="drop-a" href=""  class="box-opcoes-{{post.subject}}">Temas</a>
-							<div class="dropdown-content">
-									<div class="dropdown-content-{{post.subject}}">
+    <div class="opcoes">
+      <ul>
+        <li >
+          <a href="/" class="box-opcoes-{{post.subject}}">Início</a>
+        </li>
+        <li >
+          <div class="dropdown">
+            <a id="drop-a" href="" class="box-opcoes-{{post.subject}}">Temas</a>
+            <div class="dropdown-content">
+              <div class="dropdown-content-{{post.subject}}">
 
-									<a href="/temas?category_name=Artes">Arte</a>
-									<a href="/temas?category_name=Literatura">Literatura</a>
-									<a href="/temas?category_name=Saúde">Saúde</a>
-									<a href="/temas?category_name=Tecnologia" >Tecnologia</a>
-								</div>
-								 
-							</div>
-					</div>
-				</li>
-				<li ><a href="/sobre"  class="box-opcoes-{{post.subject}}">Sobre</a></li>
-				<li ><a href="/contact"  class="box-opcoes-{{post.subject}}" id="last-a">Contato</a ></li>
+                <a href="/temas?category_name=Artes">Arte</a>
+                <a href="/temas?category_name=Literatura">Literatura</a>
+                <a href="/temas?category_name=Saúde">Saúde</a>
+                <a href="/temas?category_name=Tecnologia">Tecnologia</a>
+              </div>
 
-				<div class="img-tema">
-					<img src="/assets/{{post.subject}}.png">
-				</div>
+            </div>
+          </div>
+        </li>
+        <li >
+          <a href="/sobre" class="box-opcoes-{{post.subject}}">Sobre</a>
+        </li>
+        <li >
+          <a href="/contact" class="box-opcoes-{{post.subject}}" id="last-a">Contato</a >
+        </li>
 
-				<div class="pesquisar">
-					<input class="input" type="search" placeholder="Buscar no blog" >
-					<button class="button">Buscar</button>
-				</div>
-			</ul>	
+        <div class="img-tema">
+          <img src="/assets/{{post.subject}}.png">
+        </div>
 
-		</div>
-	</div>
+        <div class="pesquisar">
+          <form action="/busca" method="POST">
+            <input class="input" type="search" placeholder="Buscar no blog" name="filter">
+            <button type="submit" class="button">Buscar</button>
+          </form>
+        </div>
+      </ul>
 
-	<!--	mobile version-->
-	<img id="mobile-logo" class="logo" src="/assets/logoif.jpg">
-	<div  id="mobile-nav-bar" class="nav-bar-{{post.subject}}">
+    </div>
+  </div>
 
-		<div class="dropdown-media-{{post.subject}}"> 
-		<button onclick="show_hide()" id="drop-a"  class="box-opcoes-{{post.subject}}"><img src="/assets/menu.png"></button>	
-		
-		<div class="dropdown-content-media-{{post.subject}}" id="dropdown-content-{{post.subject}}" style="display: none;">
-			<a href="/"  class="box-opcoes-{{post.subject}}" >Início</a>
-			<div class="dropdown-temas"> 
-				<button onclick="show_hide_temas()" href=""  class="box-opcoes-temas">Temas</button>
-			 	<div class="dropdown-content-temas-{{post.subject}}" id="dropdown-content-temas-{{post.subject}}"  style="display: none;">
-			 	<a href="/temas?category_name=Artes">Arte</a>
-			 	<a href="/temas?category_name=Literatura">Literatura</a>
-			 	<a href="/temas?category_name=Saúde">Saúde</a>
-			 	<a href="/temas?category_name=Tecnologia">Tecnologia</a>
-				</div>
-			</div>
-			<a href="/sobre"  class="box-opcoes-{{post.subject}}">Sobre</a>
-			<a href="/contato"  class="box-opcoes-{{post.subject}}">Contato</a>
-		</div>
-	</div>
-	<div class="pesquisar-media">
-		<input class="input-media" type="search" placeholder="Buscar no blog" >
-		<button class="button-media-{{post.subject}}" ><img src="/assets/search.png"></button>
-		
-	</div>
-	<div  class="img-tema-media">
-		<img src="/assets/{{post.subject}}.png">
-	</div>
-	</div>
-	
+  <!-- mobile version-->
+  <img id="mobile-logo" class="logo" src="/assets/logoif.jpg">
+  <div id="mobile-nav-bar" class="nav-bar-{{post.subject}}">
+
+    <div class="dropdown-media-{{post.subject}}">
+      <button onclick="show_hide()" id="drop-a" class="box-opcoes-{{post.subject}}"><img src="/assets/menu.png"></button>
+
+      <div class="dropdown-content-media-{{post.subject}}" id="dropdown-content-{{post.subject}}" style="display: none;">
+        <a href="/" class="box-opcoes-{{post.subject}}">Início</a>
+        <div class="dropdown-temas">
+          <button onclick="show_hide_temas()" href="" class="box-opcoes-temas">Temas</button>
+          <div class="dropdown-content-temas-{{post.subject}}" id="dropdown-content-temas-{{post.subject}}" style="display: none;">
+            <a href="/temas?category_name=Artes">Arte</a>
+            <a href="/temas?category_name=Literatura">Literatura</a>
+            <a href="/temas?category_name=Saúde">Saúde</a>
+            <a href="/temas?category_name=Tecnologia">Tecnologia</a>
+          </div>
+        </div>
+        <a href="/sobre" class="box-opcoes-{{post.subject}}">Sobre</a>
+        <a href="/contato" class="box-opcoes-{{post.subject}}">Contato</a>
+      </div>
+    </div>
+    <div class="pesquisar-media">
+      <form action="/busca" method="POST">
+        <input class="input-media" type="search" placeholder="Buscar no blog" name="filter">
+        <button type="submit" class="button-media-{{post.subject}}"><img src="/assets/search.png"></button>
+      </form>
+
+    </div>
+    <div class="img-tema-media">
+      <img src="/assets/{{post.subject}}.png">
+    </div>
+  </div>
+
 </nav>
 
-
 <script type="text/javascript">
-	function show_hide() {
-		var click = document.getElementById("dropdown-content-{{post.subject}}");
-		if(click.style.display === "none") {
-			click.style.display = "block";
-		} else {
-			click.style.display = "none";
-		}
-	}
+  function show_hide() {
+    var click = document.getElementById("dropdown-content-{{post.subject}}");
+    if (click.style.display === "none") {
+      click.style.display = "block";
+    } else {
+      click.style.display = "none";
+    }
+  }
 
-
-function show_hide_temas() {
-		var click = document.getElementById("dropdown-content-temas-{{post.subject}}");
-		if(click.style.display === "none") {
-			click.style.display = "block";
-		} else {
-			click.style.display = "none";
-		}
-	}
-</script> 
-
+  function show_hide_temas() {
+    var click = document.getElementById("dropdown-content-temas-{{post.subject}}");
+    if (click.style.display === "none") {
+      click.style.display = "block";
+    } else {
+      click.style.display = "none";
+    }
+  }
+</script>

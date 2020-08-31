@@ -77,6 +77,6 @@ module.exports = {
         return res.render('sobre/sobre');
     },
     contact(req, res){
-        return res.send('Página de contato');
+        return res.render('contato/contato');
     }
 }

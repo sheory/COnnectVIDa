@@ -1,81 +1,86 @@
 <nav class="nav-bar">
-		<img class="logo" src="assets/logo.png">
+  <img class="logo" src="assets/logo.png">
 
-		 <div class="opcoes">
-			 <ul>
-			  <li ><a href="/"  class="box-opcoes">Inicio</a></li>
-				 	<li >
-				 		<div class="dropdown">
-				 			<a id="drop-a" href=""  class="box-opcoes">Temas</a>
-				 			<div class="dropdown-content">
-				 				<a href="temas?category_name=Artes">Arte</a>
-				 				<a href="temas?category_name=Literatura">Literatura</a>
-				 				<a href="temas?category_name=Saúde">Saúde</a>
-				 				<a href="temas?category_name=Tecnologia">Tecnologia</a>
-				 			</div>
-				 		</div>
-				 	</li>
+  <div class="opcoes">
+    <ul>
+      <li >
+        <a href="/" class="box-opcoes">Inicio</a>
+      </li>
+      <li >
+        <div class="dropdown">
+          <a id="drop-a" href="" class="box-opcoes">Temas</a>
+          <div class="dropdown-content">
+            <a href="temas?category_name=Artes">Arte</a>
+            <a href="temas?category_name=Literatura">Literatura</a>
+            <a href="temas?category_name=Saúde">Saúde</a>
+            <a href="temas?category_name=Tecnologia">Tecnologia</a>
+          </div>
+        </div>
+      </li>
 
+      <li >
+        <a href="/sobre" class="box-opcoes" id="last-a">Sobre</a>
+      </li>
+      <div class="pesquisar">
+        <form action="/busca" method="POST">
+          <input class="input" type="search" placeholder="Buscar no blog" name="filter">
+          <button type="submit" class="button">Buscar</button>
+        </form>
+      </div>
+    </ul>
 
-				 	<li ><a href="/sobre"  class="box-opcoes" id="last-a">Sobre</a></li>
-				 	<div class="pesquisar">
-				 		<input class="input" type="search" placeholder="Buscar no blog" >
-				 		<button class="button">Buscar</button>
-				 	</div>
-			 </ul>
+  </div>
 
-		 </div>
+  <!--mobile version-->
+  <div class="dropdown-media">
+    <button onclick="show_hide()" id="drop-a" class="box-opcoes"><img src="assets/menu.png"></button>
+    <div class="dropdown-content" id="dropdown-content" style="display: none;">
+      <a href="/" class="box-opcoes">Inicio</a>
+      <div class="dropdown-temas">
+        <button onclick="show_hide_temas()" href="" class="box-opcoes-temas">Temas</button>
+        <div class="dropdown-content-temas" id="dropdown-content-temas" style="display: none;">
+          <a href="temas?category_name=Artes">Arte</a>
+          <a href="temas?category_name=Literatura">Literatura</a>
+          <a href="temas?category_name=Saúde">Saúde</a>
+          <a href="temas?category_name=Tecnologia">Tecnologia</a>
+        </div>
+      </div>
+      <a href="/sobre" class="box-opcoes">Sobre</a>
 
-		 	<!--mobile version-->
-	 		<div class="dropdown-media">
-	 				<button onclick="show_hide()" id="drop-a"  class="box-opcoes"><img src="assets/menu.png"></button>
-	 			<div class="dropdown-content" id="dropdown-content" style="display: none;">
-	 				<a href="/"  class="box-opcoes">Inicio</a>
-					<div  class="dropdown-temas">
-								<button onclick="show_hide_temas()" href=""  class="box-opcoes-temas">Temas</button>
-					 			<div class="dropdown-content-temas" id="dropdown-content-temas"  style="display: none;">
-					 				<a href="temas?category_name=Artes">Arte</a>
-					 				<a href="temas?category_name=Literatura">Literatura</a>
-					 				<a href="temas?category_name=Saúde">Saúde</a>
-					 				<a href="temas?category_name=Tecnologia">Tecnologia</a>
-					 			</div>
-						</div>
-	 				<a href="/sobre"  class="box-opcoes">Sobre</a>
+    </div>
+  </div>
+  <div class="pesquisar-media">
+    <form action="/busca" method="POST">
+      <input class="input-media" type="search" placeholder="Buscar no blog" name="filter">
 
-				 	</div>
-	 			</div>
-	 			<div class="pesquisar-media">
-				 		<input class="input-media" type="search" placeholder="Buscar no blog" >
+      <div class="maior-buscar">
+        <button type="submit" class="button-media">Buscar</button>
+      </div>
 
-				 		<div class="maior-buscar">
-				 			<button class="button-media">Buscar</button>
-				 		</div>
+      <div class="menor-buscar">
+        <button type="submit"><img src="assets/search.png"></button>
+      </div>
+    </form>
 
-				 		<div class="menor-buscar">
-				 			<button ><img src="assets/search.png"></button>
-				 		</div>
-
-				</div> 
-	</nav>
+  </div>
+</nav>
 
 <script type="text/javascript">
-	function show_hide() {
-		var click = document.getElementById("dropdown-content");
-		if(click.style.display === "none") {
-			click.style.display = "block";
-		} else {
-			click.style.display = "none";
-		}
-	}
+  function show_hide() {
+    var click = document.getElementById("dropdown-content");
+    if (click.style.display === "none") {
+      click.style.display = "block";
+    } else {
+      click.style.display = "none";
+    }
+  }
 
-
-function show_hide_temas() {
-		var click = document.getElementById("dropdown-content-temas");
-		if(click.style.display === "none") {
-			click.style.display = "block";
-		} else {
-			click.style.display = "none";
-		}
-	}
+  function show_hide_temas() {
+    var click = document.getElementById("dropdown-content-temas");
+    if (click.style.display === "none") {
+      click.style.display = "block";
+    } else {
+      click.style.display = "none";
+    }
+  }
 </script>
-

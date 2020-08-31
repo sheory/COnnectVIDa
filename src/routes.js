@@ -8,9 +8,11 @@ const PostCommentController = require('./app/controllers/PostCommentsController'
 
 
 //POSTS
-routes.post('/posts', PostController.post);
 routes.get('/posts', PostController.index);
 routes.get('/posts/:id', PostController.show);
+
+//POSTS ADM
+routes.post('/posts', PostController.post);
 routes.put('/posts', PostController.put);
 routes.delete('/posts/:id', PostController.delete);
 

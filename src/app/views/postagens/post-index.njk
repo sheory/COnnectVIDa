@@ -12,8 +12,10 @@
   </audio>
 
   <div class="text">
-    <p>{{post.body}}</p>
-  </div>
+    <div id="post-body">
+      <div id="post-body-p"></div>
+    </div>
+    <input type="hidden" id="post-body-input" value="{{post.body}}">
 
   {% if video %}
     <iframe src="{{video.src}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
