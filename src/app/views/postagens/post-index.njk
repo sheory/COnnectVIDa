@@ -1,8 +1,12 @@
 <div class="container">
 
   <img class="img-post" src="{{post.image}}">
-  <h1 class="title">{{post.title}}</h1>
-
+  <div class="header">
+    <img class="tema-img-mobile" src="/assets/{{post.subject}}-black.png">
+    <h1 class="title">{{post.title}}</h1>
+    
+  </div>
+  
   <audio controls="controls">
     <source src="{{audio.src}}" type="audio/mp3" />
   </audio>
@@ -22,7 +26,8 @@
 
 <div class="comments-container">
 
-  <h4>{{comments.length}} COMENTÁRIOS</h4>
+  <h4>COMENTÁRIOS</h4>
+
   {% for comment in comments %}
     <div class="comentario">
       <div class="dados-comments-container">
