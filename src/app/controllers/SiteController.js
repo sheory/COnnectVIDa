@@ -20,8 +20,8 @@ module.exports = {
 
         results = await Post.getPostsSubjects();
         const subjects = results[0];
-        
-       return res.render('main/index', { posts, subjects });
+
+        return res.render('main/index', { posts, subjects });
     },
     async category(req, res) {
         const category = req.query.category_name;
@@ -30,25 +30,29 @@ module.exports = {
         params.category = category;
 
         let results = await Post.search(params);
-        const posts = results[0];
+        if (results[0].length > 0) {
+            const posts = results[0];
 
-        for (let i = 0; i < results[0].length; i++) {
-            let datetime = new Date(results[0][i].created_at);
-            let convert = date(datetime.getTime());
-            results[0][i].created_at = `${convert.format} às ${convert.hourFormat}`;
+            for (let i = 0; i < results[0].length; i++) {
+                let datetime = new Date(results[0][i].created_at);
+                let convert = date(datetime.getTime());
+                results[0][i].created_at = `${convert.format} às ${convert.hourFormat}`;
 
-            datetime = new Date(results[0][i].updated_at);
-            convert = date(datetime.getTime());
-            results[0][i].updated_at = `${convert.format} às ${convert.hourFormat}`;
+                datetime = new Date(results[0][i].updated_at);
+                convert = date(datetime.getTime());
+                results[0][i].updated_at = `${convert.format} às ${convert.hourFormat}`;
+            }
+
+            results = await Post.getPostsSubjects();
+            const subjects = results[0];
+
+            return res.render('temas/temas', { posts, subjects });
+        }else{
+            return res.redirect('/');
         }
 
-        results = await Post.getPostsSubjects();
-        const subjects = results[0];
-
-         return res.render('temas/temas', { posts, subjects });
-
     },
-    async search(req, res){
+    async search(req, res) {
         const filter = req.body.filter;
         const params = {};
 
@@ -73,10 +77,10 @@ module.exports = {
         return res.render('main/search', { posts, subjects, filter });
 
     },
-    about(req, res){
+    about(req, res) {
         return res.render('sobre/sobre');
     },
-    contact(req, res){
+    contact(req, res) {
         return res.render('contato/contato');
     }
 }
