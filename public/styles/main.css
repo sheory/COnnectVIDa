@@ -870,9 +870,17 @@ h4.img-title {
 		height: 1.7rem;
   	margin: 10px;
 	}
+	p.last-update {
+		margin-top: 32px; 
+
+	}
 }
 
 @media only screen and (max-width: 750px) {
+	p.last-update {
+		margin-top: 32px; 
+
+	}
 	footer .logoif {
 		display: none;
 	}
