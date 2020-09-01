@@ -1,7 +1,4 @@
 
-.temas-mensais-container {
-	display: none;
-}
 
 .nav-bar {
 	position: fixed;
@@ -464,6 +461,10 @@ a.tag {
 }
 
 
+.temas-mensais-container {
+	display: none;
+}
+
 /*footer*/
 footer	{
 	color: white;
@@ -569,6 +570,12 @@ h4.img-title {
 .pesquisar-media {
 	display: none;
 }
+
+
+.tema-semanal-container button {
+	display: none;
+}
+
 
 /*media-query*/
 /*responsividade*/
