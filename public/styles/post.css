@@ -58,7 +58,7 @@
 
 ul { 
 	text-align: center;
-	margin-top: -76px;
+	margin-top: -60px;
 	
 	padding-left: 120px;
 }
@@ -154,11 +154,18 @@ a.box-opcoes-literatura:hover {
 }
 
 .pesquisar {
+	margin-top: -17px;
+	display: flex;
+	flex-direction: row;
 	padding-top: 12px;
-	width: 15rem;
+	width: 20rem;
 	float: right;
 	margin-right: 20px;
+}
 
+button.button {
+	margin-left: 55%;
+	margin-top: -30px;
 }
 
 .img-tema {
@@ -668,6 +675,24 @@ button#drop-a.box-opcoes- {
 	}
 
 @media only screen and (max-width: 959px) {
+
+	.pesquisar {
+	margin-top: -50px;
+	}
+	input.input-media {
+		/*margin-top: -20px;*/
+	}
+
+	.pesquisar-media form {
+		margin-top: -20px;
+		display: inline-flex;
+		flex-direction: row;
+	}
+ .pesquisar-media {
+ 
+		
+	/*margin-left: 100%;*/
+}
 
 	#mobile-nav-bar {
 		display: block;
