@@ -1,7 +1,4 @@
 
-.temas-mensais-container {
-	display: none;
-}
 
 .nav-bar {
 	position: fixed;
@@ -463,6 +460,10 @@ a.tag {
 	background-color: rgba(255, 233, 129, 0.5);
 }
 
+
+.temas-mensais-container {
+	display: none;
+}
 
 /*footer*/
 footer	{
