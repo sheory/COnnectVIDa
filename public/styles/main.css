@@ -579,11 +579,6 @@ h4.img-title {
 /*media-query*/
 /*responsividade*/
 @media only screen and (min-width: 959px) and (max-width: 1025px) {
-	
-	p.last-update {
-		margin-top: 32px; 
-
-	}
 
 
 	.tag1 {
@@ -597,7 +592,7 @@ h4.img-title {
 	}
 
 	p.last-update {
-		margin-top: 10px; 
+		margin-top: 32px; 
 		margin-bottom: 0;
 	}
 
