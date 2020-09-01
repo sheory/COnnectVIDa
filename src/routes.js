@@ -4,6 +4,7 @@ const routes = express.Router();
 const SiteController = require('./app/controllers/SiteController');
 const PostController = require('./app/controllers/PostController');
 const PostCommentController = require('./app/controllers/PostCommentsController');
+const MessageController = require('./app/controllers/MessageController');
 
 
 
@@ -25,5 +26,9 @@ routes.post('/busca', SiteController.search);
 
 //POSTS COMMENTS
 routes.post('/postcomment/:postId', PostCommentController.post);
+
+//MESSAGES
+routes.post('/mensagem', MessageController.post);
+
 
 module.exports = routes;

@@ -9,6 +9,7 @@
 	<title>COnnectVIDa</title>
 
 	<link rel="stylesheet" type="text/css" href="/styles/contato.css">
+	<link rel="stylesheet" type="text/css" href="/styles/messages.css">
 	
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--barra de navegação-->
@@ -16,6 +17,17 @@
 
 </head>
 <body>
+	{% if error %}
+      <div class="toast error">
+        {{error}}
+      </div>
+    {% endif %}
+
+    {% if success %}
+      <div class="toast success">
+        {{success}}
+      </div>
+    {% endif %}
   {% include 'contato/contato-header.njk'%}
   {% include 'contato/contato-index.njk'%}
   <br>
