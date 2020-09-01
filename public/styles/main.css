@@ -575,7 +575,12 @@ h4.img-title {
 .tema-semanal-container button {
 	display: none;
 }
+@media only screen and (min-width: 1020px) and (max-width: 1030px){
+	p.last-update {
+		margin-top: 32px; 
 
+	}
+}
 
 /*media-query*/
 /*responsividade*/
