@@ -608,6 +608,13 @@ h4.img-title {
 
 @media only screen and (max-width: 959px) {
 
+
+	.pesquisar-media form {
+		margin-top: 0px;
+		display: inline-flex;
+		flex-direction: row;
+	}
+
 	.menor-buscar button {
 		display: none;
 	}
