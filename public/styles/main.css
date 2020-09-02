@@ -118,7 +118,7 @@ ul {
 
 .button {
 	color: white;
-  width: 100px;
+  width: 75px;
   padding: 5px;
   border-radius: 4px 5px;
   border: 1px solid #ced4da;
@@ -126,6 +126,7 @@ ul {
   border: 1px solid white;
   border-radius: 4px ; 
   background-color: #248e38;
+  margin-left: 5px;
   font-size: 1rem;
 }
 
