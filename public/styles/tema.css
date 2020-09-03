@@ -273,6 +273,11 @@ h4 {
 	margin-top: 10px;
 }
 
+.texto h4 {
+	
+    padding-bottom: 5px;
+}
+
 .texto {
 	height: 40%;
 	margin-left: 3%;
