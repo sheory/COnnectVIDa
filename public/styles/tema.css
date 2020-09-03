@@ -266,6 +266,25 @@ body {
 }
 
 
+.card {
+	
+  text-decoration: none;
+  width: 308px;
+  height: 409px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+  display: inline-grid;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+	transition: all 0.3s linear;
+
+
+	color: black;
+}
+
 h4 {
 	font-size: 100%;
 	height: 10%;
@@ -274,15 +293,6 @@ h4 {
     	margin-bottom: 0;
 }
 
-.texto {
-	height: 40%;
-	margin-left: 3%;
-	margin-top: -0%;
-}
-
-button.card {
-	height: 10%;
-}
 
 h1 {
 
@@ -292,39 +302,41 @@ h1 {
 
 }
 
-.card {
-	 
-  /* Add shadows to create the "card" effect */
-  /*box-shadow: 1px 0 0 0 rgba(0,0,0,0.1);*/
-  /*transition: 0.3s;*/
-  width: 308px;
-  height: 409px;
-  margin: 10px;
-  border: 1px solid #dcdcdc;
-  /*float: left*/
-  display: inline-grid;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 100%;
-	transition: all 0.3s linear;
+.previa-post {
+	margin-left: 10px;
+	padding-top: 13px;
 }
-/*
-.card img {
-	width: 100%;
-	height: 50%;
-}*/
 
+p.previa-post {
+height: 40%;	
+}
+
+p.last-update {
+	display: flex;
+	height: 12%;
+	width: 100%;
+	font-family: 'Mulish', sans-serif;
+	color: rgba(0,0,0,0.6);
+	font-weight: 300;
+	font-size: 75.3%;
+  border: 1px solid rgba(0,0,0,0.1);
+  text-align: justify;
+  align-items: center;
+	margin-top: 11px; 
+	margin-bottom: 0;
+
+}
+
+.last-update-literatura, .last-update-saúde, .last-update-tecnologia , .last-update-artes {
+	margin-left: -10px;
+	width: 103%;
+}
+ 
 .card img {
 	width: 100%;
 	height: 230px;
 }
 
-/*
-.texto {
-	margin-top: -20px;
-	margin-left: 3%;
-	font-size: 1rem;
-}*/ 
 
  button {
 	width: 7rem;
@@ -336,6 +348,58 @@ h1 {
 	margin-right: 1rem;
 
 }
+
+button.card {
+	height: 10%;
+}
+
+
+
+.texto  h4 {
+	margin-left: 10px;
+}
+
+
+
+.tag1 {
+	width: 6rem;
+	margin-left: 70%; 
+	/*height: 13%;*/
+	height: 6rem;
+	/*margin-right: .5rem!important;*/
+}
+
+.tag1 button:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+/*
+.card img {
+	width: 100%;
+	height: 50%;
+}*/
+
+
+
+/*
+.texto {
+	margin-top: -20px;
+	margin-left: 3%;
+	font-size: 1rem;
+}*/ 
+
+/*
+.card img {
+	width: 100%;
+	height: 50%;
+}*/
+
+
 
 .literatura button a, .saúde button a, .tecnologia button a, .artes button a{
 	text-decoration: none;
@@ -400,57 +464,8 @@ img	{
   margin-right: auto;
 }*/
 
-.tag1 {
-	width: 6rem;
-	margin-left: 70%; 
-	/*height: 13%;*/
-	height: 6rem;
-	/*margin-right: .5rem!important;*/
-}
 
-.tag1 button:hover {
-	transform: scale(1.1);
-}
 
-p.last-update {
-	display: flex;
-	height: 12%;
-	width: 100%;
-	font-family: 'Mulish', sans-serif;
-	color: rgba(0,0,0,0.6);
-	font-weight: 300;
-	font-size: 75.3%;
-  border: 1px solid rgba(0,0,0,0.1);
-  text-align: justify;
-  align-items: center;
-	margin-top: 11px; 
-	margin-bottom: 0;
-
-}
-
-/*
-.card img {
-	width: 100%;
-	height: 50%;
-}*/
-
-.texto  h4 {
-	margin-left: 10px;
-}
-
-.previa-post {
-	margin-left: 10px;
-	padding-top: 13px;
-}
-
-p.previa-post {
-height: 40%;	
-}
-
-.last-update-literatura, .last-update-saúde, .last-update-tecnologia , .last-update-artes {
-	margin-left: -9px;
-	width: 103%;
-}
 
 .last-update-literatura{
 	background-color: rgba(176,143,200,0.5);
