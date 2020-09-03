@@ -402,6 +402,8 @@ img	{
 .tag1 {
 	width: 6rem;
 	margin-left: 70%; 
+	
+	height: 10%;
 	/*margin-right: .5rem!important;*/
 }
 
