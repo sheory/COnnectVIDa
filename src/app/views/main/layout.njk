@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/styles/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>COnnectVIDa</title>
+	{% include 'main/layout-header.njk'%}
+</head>
+<body>
+   
+    
+    {% block content %} 
 
+    {% endblock content%}
+
+  <footer id="footer">
+		<div class="info-footer">
+			
+			<div class="email">
+				<img src="assets/gm.png">
+				<p>connectvidaifba@gmail.com</p>
+			</div>
+			
+			<div class="footer-imgs-container"> 
+				<div class="footer-imgs">
+					<a href="https://www.instagram.com/connectvida/"><img id="first" src="assets/insta.png"></a>
+					<a href="https://youtu.be/lFUB0z-I7_0"><img src="assets/yt.png"></a>
+					<a href="https://www.facebook.com/connectvida.ifba.3"> <img src="assets/facebook.png"></a>
+				</div>
+			</div>	
+		</div>
+					
+	</footer>
+
+</body>
+</html>
