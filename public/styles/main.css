@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "Overpass", sans-serif;
 }
 body {
   padding-top: 0;
@@ -190,4 +191,113 @@ a.theme {
 .footer-content {
   background-color: #f0f0f0;
   width: 100%;
+}
+.navbar-nav > .active > a {
+  color: #28a745 !important;
+}
+.about-image {
+  background: url("img/pexels-cottonbro-3952238.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+}
+.about-description {
+  line-height: 2;
+  height: 100%;
+}
+.about-title {
+  margin: 15px 30px;
+  color: #28a745;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.about-description {
+  border-top: 1px solid rgba(194, 192, 192, 0.493);
+  text-align: justify;
+}
+.contact-me {
+  height: 80vh;
+  background: url("img/laptop-4906312_1920.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-title {
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #28a745;
+}
+.container-contact {
+  background-color: #fff;
+  height: 70vh;
+  width: 60%;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 1px solid #28a74673;
+}
+.container-contact input,
+textarea {
+  margin: 20px;
+  width: 50% !important;
+}
+.inputs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-contact input:focus {
+  outline: none !important;
+  border-color: #28a746;
+  box-shadow: 0 0 10px #28a746;
+}
+.container-contact textarea:focus {
+  outline: none !important;
+  border-color: #28a746;
+  box-shadow: 0 0 10px #28a746;
+}
+.button-send {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+.btn-send {
+  width: 150px;
+  height: 35px;
+  background: none;
+  outline: none;
+  border: 2px solid#28a746;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s linear;
+  cursor: pointer;
+  color: rgb(110, 110, 110);
+}
+.btn-send:hover {
+  background-color: #28a746;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .container-contact {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .container-contact {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 480px) {
+  .container-contact {
+    min-height: 70vh;
+  }
+  .inputs-container {
+    min-height: 70vh;
+  }
+  .button-send {
+    display: flex;
+    justify-content: center;
+  }
 }
