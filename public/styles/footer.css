@@ -1,0 +1,18 @@
+
+
+.icons-footer {
+  margin: 25px 25px;
+}
+.icons-footer a {
+  color: black;
+  padding: 15px;
+  margin: 10px;
+}
+.icons-footer a:hover {
+  text-decoration: none;
+  color: #28a745;
+}
+.footer-content {
+  background-color: #f0f0f0;
+  width: 100%;
+}

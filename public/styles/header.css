@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+}
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(65, 63, 63);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}
+.nav-item > a:hover {
+  color: #28a745 !important;
+}
+.searchbar {
+  margin-bottom: auto;
+  margin-top: 5px;
+  height: 30px;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  padding-bottom: 10px;
+  border: 1px solid #28a745;
+}
+
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 25px;
+  transition: width 0.4s linear;
+}
+/*nav-bar*/
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 100px;
+  caret-color: #28a745;
+  color: #28a745;
+  transition: width 0.4s linear;
+}
+
+.search_icon {
+  height: 10px;
+  padding-top: 15px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #28a745;
+  text-decoration: none;
+}
+.search_icon:hover {
+  color: #28a745;
+}
+.navbar-nav > .active > a {
+  color: #28a745 !important;
+}
