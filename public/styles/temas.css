@@ -1,0 +1,41 @@
+.container-fluid {
+  width: 80%;
+  margin-top: 2rem;
+}
+
+
+@media only screen and (min-width: 1015px) and (max-width: 1167px) {
+	.container-fluid {
+	  width: 90%;
+	  
+	}
+}
+
+@media only screen and (min-width: 995px) and (max-width: 1035px) {
+	.container-fluid {
+	  width: 95%;
+	  
+	}
+
+}
+
+@media only screen and (min-width: 771px) and (max-width: 779px) {
+	.container-fluid {
+	  width: 92%;
+	  
+	}
+}
+
+@media only screen and (min-width: 620px) and (max-width: 770px) {
+	.container-fluid {
+	  width: 65%;
+	  
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.container-fluid {
+	  width: 95%;
+	  
+	}
+}
