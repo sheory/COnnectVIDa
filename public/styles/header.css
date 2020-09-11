@@ -79,3 +79,26 @@ body {
 .navbar-nav > .active > a {
   color: #28a745 !important;
 }
+
+}
+.dropdown-item:hover {
+  background-color: #28a745;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: #28a745 !important;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+/* END NAVBAR DESIGN */
