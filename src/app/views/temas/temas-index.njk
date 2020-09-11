@@ -1,30 +1,28 @@
-<div class="cards">
-	<div class="header">
-		<h1> Postagens recentes </h1>
-		<div  class="img-tema-mobile">
-			<img src="assets/{{posts[0].subject}}-black.png">
-	</div>
-	<hr>
-	</div>
-	
-	{%for post in posts%}
-	<div class="card">
-		<div class="{{post.subject}}"> 
-			<img src="{{post.image}}">
-			<div class="texto">
-				<h4> <b> {{post.title}} </b></h4>
-				<p class="previa-post"> {{post.subtitle}}</p>
-				<div class="tag1">
-					<button> <a href="/posts/{{post.id}}">ver publicação</a></button> 
-				</div>
-				
-				{%if post.subject %}
-					<div class="last-update-{{post.subject}}">
-					<p class="last-update" >{{post.updated_at}}</p>
-				</div>
-			{%endif%}
-			</div>
-		</div>						
-	</div>
-	{%endfor%}
-</div>
+
+<!--Cards-->
+<div class="container-fluid"> 
+
+  <div class="row">
+    {%for post in posts%}
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 card-{{post.subject}}">
+        <a href="#"><img class="card-img-top" src="{{post.image}}"></a>
+        <div class="card-body">
+          <a class="theme"  href="temas?category_name={{post.subject}}"><img class="theme-img" src="assets/{{post.subject}}.png">{{post.subject}}</a>
+          <h4 class="card-title">
+            <a href="#">{{post.title}}</a>
+          </h4>
+          <h5 class="create-post"><img src="assets/clock.png">02/09/2020</h5>
+          <p class="card-text">{{post.subtitle}}</p>
+
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary btn-card">Ler mais</button>
+         </div>
+      </div>  
+      </div>          
+    </div>
+    {%endfor%}
+
+  </div>
+  <!-- /.row -->   
+</div>  
