@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <title>COnnectVIDa</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/examples/carousel/carousel.css">
+    <script
+      src="https://kit.fontawesome.com/36785ec993.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/temas.css" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    {% include 'main/header.njk'%}
 
-	<title>COnnectVIDa</title>
-
-	<link rel="stylesheet" type="text/css" href="/styles/tema.css">
-	
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--barra de navegação-->
-
-
-
-	<div class="blue-line">
-		
-	</div>
-
-</head>
-<body>
-  {% include 'temas/temas-header.njk'%}
-  {% include 'temas/temas-index.njk'%}
-  <br>
-  {%include 'temas/temas-footer.njk'%}
-</body>
+  </head>
+  <body>
+  	{% include 'temas/temas-index.njk'%}
+    {% include 'main/footer.njk'%}
+  </body>
 </html>
