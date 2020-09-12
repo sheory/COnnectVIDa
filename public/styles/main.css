@@ -154,7 +154,7 @@ body {
 }
 
 .tema-semanal-container {
-	width: 80%;
+	width: 50%;
 	height: 260px;
 	padding: 15px;
 	padding-top: 80px;
@@ -1030,7 +1030,7 @@ h4.img-title {
 }
 
 .tema-semanal-container {
-	width: 90%;
+	width: 50%;
 	margin-right: 10px;
 	height: 300px;
 	padding: 15px;
@@ -1267,7 +1267,7 @@ h4.img-title {
 	}
 
 	.tema-semanal-container {
-		width: 90%;
+		width: 50%;
 		margin-right: 10px;
 		height: 300px;	
 		padding: 15px;
@@ -1540,7 +1540,7 @@ h4.img-title {
 
 	.tema-semanal-container {
 		
-		width: 90%;
+		width: 50%;
 		margin-right: 10px;
 		height: 270px;
 		
