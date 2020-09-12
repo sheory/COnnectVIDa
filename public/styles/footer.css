@@ -1,5 +1,4 @@
-
-
+/* FOOTER DESIGN */
 .icons-footer {
   margin: 25px 25px;
 }
@@ -13,6 +12,8 @@
   color: #28a745;
 }
 .footer-content {
-  background-color: #f0f0f0;
+  border-top: #e0e0e0 1px solid;
+  background-color: #f8f9fa;
   width: 100%;
 }
+/* FOOTER END */

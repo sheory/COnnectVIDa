@@ -1,7 +1,7 @@
 
 .contact-me {
   height: 80vh;
-  background: url("img/laptop-4906312_1920.jpg") no-repeat center;
+  background: url("../assets/laptop-4906312_1920.jpg") no-repeat center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
