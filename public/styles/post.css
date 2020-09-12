@@ -45,6 +45,9 @@
     margin-top: -90px;
     background-color: rgb(170, 170, 170);
   }
+  .fb-comments{
+    padding-bottom: 30px;
+  }
   @media screen and (max-width: 420px) {
     .image-topic{
     transform: translateX(0%);
