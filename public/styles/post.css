@@ -1,0 +1,54 @@
+/* TOPIC DESIGN */ 
+.container-topic{
+    background-color: white;
+  }
+.image-topic{
+    background: url(img/Capa.jpg) no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    left: 0;
+    transform: translateX(50%);
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  .container-image{
+    position: relative;
+    top: 30px;
+  }
+  .text-topic{
+    text-align: justify;
+    margin: 0 !important;
+  }
+  .text-container{
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .title-topic{
+    font-weight: 800;
+    inline-size: 5em;
+    color: rgb(78, 78, 78);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+  }
+  .date-topic{
+    padding-bottom: 30px;
+    color: #28a745;
+    line-height: 5rem;
+    font-weight: 800;
+  }
+  .border-title{
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin-top: -90px;
+    background-color: rgb(170, 170, 170);
+  }
+  @media screen and (max-width: 420px) {
+    .image-topic{
+    transform: translateX(0%);
+    width: 100%;
+  }
+}
+/* END TOPIC DESIGN */ 
