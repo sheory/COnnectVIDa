@@ -638,7 +638,7 @@ h4.img-title {
 		margin-top: 32px; 
 
 	}*/
-
+	
 	.pesquisar-media form {
 		margin-top: 0px;
 		display: inline-flex;
@@ -1091,7 +1091,7 @@ h4.img-title {
 /*temas-mensais*/
 	.temas-mensais-container {
 		margin-top: 0;
-		display: block;
+		display: none;
 		width: 60%;
 		height: 300px;
 		padding: 15px;
@@ -1350,7 +1350,7 @@ h4.img-title {
 
 		margin-top: 0;
 
-		display: block;
+		display: none;
 		width: 60%;
 		height: 300px;
 		
@@ -1627,7 +1627,7 @@ h4.img-title {
 
 		margin-top: 0;
 
-		display: block;
+		display: none;
 		width: 60%;
 		height: 270px;
 		
