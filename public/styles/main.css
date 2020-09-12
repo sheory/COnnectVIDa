@@ -70,15 +70,15 @@ a.theme {
   font-size: 1rem;
   float: right;
 }
- .card-saúde .btn-card {
+ .card-saúde .btn-card, .card-saúde .btn-card a  {
   color: #1a68b8;
   border-color: #1a68b8;
 }
- .card-artes  .btn-card {
+ .card-artes  .btn-card, .card-artes  .btn-card a {
   color: #eb7d16;
   border-color: #eb7d16;
 }
- .card-tecnologia  .btn-card{
+ .card-tecnologia  .btn-card,  .card-tecnologia  .btn-card a{
   color: #0c8c6a;
   border-color: #0c8c6a;
 }
