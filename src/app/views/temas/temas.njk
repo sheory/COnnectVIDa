@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html prefix="og: https://ogp.me/ns#">
-<head>
+  <head>
 
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-	<title>COnnectVIDa</title>
+    <title>COnnectVIDa</title>
 
-	<meta property="og:title" content="COnnectVIDa: Temas"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://connectvida.com.br"/>
-	<meta property="og:image" content="http://connectvida.com.br/assets/logo.png"/>
+    <meta property="og:title" content="COnnectVIDa: Temas"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://connectvida.com.br"/>
+    <meta property="og:image" content="http://connectvida.com.br/assets/logo.png"/>
 
-	<link rel="stylesheet" type="text/css" href="/styles/tema.css">
-	
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--barra de navegação-->
+    <link rel="stylesheet" type="text/css" href="/styles/tema.css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--barra de navegação-->
 
+    <div class="blue-line"></div>
 
-	<div class="blue-line">
-		
-	</div>
+  </head>
+  <body>
+    {% include 'temas/temas-header.njk'%}
+    {% include 'temas/temas-index.njk'%}
+    <br>
+    {%include 'temas/temas-footer.njk'%}
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
 
-</head>
-<body>
-  {% include 'temas/temas-header.njk'%}
-  {% include 'temas/temas-index.njk'%}
-  <br>
-  {%include 'temas/temas-footer.njk'%}
-</body>
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCB-CxGPummNYwquyZHd-XvzYcRWgOAhHU",
+        authDomain: "connectvida-6e8fe.firebaseapp.com",
+        databaseURL: "https://connectvida-6e8fe.firebaseio.com",
+        projectId: "connectvida-6e8fe",
+        storageBucket: "connectvida-6e8fe.appspot.com",
+        messagingSenderId: "680444207265",
+        appId: "1:680444207265:web:44f34ec1b601ab44ef50e0",
+        measurementId: "G-CXRB1B22QW"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
 </html>
