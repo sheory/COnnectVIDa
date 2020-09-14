@@ -22,7 +22,9 @@
     <!--Cards-->
     <div class="container-fluid">
 
-      <h1> Você pesquisou por "{{filter}}" <hr></h1>
+      <h1>
+        Você pesquisou por "{{filter}}"
+        <hr></h1>
 
       <div class="row">
         {%for post in posts%}
@@ -51,5 +53,29 @@
         <!-- /.row -->
       </div>
       {% include 'main/footer.njk'%}
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+      <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyCB-CxGPummNYwquyZHd-XvzYcRWgOAhHU",
+          authDomain: "connectvida-6e8fe.firebaseapp.com",
+          databaseURL: "https://connectvida-6e8fe.firebaseio.com",
+          projectId: "connectvida-6e8fe",
+          storageBucket: "connectvida-6e8fe.appspot.com",
+          messagingSenderId: "680444207265",
+          appId: "1:680444207265:web:44f34ec1b601ab44ef50e0",
+          measurementId: "G-CXRB1B22QW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
     </body>
   </html>

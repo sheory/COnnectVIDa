@@ -24,9 +24,9 @@
           <h3 class="contact-title">
             Entre em Contato</h3>
           <div class="form-group inputs-container">
-            <input type="text" class="form-control" name="name" id="" placeholder="Nome" required>
-            <input type="email" class="form-control" name="email" id="" placeholder="Email" required>
-            <textarea class="form-control" rows="3" id="comment" name="body" required></textarea>
+            <input type="text" class="form-control" name="name" id="" placeholder="Nome" required="required">
+            <input type="email" class="form-control" name="email" id="" placeholder="Email" required="required">
+            <textarea class="form-control" rows="3" id="comment" name="body" required="required"></textarea>
           </div>
           <div class="button-send">
             <button type="submit" class="btn-send">Enviar Mensagem</button>
@@ -35,5 +35,29 @@
       </div>
     </div>
     {% include 'main/footer.njk'%}
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCB-CxGPummNYwquyZHd-XvzYcRWgOAhHU",
+        authDomain: "connectvida-6e8fe.firebaseapp.com",
+        databaseURL: "https://connectvida-6e8fe.firebaseio.com",
+        projectId: "connectvida-6e8fe",
+        storageBucket: "connectvida-6e8fe.appspot.com",
+        messagingSenderId: "680444207265",
+        appId: "1:680444207265:web:44f34ec1b601ab44ef50e0",
+        measurementId: "G-CXRB1B22QW"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
