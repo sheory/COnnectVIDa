@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>COnnectVIDa</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/examples/carousel/carousel.css">
+    <script src="https://kit.fontawesome.com/36785ec993.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="/styles/temas.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    {% include 'main/header.njk'%}
+
+  </head>
+  <body>
+    <!--Cards-->
+    <div class="container-fluid">
+
+      <h1> Você pesquisou por "{{filter}}" <hr></h1>
+
+      <div class="row">
+        {%for post in posts%}
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 card-{{post.subject}}">
+              <a href="#"><img class="card-img-top" src="{{post.image}}"></a>
+              <div class="card-body">
+                <a class="theme" href="temas?category_name={{post.subject}}"><img class="theme-img" src="assets/{{post.subject}}.png">{{post.subject}}</a>
+                <h4 class="card-title">
+                  <a href="/posts/{{post.id}}">{{post.title}}</a>
+                </h4>
+                <h5 class="create-post"><img src="assets/clock.png">02/09/2020</h5>
+                <p class="card-text">{{post.subtitle}}</p>
+
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary btn-card">
+                    <a href="/posts/{{post.id}}">Ler mais</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {%endfor%}
+
+        </div>
+        <!-- /.row -->
+      </div>
+      {% include 'main/footer.njk'%}
+    </body>
+  </html>

@@ -2,20 +2,14 @@
 <html lang="en">
   <head>
     <title>COnnectVIDa</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
     <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/examples/carousel/carousel.css">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/36785ec993.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/styles/contato.css" />
+    <script src="https://kit.fontawesome.com/36785ec993.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/contato.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -24,22 +18,22 @@
 
   </head>
   <body>
-    
-  <div class="container-fluid contact-me">
-    <div class="container container-contact">
-      <h3 class="contact-title"> Entre em Contato</h3>
-        <div class="form-group inputs-container">
-          <input type="text"
-          class="form-control" name="nome" id=""  placeholder="Nome">
-          <input type="email"
-          class="form-control" name="email" id=""  placeholder="Email">
-          <textarea class="form-control" rows="3" id="comment"></textarea>      
-        </div>
-        <div class="button-send">
-          <button class="btn-send">Enviar Mensagem</button>
-      </div>      
+    <div class="container-fluid contact-me">
+      <div class="container container-contact">
+        <form method="POST" action="/mensagem">
+          <h3 class="contact-title">
+            Entre em Contato</h3>
+          <div class="form-group inputs-container">
+            <input type="text" class="form-control" name="name" id="" placeholder="Nome" required>
+            <input type="email" class="form-control" name="email" id="" placeholder="Email" required>
+            <textarea class="form-control" rows="3" id="comment" name="body" required></textarea>
+          </div>
+          <div class="button-send">
+            <button type="submit" class="btn-send">Enviar Mensagem</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
     {% include 'main/footer.njk'%}
   </body>
 </html>
