@@ -12,6 +12,17 @@
     margin-bottom: 25px;
     border-radius: 10px;
   }
+
+p {
+  line-height: 1.6;
+  font-size:1.2rem;
+  text-align: justify;
+}
+
+.post-container {
+  margin-right: auto;
+  margin-left: auto;
+}
   .container-image{
     position: relative;
     top: 30px;
@@ -26,11 +37,19 @@
   }
   .title-topic{
     font-weight: 800;
+    font-size: 2rem;
     inline-size: 5em;
     color: rgb(78, 78, 78);
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 50px;
+    width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  audio {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
   }
   .date-topic{
     padding-bottom: 30px;
