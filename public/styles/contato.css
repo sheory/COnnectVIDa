@@ -58,6 +58,9 @@ textarea {
   cursor: pointer;
   color: rgb(110, 110, 110);
 }
+.btn-send:focus{
+  outline: none;
+}
 .btn-send:hover {
   background-color: #28a746;
   color: #fff;
@@ -83,4 +86,16 @@ textarea {
     display: flex;
     justify-content: center;
   }
+}
+.toast-success{
+  background-color: #28a745;
+}
+.toast-body-success{
+  color: white;
+}
+.toast-error{
+  background-color: #cf5252;
+}
+.toast-body-error{
+  color: white;
 }

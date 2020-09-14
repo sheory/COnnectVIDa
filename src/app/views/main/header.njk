@@ -21,48 +21,27 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/sobre">
-            Sobre
-          </a>
+          <a class="nav-link" href="/sobre"> Sobre </a>
         </li>
         <li class="nav-item">
-        <li >
-          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
-            Temas
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="/temas?category_name=Artes">
-                Artes</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/temas?category_name=Literatura">
-                Literatura
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/temas?category_name=Saúde">
-                Saúde
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/temas?category_name=Tecnologia">
-                Tecnologia
-              </a>
-            </li>
-          </ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Temas  </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/temas?category_name=Artes"> Artes</a></li>
+              <li><a class="dropdown-item" href="/temas?category_name=Literatura"> Literatura </a></li>
+              <li><a class="dropdown-item" href="/temas?category_name=Saúde"> Saúde </a></li>
+              <li><a class="dropdown-item" href="/temas?category_name=Tecnologia"> Tecnologia </a></li>
+            </ul>
         </li>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contato">
-          Contato
-        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contato"> Contato </a>
       </li>
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
           <form action="/busca" method="POST">
             <input class="search_input" type="text" name="filter" placeholder="Search..."/>
-            <button type="submit" class="search_icon">
+            <button type="submit" id="btn-search" class="search_icon">
               <i class="fas fa-search"></i >
             </button>
           </form>
