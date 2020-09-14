@@ -4,8 +4,20 @@ body{
 /*cards*/
 
 .container-fluid {
+  background: white;
   width: 85%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
+
+h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
 img.card-img-top {
   max-height: 220px;
   min-height: 220px;
@@ -121,6 +133,15 @@ a.theme {
 @media only screen and (min-width: 1015px) and (max-width: 1167px) {
   .container-fluid {
     width: 90%;
+    
+  }
+}
+
+
+@media only screen and (max-width: 1167px) {
+  .container-fluid {
+    padding-right: 1rem;
+    padding-left: 1rem;
     
   }
 }
