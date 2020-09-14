@@ -4,36 +4,37 @@
       
       </div>
     </div>
-
-    <audio controls="controls">
-      <source src="{{audio.src}}" type="audio/mp3" />
-    </audio>
-
-    <h3 class="title-topic">{{post.title}}</h3>
-    <span class="border-title"></span>
-    <div class="text-container">
-      <input type="hidden" id="post-body-input" value="{{post.body}}">
-      <p class="text-topic">
-          Insubmissas Lágrimas de Mulheres, de Conceição Evaristo.
-          Por: Marissol Oliveira
-          Insubmissas Lágrimas de Mulheres é um livro de contos composto por histórias que marcaram e transformaram a vida de treze mulheres. São contos traduzidos na voz de uma narradora que, antes de iniciar seus relatos, adverte “estas histórias não são totalmente minhas, mas quase que me pertencem, na medida em que, às vezes, se (con)fundem com as minhas”. Desta advertência intuímos o que Conceição Evaristo, em vários momentos de sua produção literária, descreve como escrevivência, isto é, a influência de suas experiências, enquanto mulher negra, nas narrativas desenhadas por seus dedos, olhos e ouvidos atentos.
-          
-          Desta forma, somos introduzidos a um universo representado por mulheres marcadas pela dor, contudo protagonistas de suas histórias. Mulheres que choram, mas que possuem lágrimas insubmissas, que não se curvam às adversidades e que triunfam pela coragem de mudar paradigmas. São Aramides, mulheres violentadas e abandonadas; Natalinas, aquelas rejeitadas pelos pais, apenas por serem mulheres; Shirleys, aprisionadas após se defenderem de violências; Adelhas, santas que mantêm o matrimônio, apesar de; Isaltinas, violentadas por suas sexualidades; dentre tantas outras. Também temos Marys, vencedoras, pois autodidatas; e Reginas, que não se curvam a uma estrutura social que oprime, desumaniza e marginaliza.
-          
-          São mulheres que na oferta dos seus corpos-relatos nos ensinam, tal qual a bailarina Rose Dusreis que confidencia “dizem que algumas pessoas escrevem para não morrer, outras pintam, algumas representam, e há também as que cantam, as que tocam instrumentos, as que bordam... Eu danço”. São narrativas marcadas pela liberdade, ancestralidade, religiosidade e esperança no desconhecido. Algumas vezes, narrativas duras, que impressionam pela crueldade dos atores envolvidos. Mas, nós, leitores assíduos de Evaristo, sabemos: suas histórias não são feitas para ninar, são feitas para incomodar sonos injustos.
-          
-          Marcado pela leitura instigante, Insubmissas Lágrimas de Mulheres apresenta personagens complexos e leitura fluida. Os títulos dos contos, representados pelos nomes de suas protagonistas, são bem construídos e guardam relação com as personagens e suas vidas: Adelha Santana, a santa negra; Natalina Soledad, a mulher solitária desde que nasceu; Mirtes Aparecida Daluz, a que enxerga no escuro... É um livro para todos, mas que alcança de forma especial as mulheres, sobretudo, as mulheres negras.
-          
-          Marissol de Oliveira é professora do Instituto Federal da Bahia, Campus Irecê. 
-        </p>
+    <div class="container post-container"> 
+      <h3 class="title-topic">{{post.title}}</h3>
+      <audio controls="controls">
+        <source src="{{audio.src}}" type="audio/mp3" />
+      </audio>
+      <!--<span class="border-title"></span>-->
+      <div class="text-container">
+        <input type="hidden" id="post-body-input" value="{{post.body}}">
+        <p class="text-topic">
+            Insubmissas Lágrimas de Mulheres, de Conceição Evaristo.
+            Por: Marissol Oliveira
+            Insubmissas Lágrimas de Mulheres é um livro de contos composto por histórias que marcaram e transformaram a vida de treze mulheres. São contos traduzidos na voz de uma narradora que, antes de iniciar seus relatos, adverte “estas histórias não são totalmente minhas, mas quase que me pertencem, na medida em que, às vezes, se (con)fundem com as minhas”. Desta advertência intuímos o que Conceição Evaristo, em vários momentos de sua produção literária, descreve como escrevivência, isto é, a influência de suas experiências, enquanto mulher negra, nas narrativas desenhadas por seus dedos, olhos e ouvidos atentos.
             
-      {% if video %}
-        <div style="text-align: center;">
-          <iframe src="{{video.src}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      {% endif %}
-    </div>
+            Desta forma, somos introduzidos a um universo representado por mulheres marcadas pela dor, contudo protagonistas de suas histórias. Mulheres que choram, mas que possuem lágrimas insubmissas, que não se curvam às adversidades e que triunfam pela coragem de mudar paradigmas. São Aramides, mulheres violentadas e abandonadas; Natalinas, aquelas rejeitadas pelos pais, apenas por serem mulheres; Shirleys, aprisionadas após se defenderem de violências; Adelhas, santas que mantêm o matrimônio, apesar de; Isaltinas, violentadas por suas sexualidades; dentre tantas outras. Também temos Marys, vencedoras, pois autodidatas; e Reginas, que não se curvam a uma estrutura social que oprime, desumaniza e marginaliza.
+            
+            São mulheres que na oferta dos seus corpos-relatos nos ensinam, tal qual a bailarina Rose Dusreis que confidencia “dizem que algumas pessoas escrevem para não morrer, outras pintam, algumas representam, e há também as que cantam, as que tocam instrumentos, as que bordam... Eu danço”. São narrativas marcadas pela liberdade, ancestralidade, religiosidade e esperança no desconhecido. Algumas vezes, narrativas duras, que impressionam pela crueldade dos atores envolvidos. Mas, nós, leitores assíduos de Evaristo, sabemos: suas histórias não são feitas para ninar, são feitas para incomodar sonos injustos.
+            
+            Marcado pela leitura instigante, Insubmissas Lágrimas de Mulheres apresenta personagens complexos e leitura fluida. Os títulos dos contos, representados pelos nomes de suas protagonistas, são bem construídos e guardam relação com as personagens e suas vidas: Adelha Santana, a santa negra; Natalina Soledad, a mulher solitária desde que nasceu; Mirtes Aparecida Daluz, a que enxerga no escuro... É um livro para todos, mas que alcança de forma especial as mulheres, sobretudo, as mulheres negras.
+            
+            Marissol de Oliveira é professora do Instituto Federal da Bahia, Campus Irecê. 
+          </p>
+              
+        {% if video %}
+          <div style="text-align: center;">
+            <iframe src="{{video.src}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        {% endif %}
+      </div>
 
+    </div>
+    
     <div class="date-topic">
       Publicado em: {{post.updated_at}}
     </div>
