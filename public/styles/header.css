@@ -80,7 +80,7 @@ body {
 .search_icon:hover {
   color: #28a745;
 }
-.navbar-nav > .active > a {
+.active{
   color: #28a745 !important;
 }
 .dropdown-item{

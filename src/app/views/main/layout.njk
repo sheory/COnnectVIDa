@@ -45,5 +45,15 @@
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
     </script>
+    <script>
+    const currentPage = location.pathname;
+const menuItems = document.querySelectorAll('.nav-link');
+
+for (item of menuItems) {
+    if (currentPage.includes(item.getAttribute('href'))) {
+        item.classList.add('active');
+    }
+}
+    </script>
   </body>
 </html>
