@@ -2,6 +2,9 @@
 .container-topic{
     background-color: white;
   }
+.post-container {
+  width: 90%;
+}
 .image-topic{
     background: url(img/Capa.jpg) no-repeat center;
     background-size: cover;
