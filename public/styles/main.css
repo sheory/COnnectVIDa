@@ -1,6 +1,18 @@
 body{
   background-color: rgb(238,238,238) !important;
 }
+
+/*carousel*/
+.carousel-caption {
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 7px;
+}
+
+.carousel-caption h1, .carousel-caption p  {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /*cards*/
 
 .container-fluid {
