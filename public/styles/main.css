@@ -83,39 +83,78 @@ a.theme {
   font-size: 1rem;
   float: right;
 }
- .card-saúde .btn-card, .card-saúde .btn-card a  {
-  color: #f8f9fa;
-  border-color: #1a68b8;
-  background-color: #1a68b8;
-}
- .card-artes  .btn-card, .card-artes  .btn-card a {
-  color: #f8f9fa;
-  border-color: #eb7d16;
-  background-color: #eb7d16;
-}
- .card-tecnologia  .btn-card,  .card-tecnologia  .btn-card a{
-  color: #f8f9fa;
-  border-color: #0c8c6a;
-  background-color: #0c8c6a;
-}
- .btn-card:hover {
-  opacity: 0.8;
- }
-
-.btn-card:active {
-  opacity: 0.5;
-}
 
 .btn-card a:hover {
   text-decoration-line: none;
 }
 
-.btn-primary:hover {
-	filter: brightness(1.2);
+/* Healthy Card Button */
+
+.card-saúde .btn-card {
+  background-color: transparent;
+  border-color: #1a68b8;
 }
 
-.btn-primary:active {
-	filter: brightness(1.5);
+.card-saúde button.btn.btn-primary.btn-card:active {
+  background-color: #1a68b8c0;
+}
+
+.card-saúde button.btn.btn-primary.btn-card:active a {
+  color: white;
+}
+
+.card-saúde .btn-card:hover {
+  background-color: #1a68b840;
+}
+
+.card-saúde .btn-card a {
+  color: #1a68b8;
+}
+
+/* Art Card Button */
+
+.card-artes .btn-card {
+  background-color: transparent;
+  border-color: #eb7d16;
+}
+
+.card-artes button.btn.btn-primary.btn-card:active {
+  background-color: #eb7d16c0;
+}
+
+.card-artes button.btn.btn-primary.btn-card:active a {
+  color: white;
+}
+
+.card-artes .btn-card:hover {
+  background-color: #eb7d1640;
+}
+
+.card-artes .btn-card a {
+  color: #eb7d16;
+}
+
+/* Tecnology Card Button */
+
+.card-tecnologia .btn-card {
+  border-color: #0c8c6a;
+  background-color: transparent;
+}
+
+.card-tecnologia button.btn.btn-primary.btn-card:active {
+  background-color: #0c8c6ac0;
+}
+
+.card-tecnologia button.btn.btn-primary.btn-card:active a {
+  color: white;
+}
+
+.card-tecnologia .btn-card:hover {
+	background-color: #0c8c6a40;
+}
+
+.card-tecnologia .btn-card a {
+  color: #0c8c6a;
 }
 
 /*end cards*/
