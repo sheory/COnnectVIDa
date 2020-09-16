@@ -4,11 +4,23 @@
     <title>COnnectVIDa</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:title" content="COnnectVIDa: {{post.title}}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://connectvida.com.br/posts/{{post.id}}"/>
+    <meta property="og:image" content="{{post.image}}"/>    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
     <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/examples/carousel/carousel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/36785ec993.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/header.css"/>
+    <link rel="stylesheet" href="/styles/temas.css"/>
+    <link rel="stylesheet" href="/styles/contato.css"/>
+    <link rel="stylesheet" href="/styles/post.css"/>
+    <link rel="stylesheet" href="/styles/sobre.css"/>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -53,7 +65,8 @@ for (item of menuItems) {
     if (currentPage.includes(item.getAttribute('href'))) {
         item.classList.add('active');
     }
-}
+} 
+            
     </script>
   </body>
 </html>

@@ -77,6 +77,22 @@ module.exports = {
         return res.render('main/search', { posts, subjects, filter });
 
     },
+    async postweek(req, res){
+        let results = await Post.getPostWeek();
+
+        for (let i = 0; i < results[0].length; i++) {
+            let datetime = new Date(results[0][i].created_at);
+            let convert = date(datetime.getTime());
+            results[0][i].created_at = `${convert.format} às ${convert.hourFormat}`;
+
+            datetime = new Date(results[0][i].updated_at);
+            convert = date(datetime.getTime());
+            results[0][i].updated_at = `${convert.format} às ${convert.hourFormat}`;
+        }
+        const posts = results[0];
+        return res.render('postagens/weekpost',{posts});
+    },
+
     about(req, res) {
         return res.render('sobre/sobre');
     },

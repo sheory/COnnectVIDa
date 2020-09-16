@@ -1,58 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>COnnectVIDa</title>
-
-    <meta property="og:title" content="COnnectVIDa: {{post.title}}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://connectvida.com.br/posts/{{post.id}}"/>
-    <meta property="og:image" content="{{post.image}}"/>
-
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
-    <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/examples/carousel/carousel.css">
-    <script src="https://kit.fontawesome.com/36785ec993.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="/styles/post.css">
-    <link rel="stylesheet" type="text/css" href="/styles/main.css">
-
-    {% include 'main/header.njk'%}
-
-  </head>
-
-  <body>
+ {% extends "main/layout.njk" %}
+ {% block content %}
     <div id="fb-root"></div>
     <script async="async" defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0" nonce="ucNBGIoF"></script>
     {% include 'postagens/post-index.njk'%}
-    {% include 'main/footer.njk'%}
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyCB-CxGPummNYwquyZHd-XvzYcRWgOAhHU",
-        authDomain: "connectvida-6e8fe.firebaseapp.com",
-        databaseURL: "https://connectvida-6e8fe.firebaseio.com",
-        projectId: "connectvida-6e8fe",
-        storageBucket: "connectvida-6e8fe.appspot.com",
-        messagingSenderId: "680444207265",
-        appId: "1:680444207265:web:44f34ec1b601ab44ef50e0",
-        measurementId: "G-CXRB1B22QW"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
-  </body>
-</html>
+{% endblock content %}
