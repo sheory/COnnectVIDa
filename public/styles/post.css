@@ -16,7 +16,7 @@
     border-radius: 10px;
   }
 
-p {
+p.text-topic {
   line-height: 1.6;
   font-size:1.2rem;
   text-align: justify;
