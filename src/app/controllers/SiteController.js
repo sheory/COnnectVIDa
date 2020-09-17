@@ -90,7 +90,7 @@ module.exports = {
             results[0][i].updated_at = `${convert.format} às ${convert.hourFormat}`;
         }
         const posts = results[0];
-        return res.render('postagens/weekpost',{posts});
+        return res.render('tema-semanal/weekpost',{posts});
     },
 
     about(req, res) {
