@@ -13,6 +13,23 @@ body{
   padding-right: 1rem;
 }
 
+.carousel-caption a {
+  background-color:  #299440;
+  border-color:  #299440;
+  color: white;
+}
+
+.carousel-caption a:hover, .carousel-caption a:active{
+  background-color:  rgb(40,170,69);
+  border-color:  rgb(40,170,69);
+  color: white;
+}
+
+.carousel-caption button a:active{
+  background-color: rgb(40,170,69);
+  border-color: rgb(40,170,69);
+  color: white;
+}
 /*cards*/
 
 .container-fluid {
