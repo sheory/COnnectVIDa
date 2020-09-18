@@ -78,6 +78,9 @@ module.exports = {
     },
     getPostWeek(){
         return db.promise().query('SELECT * FROM posts WHERE YEARWEEK(created_at) = YEARWEEK(CURDATE())');
+    },
+    getPostWeekCarrousel(){
+        return db.promise().query('SELECT * FROM posts WHERE YEARWEEK(created_at) = YEARWEEK(CURDATE()) LIMIT 3');
     }
     
 }

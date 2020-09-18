@@ -7,6 +7,18 @@ module.exports = {
     async index(req, res) {
         let results = await Post.findRecents();
         const posts = results[0];
+        let carrouselWeak = await Post.getPostWeekCarrousel();
+        const carrousel = carrouselWeak[0];
+
+        for (let i = 0; i < carrousel.length; i++) {
+            let datetime = new Date(carrousel[i].created_at);
+            let convert = date(datetime.getTime());
+            carrousel[i].created_at = `${convert.format} às ${convert.hourFormat}`;
+
+            datetime = new Date(carrousel[i].updated_at);
+            convert = date(datetime.getTime());
+            carrousel[i].updated_at = `${convert.format} às ${convert.hourFormat}`;
+        }
 
         for (let i = 0; i < posts.length; i++) {
             let datetime = new Date(posts[i].created_at);
@@ -21,7 +33,7 @@ module.exports = {
         results = await Post.getPostsSubjects();
         const subjects = results[0];
 
-        return res.render('main/index', { posts, subjects });
+        return res.render('main/index', { posts, subjects, carrousel });
     },
     async category(req, res) {
         const category = req.query.category_name;
