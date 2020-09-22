@@ -16,4 +16,18 @@
   background-color: #f8f9fa;
   width: 100%;
 }
+.dev-group {
+  color: rgba(0,0,0,.5);
+  margin-top: 25px;
+  text-align: center;
+}
+.dev-group-member a {
+  color: rgba(0,0,0,.5);
+  margin: 5px 5px;
+  padding: 0px 0px;
+}
+.dev-group-member a:hover {
+  text-decoration: none;
+  color: #28a745;
+}
 /* FOOTER END */
