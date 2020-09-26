@@ -20,3 +20,40 @@
   border-top: 1px solid rgba(194, 192, 192, 0.493);
   text-align: justify;
 }
+
+.dev-group-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.dev-group-title {
+  margin-bottom: 20px;
+}
+
+.dev-group-sobre {
+  background-color: white;
+  color: rgba(0,0,0,.5);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: right;
+  text-align: center;
+  width: 230px;
+  height: 220px;
+
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+.dev-group-member a {
+  color: rgba(0,0,0,.5);
+  margin: 5px 5px;
+  padding: 0px 0px;
+}
+
+.dev-group-member a:hover {
+  text-decoration: none;
+  color: #28a745;
+}
+/* FOOTER END */
