@@ -9,7 +9,7 @@ const MessageController = require('./app/controllers/MessageController');
 
 
 //POSTS
-routes.get('/posts', PostController.index);
+// routes.get('/posts', PostController.index);
 routes.get('/posts/:id', PostController.show);
 
 //POSTS ADM

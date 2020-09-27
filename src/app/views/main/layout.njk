@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <title>COnnectVIDa</title>
     <meta charset="utf-8"/>
@@ -25,12 +25,10 @@
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 
     {% include 'main/header.njk'%}
-
   </head>
   <body>
 
     {% block content %}{% endblock content%}
-
     {% include 'main/footer.njk'%}
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -66,6 +64,18 @@ for (item of menuItems) {
     }
 } 
             
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-175769169-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-175769169-1');
     </script>
   </body>
 </html>
