@@ -79,6 +79,9 @@ a.theme {
 .card-artes {
   border: solid 1px #eb7d16;
 }
+.card-literatura{
+  border: solid 1px #803387;
+}
 .create-post  img {
   margin-top: -2px;
   width: 1.8rem;
@@ -98,6 +101,9 @@ a.theme {
 }
 .card-artes a.theme {
   color: #eb7d16;
+}
+.card-literatura a.theme{
+  color: #803387;
 }
 .card-footer {
   padding: .75rem 1.25rem;
@@ -184,6 +190,23 @@ a.theme {
 
 .card-tecnologia .btn-card a {
   color: #0c8c6a;
+}
+
+.card-literatura .btn-card {
+  background-color: transparent;
+  border-color: #803387;
+}
+.card-literatura .btn-card a {
+  color: #803387;
+}
+.card-literatura .btn-card:hover {
+	background-color: #80338740;
+}
+.card-literatura button.btn.btn-primary.btn-card:active a {
+  color: white;
+}
+.card-literatura button.btn.btn-primary.btn-card:active {
+  background-color: #803387c0;
 }
 
 /*end cards*/
