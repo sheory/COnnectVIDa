@@ -1,45 +1,70 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
-    <link rel="stylesheet" type="text/css" href="/styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COnnectVIDa</title>
-
-    <meta property="og:title" content="COnnectVIDa"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:title" content="COnnectVIDa: {{post.title}}"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://connectvida.com.br"/>
-    <meta property="og:image" content="http://connectvida.com.br/assets/logo.png"/>
+    <meta property="og:url" content="http://connectvida.com.br/posts/{{post.id}}"/>
+    <meta property="og:image" content="{{post.image}}"/>   
+     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/carousel.css">
+    <link href="/bootstrap/css/overpass.css" rel="stylesheet">
+    <script src="/bootstrap/js/fontawesome.js"></script>
+    <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/header.css"/>
+    <link rel="stylesheet" href="/styles/temas.css"/>
+    <link rel="stylesheet" href="/styles/contato.css"/>
+    <link rel="stylesheet" href="/styles/post.css"/>
+    <link rel="stylesheet" href="/styles/sobre.css"/>
+    
+    <script src="/bootstrap/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 
-    {% include 'main/layout-header.njk'%}
+    {% include 'main/header.njk'%}
   </head>
   <body>
 
     {% block content %}{% endblock content%}
+    {% include 'main/footer.njk'%}
 
-    <footer id="footer">
-      <div class="info-footer">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
 
-        <div class="email">
-          <img src="assets/gm.png">
-          <p>connectvidaifba@gmail.com</p>
-        </div>
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
 
-        <div class="footer-imgs-container">
-          <div class="footer-imgs">
-            <a href="https://www.instagram.com/connectvida/"><img id="first" src="assets/insta.png"></a>
-            <a href="https://youtu.be/lFUB0z-I7_0"><img src="assets/yt.png"></a>
-            <a href="https://www.facebook.com/connectvida.ifba.3">
-              <img src="assets/facebook.png"></a>
-          </div>
-        </div>
-      </div>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCB-CxGPummNYwquyZHd-XvzYcRWgOAhHU",
+        authDomain: "connectvida-6e8fe.firebaseapp.com",
+        databaseURL: "https://connectvida-6e8fe.firebaseio.com",
+        projectId: "connectvida-6e8fe",
+        storageBucket: "connectvida-6e8fe.appspot.com",
+        messagingSenderId: "680444207265",
+        appId: "1:680444207265:web:44f34ec1b601ab44ef50e0",
+        measurementId: "G-CXRB1B22QW"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script>
+    const currentPage = location.pathname;
+const menuItems = document.querySelectorAll('.nav-link');
 
-    </footer>
+for (item of menuItems) {
+    if (currentPage.includes(item.getAttribute('href'))) {
+        item.classList.add('active');
+    }
+} 
+            
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-175769169-1"></script>
@@ -52,6 +77,5 @@
 
       gtag('config', 'UA-175769169-1');
     </script>
-
   </body>
 </html>

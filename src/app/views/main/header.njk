@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container">
+<a class="navbar-brand logo-nav" href="#">
+    <img src="/assets/logo.png" width="40" height="40" alt="">
+  </a>
+    <a class="navbar-brand text-success" href="/">
+      COnnectVIDa
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse"></div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a  class="nav-link" href="/">
+            Início
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sobre"> Sobre </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Temas  </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/temas?category_name=Artes"> Artes</a></li>
+              <li><a class="dropdown-item" href="/temas?category_name=Literatura"> Literatura </a></li>
+              <li><a class="dropdown-item" href="/temas?category_name=Saúde"> Saúde </a></li>
+              <li><a class="dropdown-item" href="/temas?category_name=Tecnologia"> Tecnologia </a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+          <a  class="nav-link" href="/contato"> Contato </a>
+      </li>
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <form action="/busca" method="POST">
+            <input class="search_input" type="text" name="filter" placeholder="Buscar..."/>
+            <button type="submit" id="btn-search" class="search_icon">
+              <i class="fas fa-search"></i >
+            </button>
+          </form>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>
+</nav>

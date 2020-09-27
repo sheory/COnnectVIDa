@@ -1,61 +1,74 @@
 {% extends 'main/layout.njk' %}
 
-
 {% block content %}
+<!--
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="1"></li>
+  <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
 
-<div class="container">
-	<div class="temas-container">
-		<div class="tema-semanal-container">
-			<h4>Tema Semanal</h4>
-			<hr>
-			<p class="title-tema-semanal">Setembro Amarelo</p>
-			<button ><a href="/temas?category_name=saude" style="text-decoration: none;">ver publicações</a></button>
-		</div>
+{%for item in carrousel%}
+  {%if loop.index == 1%}
+    <div class="carousel-item active">
+  {%else%}
+    <div class="carousel-item">
+  {%endif%}
+  {%if loop.index == 1 %}
+    <img class="first-slide" src="{{item.image}}" alt="First slide">
+  {%elif loop.index == 2 %}
+    <img class="second-slide" src="{{item.image}}" alt="second slide">
+  {% else %}
+    <img class="third-slide" src="{{item.image}}" alt="third slide">
+  {% endif %}
+    <div class="container">
+      <div class="carousel-caption d-none d-md-block text-left">
+        <h1>
+        {{item.title}}</h1>
+        <p>{{item.subtitle}}</p>
+        <p><a class="btn btn-lg btn-primary" href="/posts/{{item.id}}" role="button">Ver publicações</a></p>
+      </div>
+    </div>
+  </div>
+{%endfor%}
 
-		<div class="temas-mensais-container">
-			<h4>Temas do mês</h4>
-			<hr>
-			<div class="titulos-mensais">
-				<div class="weeks-1-2">
-					<a href="" class="title-tema-mensal">Alívio das tensões e ansiedade</a>
-				<a href="" class="title-tema-mensal">Assédio</a>
-				</div>
-				<div class="weeks-1-2">
-					<a href="" class="title-tema-mensal">Setembro amarelo</a>
-					<a href="" class="title-tema-mensal">Racismo</a>
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
-	
+<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+-->
+<!--Cards-->
+<div class="container-fluid"> 
+  <h1>Postagens Recentes</h1>
+  <div class="row">
+    {%for post in posts%}
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 card-{{post.subject}}">
+        <a href="#"><img class="card-img-top" src="{{post.image}}"></a>
+        <div class="card-body">
+          <a class="theme"  href="temas?category_name={{post.subject}}"><img class="theme-img" src="assets/{{post.subject}}.png">{{post.subject}}</a>
+          <h4 class="card-title">
+            <a href="#">{{post.title}}</a>
+          </h4>
+          <h5 class="create-post"><img src="assets/clock.png">02/09/2020</h5>
+          <p class="card-text">{{post.subtitle}}</p>
 
-	<div class="cards">
+          <div class="card-footer">
+            <button type="button" class="btn btn-primary btn-card"><a href="/posts/{{post.id}}">Ler mais</a></button>
+         </div>
+      </div>  
+      </div>          
+    </div>
+    {%endfor%}
 
-		<h1> Postagens recentes <hr></h1>
-
-		{%for post in posts%}
-		<div class="card">
-			<div class="{{post.subject}}"> 
-				<img src="{{post.image}}">
-				<div class="texto">
-					<h4 > <b><a class="title" href="/posts/{{post.id}}">{{post.title}}</a>  </b></h4>
-					<p class="previa"> {{post.subtitle}}</p>
-					<div class="tag1">
-						<button> <a href="temas?category_name={{post.subject}}"> +{{post.subject}}</a></button> 
-					</div>
-					
-					{%if post.subject %}
-						<div class="last-update-{{post.subject}}">
-		   			<p class="last-update" >{{post.updated_at}}</p>
-		   			</div>
-		   		{%endif%}
-				</div>
-			</div>						
-		</div>
-		{%endfor%}
-	</div>
-
+  </div>
+  <!-- /.row -->     
 </div>
 {% endblock content%}

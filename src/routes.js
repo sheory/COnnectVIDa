@@ -23,6 +23,7 @@ routes.get('/temas', SiteController.category);
 routes.get('/sobre', SiteController.about);
 routes.get('/contato', SiteController.contact);
 routes.post('/busca', SiteController.search);
+routes.get('/postweek', SiteController.postweek);
 
 //POSTS COMMENTS
 routes.post('/postcomment/:postId', PostCommentController.post);

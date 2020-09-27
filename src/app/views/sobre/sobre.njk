@@ -1,26 +1,59 @@
-<!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
-  <head>
+ {% extends "main/layout.njk" %}
+ {% block content %}
+    <div class="about-image"></div>
+    <div class="container">
 
-    <link rel="stylesheet" type="text/css" href="/styles/sobre.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <div class="about-text">
+        <h3 class="about-title">Sobre</h3>
+        <div class="description-container">
+          <p class="about-description">
+            O Blog CONNECTVIDA surge da iniciativa de um grupo de professoras, técnicas, alunos e alunas do IFBA Campus Irecê no contexto da pandemia da COVID-19, no qual o novo coronavírus (SARS-CoV-2) acomete a maior parte dos países, sobretudo o Brasil. Neste momento, a vida assume outras prioridades, a rotina tal qual existia, não é mais viável e o surto viral nos impõem outras práticas de vida com novas organizações e dinâmicas.</p>
+            <p> A equipe CONNECTVIDA propõe iniciativas para a organização das atividades diárias dos discentes, bem como de seus familiares, com a função de apresentar alternativas para amenizar os impactos ocasionados por esta crise. Dessa forma, o presente BLOG (informativo e de monitoramento) é fruto dessas iniciativas e não terá um tema específico, mas um objetivo específico: a saúde mental e equilíbrio emocional. E como faremos isso? As publicações/atividades estão dividas entre os seguintes eixos: Saúde, Arte, Literatura e Tecnologia.</p>Entendemos que tais eixos, quando pensados de forma conectada, oferecem suporte para que possamos alcançar nosso principal objetivo, melhorar a qualidade de vida dos discentes e familiares. A expectativa é que o IFBA Campus Irecê consiga cumprir com sua responsabilidade social para com a comunidade do território, fortaleça os vínculos entre os atores da comunidade escolar, e minimize os impactos emocionais durante o estado de distanciamento. Além disso, entendemos que catalogar informações sobre os nossos estudantes e suas respectivas rotinas no período de distanciamento social poderá nos auxiliar no momento de retorno às atividades presenciais, que certamente terão uma configuração bem diferente do que estávamos acostumados.</p>
+        </div>
 
-    <title>COnnectVIDa</title>
+      </div>
+          <div id="dev"class="dev-group-sobre">
+      <div class="dev-group-body">
+         <b class="dev-group-title"> Equipe de Desenvolvimento </b>
+        <div class="dev-group-member">
+          Átila Gama
+          <a href="https://github.com/atchim">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
 
-    <meta property="og:title" content="COnnectVIDa: Sobre"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="http://connectvida.com.br"/>
-    <meta property="og:image" content="http://connectvida.com.br/assets/logo.png"/>
+        <div class="dev-group-member">
+          Diego Almeida
+          <a href="https://github.com/dieg0almeida">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
 
-  </head>
-  <body>
-    {% include 'sobre/sobre-header.njk'%}
-    {% include 'sobre/sobre-index.njk'%}
-    {% include 'sobre/sobre-footer.njk'%}
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <div class="dev-group-member">
+          Lucas Rodrigues
+          <a href="https://www.instagram.com/lucasrodrigues.designer">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="dev-group-member">
+          Sheory Machado
+          <a href="https://github.com/sheory">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="dev-group-member">
+          Weri Oliveira
+          <a href="https://github.com/werioliveira">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+        
+  </div>
+    </div >
+     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-175769169-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -31,5 +64,5 @@
 
       gtag('config', 'UA-175769169-1');
     </script>
-  </body>
-</html>
+
+{%endblock content %}

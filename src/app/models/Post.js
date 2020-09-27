@@ -75,5 +75,12 @@ module.exports = {
     },
     getPostsSubjects(){
         return db.promise().query('SELECT subject FROM posts GROUP BY subject');
+    },
+    getPostWeek(){
+        return db.promise().query('SELECT * FROM posts WHERE YEARWEEK(created_at) = YEARWEEK(CURDATE())');
+    },
+    getPostWeekCarrousel(){
+        return db.promise().query('SELECT * FROM posts WHERE YEARWEEK(created_at) = YEARWEEK(CURDATE()) LIMIT 3');
     }
+    
 }
