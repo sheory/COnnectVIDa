@@ -13,9 +13,9 @@ const MessageController = require('./app/controllers/MessageController');
 routes.get('/posts/:id', PostController.show);
 
 //POSTS ADM
-routes.post('/posts', PostController.post);
-routes.put('/posts', PostController.put);
-routes.delete('/posts/:id', PostController.delete);
+// routes.post('/posts', PostController.post);
+// routes.put('/posts', PostController.put);
+// routes.delete('/posts/:id', PostController.delete);
 
 //SITE
 routes.get('/', SiteController.index);
