@@ -26,9 +26,17 @@ p.text-topic {
   margin-right: auto;
   margin-left: auto;
 }
-  .container-image{
-    position: relative;
+.container-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.container-image{
+  position: relative;
     top: 30px;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto; /* to center the container */
   }
   .text-topic{
     text-align: justify;
