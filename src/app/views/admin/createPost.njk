@@ -1,0 +1,24 @@
+{% extends 'main/layout.njk' %}
+
+{% block content %}
+<div class="container newpub">
+        <h2 class="title-1">Nova Publicação</h2>
+        <form action="/dashboard/newpost" method="post">
+        <div class="container-new-post">
+         <label for="title">Título</label>
+        <input class="title"type="text" placeholder="Título">
+        <label for="subtitle">Subtítulo</label>
+        <input class="subtitle"type="text" placeholder="Subtítulo">
+        <label for="">Eixo</label>
+        <input class="subject"type="text" placeholder="Eixo">
+        <label for="images-pub">Imagem</label>
+        <input type="file" class="images-pub"name="arquivos"/>
+        </div>
+          <textarea name="editor1"></textarea>
+        <div class="send-admin">
+        <button type="submit" class="btn btn-success">Enviar</button>
+        </div>
+        
+        </form>
+        </div>
+{% endblock content%}

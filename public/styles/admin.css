@@ -1,0 +1,59 @@
+.newpub{
+    padding: 50px;
+    background-color:#f8f9fa;
+}
+.send-admin{
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 15px 0 0;
+    padding-bottom: 20px;
+}
+.container-list{
+    background-color: #f8f9fa;
+}
+.list-posts{
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    justify-content: center;
+}
+.title-admin{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: center;
+}
+.image-post img{
+    width: 75px;
+    height: 75px;
+    margin-left: 25px;
+}
+.desc-post{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.title-post-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container-new-post input{
+    display: block;
+    width: 60%;
+    height: 40px;
+    border: 1px solid rgb(133, 133, 133);
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.subtitle, .title{
+    margin: 15px 0 15px 0;
+}
+.images-pub{
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+.subject{
+    margin-bottom: 15px;
+}
